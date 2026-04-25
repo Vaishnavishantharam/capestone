@@ -1,0 +1,13 @@
+{
+  "id": "approval_c36b9bb0b7",
+  "status": "approved",
+  "created_at": "2026-04-25T20:34:29+00:00",
+  "action_type": "email_draft",
+  "payload": {
+    "to": "advisor@company.test",
+    "subject": "Advisor Pre-Booking — Nominee update — IN-L05X",
+    "body": "Booking code: IN-L05X\nTopic: Nominee update\nSlot (IST): 2026-04-26 03:00 AM IST\n\nMarket/Customer sentiment context (from Weekly Pulse): top themes this week are SIP / mandates, Support, UX / usability.\n\nNote: This is a draft only (HITL approval required).",
+    "booking_code": "IN-L05X"
+  },
+  "reviewed_at": "2026-04-25T20:34:34+00:00"
+}

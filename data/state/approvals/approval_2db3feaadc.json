@@ -1,0 +1,11 @@
+{
+  "id": "approval_2db3feaadc",
+  "status": "pending",
+  "created_at": "2026-04-25T20:34:29+00:00",
+  "action_type": "append_notes",
+  "payload": {
+    "doc_name": "Advisor Pre-Bookings (mock)",
+    "line": "2026-04-26 03:00 AM IST | Nominee update | IN-L05X | pulse_id=pulse_20260425_195835 | top_theme=SIP / mandates",
+    "booking_code": "IN-L05X"
+  }
+}

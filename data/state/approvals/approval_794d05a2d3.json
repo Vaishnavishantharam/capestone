@@ -1,0 +1,12 @@
+{
+  "id": "approval_794d05a2d3",
+  "status": "pending",
+  "created_at": "2026-04-25T20:34:29+00:00",
+  "action_type": "calendar_hold",
+  "payload": {
+    "title": "Advisor Q&A — Nominee update — IN-L05X",
+    "slot_ist": "2026-04-26 03:00 AM IST",
+    "timezone": "IST",
+    "booking_code": "IN-L05X"
+  }
+}
