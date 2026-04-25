@@ -1,10 +1,12 @@
 {
   "meta": {
-    "last_scraped": "2026-04-25T19:44:25+00:00",
+    "last_scraped": "2026-04-25T21:39:36+00:00",
     "source_urls": [
       "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
       "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184"
+      "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567"
     ]
   },
   "schemes": [
@@ -15,7 +17,7 @@
       "plan_type": "Direct",
       "option_type": "Growth",
       "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
-      "scraped_at": "2026-04-25T19:44:25+00:00",
+      "scraped_at": "2026-04-25T21:39:36+00:00",
       "expense_ratio": "1.03%",
       "exit_load": "1.0%",
       "min_sip": 100,
@@ -23,30 +25,9 @@
       "min_lumpsum": 100,
       "min_lumpsum_raw": "₹100",
       "lock_in": "No Lock-in",
-      "risk_level": "![Image 21: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "risk_level": "![Image 13: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
       "benchmark": "Nifty 100 TR INR",
       "aum": "₹35458 Cr",
-      "inception_date": "1 January, 2013",
-      "fund_manager": null
-    },
-    {
-      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580",
-      "amc_name": "HDFC",
-      "category": null,
-      "plan_type": "Direct",
-      "option_type": "Growth",
-      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "scraped_at": "2026-04-25T19:44:25+00:00",
-      "expense_ratio": "0.8%",
-      "exit_load": "1.0%",
-      "min_sip": 100,
-      "min_sip_raw": "₹100",
-      "min_lumpsum": 100,
-      "min_lumpsum_raw": "₹100",
-      "lock_in": "No Lock-in",
-      "risk_level": "![Image 23: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
-      "benchmark": "BSE 250 SmallCap TR INR",
-      "aum": "₹33724 Cr",
       "inception_date": "1 January, 2013",
       "fund_manager": null
     },
@@ -57,7 +38,7 @@
       "plan_type": "Direct",
       "option_type": "Growth",
       "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
-      "scraped_at": "2026-04-25T19:44:25+00:00",
+      "scraped_at": "2026-04-25T21:39:36+00:00",
       "expense_ratio": "0.68%",
       "exit_load": "1.0%",
       "min_sip": 100,
@@ -65,10 +46,73 @@
       "min_lumpsum": 100,
       "min_lumpsum_raw": "₹100",
       "lock_in": "No Lock-in",
-      "risk_level": "![Image 22: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "risk_level": "![Image 14: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
       "benchmark": "Nifty 500 TR INR",
       "aum": "₹91335 Cr",
       "inception_date": "1 January, 2013",
+      "fund_manager": null
+    },
+    {
+      "scheme_name": "hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "amc_name": "HDFC",
+      "category": null,
+      "plan_type": "Direct",
+      "option_type": "Growth",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "scraped_at": "2026-04-25T21:39:36+00:00",
+      "expense_ratio": "0.77%",
+      "exit_load": "1.0%",
+      "min_sip": 100,
+      "min_sip_raw": "₹100",
+      "min_lumpsum": 100,
+      "min_lumpsum_raw": "₹100",
+      "lock_in": "No Lock-in",
+      "risk_level": "![Image 14: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "benchmark": "Nifty Midcap 150 TR INR",
+      "aum": "₹85358 Cr",
+      "inception_date": "1 January, 2013",
+      "fund_manager": null
+    },
+    {
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580",
+      "amc_name": "HDFC",
+      "category": null,
+      "plan_type": "Direct",
+      "option_type": "Growth",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "scraped_at": "2026-04-25T21:39:36+00:00",
+      "expense_ratio": "0.8%",
+      "exit_load": "1.0%",
+      "min_sip": 100,
+      "min_sip_raw": "₹100",
+      "min_lumpsum": 100,
+      "min_lumpsum_raw": "₹100",
+      "lock_in": "No Lock-in",
+      "risk_level": "![Image 13: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "benchmark": "BSE 250 SmallCap TR INR",
+      "aum": "₹33724 Cr",
+      "inception_date": "1 January, 2013",
+      "fund_manager": null
+    },
+    {
+      "scheme_name": "hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "amc_name": "HDFC",
+      "category": "Index",
+      "plan_type": "Direct",
+      "option_type": "Growth",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "scraped_at": "2026-04-25T21:39:36+00:00",
+      "expense_ratio": "0.3%",
+      "exit_load": "0%",
+      "min_sip": 100,
+      "min_sip_raw": "₹100",
+      "min_lumpsum": 100,
+      "min_lumpsum_raw": "₹100",
+      "lock_in": "No Lock-in",
+      "risk_level": "![Image 15: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "benchmark": "Nifty 100 TR INR",
+      "aum": "₹374 Cr",
+      "inception_date": "23 February, 2022",
       "fund_manager": null
     }
   ],
@@ -124,66 +168,10 @@
     },
     {
       "field_name": "risk_level",
-      "field_value": "![Image 21: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
-      "evidence_text": "Risk | ![Image 21: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "field_value": "![Image 13: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "evidence_text": "Risk | ![Image 13: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
       "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
       "scheme_name": "hdfc-large-cap-fund-direct-plan-growth-option-2989"
-    },
-    {
-      "field_name": "expense_ratio",
-      "field_value": "0.8%",
-      "evidence_text": "Expense ratio | 0.8%",
-      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
-    },
-    {
-      "field_name": "benchmark",
-      "field_value": "BSE 250 SmallCap TR INR",
-      "evidence_text": "Benchmark | BSE 250 SmallCap TR INR",
-      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
-    },
-    {
-      "field_name": "aum",
-      "field_value": "₹33724 Cr",
-      "evidence_text": "AUM | ₹33724 Cr",
-      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
-    },
-    {
-      "field_name": "inception_date",
-      "field_value": "1 January, 2013",
-      "evidence_text": "Inception Date | 1 January, 2013",
-      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
-    },
-    {
-      "field_name": "min_lumpsum_sip",
-      "field_value": "₹100/₹100",
-      "evidence_text": "Min Lumpsum/SIP | ₹100/₹100",
-      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
-    },
-    {
-      "field_name": "exit_load",
-      "field_value": "1.0%",
-      "evidence_text": "Exit Load | 1.0%",
-      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
-    },
-    {
-      "field_name": "lock_in",
-      "field_value": "No Lock-in",
-      "evidence_text": "Lock In | No Lock-in",
-      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
-    },
-    {
-      "field_name": "risk_level",
-      "field_value": "![Image 23: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
-      "evidence_text": "Risk | ![Image 23: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
-      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
-      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
     },
     {
       "field_name": "expense_ratio",
@@ -236,10 +224,178 @@
     },
     {
       "field_name": "risk_level",
-      "field_value": "![Image 22: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
-      "evidence_text": "Risk | ![Image 22: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "field_value": "![Image 14: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "evidence_text": "Risk | ![Image 14: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
       "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
       "scheme_name": "hdfc-flexi-cap-fund-direct-plan-growth-option-3184"
+    },
+    {
+      "field_name": "expense_ratio",
+      "field_value": "0.77%",
+      "evidence_text": "Expense ratio | 0.77%",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "scheme_name": "hdfc-mid-cap-fund-direct-plan-growth-option-3097"
+    },
+    {
+      "field_name": "benchmark",
+      "field_value": "Nifty Midcap 150 TR INR",
+      "evidence_text": "Benchmark | Nifty Midcap 150 TR INR",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "scheme_name": "hdfc-mid-cap-fund-direct-plan-growth-option-3097"
+    },
+    {
+      "field_name": "aum",
+      "field_value": "₹85358 Cr",
+      "evidence_text": "AUM | ₹85358 Cr",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "scheme_name": "hdfc-mid-cap-fund-direct-plan-growth-option-3097"
+    },
+    {
+      "field_name": "inception_date",
+      "field_value": "1 January, 2013",
+      "evidence_text": "Inception Date | 1 January, 2013",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "scheme_name": "hdfc-mid-cap-fund-direct-plan-growth-option-3097"
+    },
+    {
+      "field_name": "min_lumpsum_sip",
+      "field_value": "₹100/₹100",
+      "evidence_text": "Min Lumpsum/SIP | ₹100/₹100",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "scheme_name": "hdfc-mid-cap-fund-direct-plan-growth-option-3097"
+    },
+    {
+      "field_name": "exit_load",
+      "field_value": "1.0%",
+      "evidence_text": "Exit Load | 1.0%",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "scheme_name": "hdfc-mid-cap-fund-direct-plan-growth-option-3097"
+    },
+    {
+      "field_name": "lock_in",
+      "field_value": "No Lock-in",
+      "evidence_text": "Lock In | No Lock-in",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "scheme_name": "hdfc-mid-cap-fund-direct-plan-growth-option-3097"
+    },
+    {
+      "field_name": "risk_level",
+      "field_value": "![Image 14: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "evidence_text": "Risk | ![Image 14: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-mid-cap-fund-direct-plan-growth-option-3097",
+      "scheme_name": "hdfc-mid-cap-fund-direct-plan-growth-option-3097"
+    },
+    {
+      "field_name": "expense_ratio",
+      "field_value": "0.8%",
+      "evidence_text": "Expense ratio | 0.8%",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
+    },
+    {
+      "field_name": "benchmark",
+      "field_value": "BSE 250 SmallCap TR INR",
+      "evidence_text": "Benchmark | BSE 250 SmallCap TR INR",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
+    },
+    {
+      "field_name": "aum",
+      "field_value": "₹33724 Cr",
+      "evidence_text": "AUM | ₹33724 Cr",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
+    },
+    {
+      "field_name": "inception_date",
+      "field_value": "1 January, 2013",
+      "evidence_text": "Inception Date | 1 January, 2013",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
+    },
+    {
+      "field_name": "min_lumpsum_sip",
+      "field_value": "₹100/₹100",
+      "evidence_text": "Min Lumpsum/SIP | ₹100/₹100",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
+    },
+    {
+      "field_name": "exit_load",
+      "field_value": "1.0%",
+      "evidence_text": "Exit Load | 1.0%",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
+    },
+    {
+      "field_name": "lock_in",
+      "field_value": "No Lock-in",
+      "evidence_text": "Lock In | No Lock-in",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
+    },
+    {
+      "field_name": "risk_level",
+      "field_value": "![Image 13: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "evidence_text": "Risk | ![Image 13: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580"
+    },
+    {
+      "field_name": "expense_ratio",
+      "field_value": "0.3%",
+      "evidence_text": "Expense ratio | 0.3%",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "scheme_name": "hdfc-nifty-100-index-fund-direct-growth-1040567"
+    },
+    {
+      "field_name": "benchmark",
+      "field_value": "Nifty 100 TR INR",
+      "evidence_text": "Benchmark | Nifty 100 TR INR",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "scheme_name": "hdfc-nifty-100-index-fund-direct-growth-1040567"
+    },
+    {
+      "field_name": "aum",
+      "field_value": "₹374 Cr",
+      "evidence_text": "AUM | ₹374 Cr",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "scheme_name": "hdfc-nifty-100-index-fund-direct-growth-1040567"
+    },
+    {
+      "field_name": "inception_date",
+      "field_value": "23 February, 2022",
+      "evidence_text": "Inception Date | 23 February, 2022",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "scheme_name": "hdfc-nifty-100-index-fund-direct-growth-1040567"
+    },
+    {
+      "field_name": "min_lumpsum_sip",
+      "field_value": "₹100/₹100",
+      "evidence_text": "Min Lumpsum/SIP | ₹100/₹100",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "scheme_name": "hdfc-nifty-100-index-fund-direct-growth-1040567"
+    },
+    {
+      "field_name": "exit_load",
+      "field_value": "0%",
+      "evidence_text": "Exit Load | 0%",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "scheme_name": "hdfc-nifty-100-index-fund-direct-growth-1040567"
+    },
+    {
+      "field_name": "lock_in",
+      "field_value": "No Lock-in",
+      "evidence_text": "Lock In | No Lock-in",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "scheme_name": "hdfc-nifty-100-index-fund-direct-growth-1040567"
+    },
+    {
+      "field_name": "risk_level",
+      "field_value": "![Image 15: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "evidence_text": "Risk | ![Image 15: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-nifty-100-index-fund-direct-growth-1040567",
+      "scheme_name": "hdfc-nifty-100-index-fund-direct-growth-1040567"
     }
   ]
 }

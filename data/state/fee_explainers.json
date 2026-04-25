@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_checked": "2026-04-25T00:00:00Z",
-    "notes": "Prototype placeholder fee URLs. Replace with official INDMoney/AMC fee/exit-load pages when available."
+    "notes": "Exit-load explainer is backed by an official SEBI investor education page plus scheme-specific sources for exact exit-load rule."
   },
   "scenarios": [
     {
@@ -17,7 +17,7 @@
         "Next step: If you think it was applied incorrectly, compare your transaction dates against the scheme’s exit-load clause and contact support with your booking code (shared securely outside this chat)."
       ],
       "source_links": [
-        "REPLACE_WITH_OFFICIAL_FEE_OR_EXIT_LOAD_POLICY_URL"
+        "https://investor.sebi.gov.in/exit_load.html"
       ]
     }
   ]

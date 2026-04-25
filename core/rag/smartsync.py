@@ -9,6 +9,7 @@ from typing import Any
 
 from core.rag.retrieve import load_schemes_json, retrieve_top_k
 from core.llm.gemini import generate_text
+from core.pulse.load import load_latest_pulse
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -21,6 +22,21 @@ def iso_now() -> str:
 
 _ADVICE_RE = re.compile(r"\b(best|returns?|20%|guarantee|should i|invest|buy|sell|predict)\b", re.IGNORECASE)
 _PII_RE = re.compile(r"\b(pan|aadhaar|otp|folio|account number|phone|email)\b", re.IGNORECASE)
+_SIP_DEF_RE = re.compile(r"^\s*(what is|define|meaning of)\s+(a\s+)?sip\s*\??\s*$", re.IGNORECASE)
+# "Why am I seeing this?" follow-up detector (typo-tolerant).
+# Covers: seeing / seeng, "showing", "do I see", etc.
+_WHY_SEE_RE = re.compile(
+    r"\b("
+    r"why\s+am\s+i\s+see(?:ing|ng)\s+this"
+    r"|why\s+do\s+i\s+see\s+this"
+    r"|why\s+is\s+this\s+show(?:ing|n)"
+    r"|why\s+am\s+i\s+seeing"
+    r")\b",
+    re.IGNORECASE,
+)
+
+# Education / definitions: keep a single approved official link for concepts.
+_AMFI_SIP_URL = "https://www.amfiindia.com/investor-corner/systematic-investment-plan"
 
 
 @dataclass(frozen=True)
@@ -48,16 +64,22 @@ def _pick_scheme_for_question(question: str, schemes_db: dict[str, Any]) -> dict
     if not schemes:
         return None
 
-    # Simple keyword mapping first (works well for our 3-scheme corpus).
+    # Simple keyword mapping first (works well for our small curated corpus).
+    # Prefer matching on category when present, otherwise scheme_name.
     keyword_map = [
-        ("large cap", "large-cap"),
-        ("flexi", "flexi-cap"),
-        ("small cap", "small-cap"),
+        ("large cap", ["large cap"]),
+        ("flexi", ["flexi cap", "flexi"]),
+        ("small cap", ["small cap"]),
+        ("mid cap", ["mid cap"]),
+        ("nifty 100", ["nifty 100", "index"]),
+        ("index", ["index"]),
     ]
-    for needle, slug in keyword_map:
+    for needle, variants in keyword_map:
         if needle in q:
             for s in schemes:
-                if slug in str(s.get("scheme_name", "")).lower():
+                cat = str(s.get("category") or "").lower()
+                name = str(s.get("scheme_name") or "").lower()
+                if any(v in cat for v in variants) or any(v in name for v in variants):
                     return s
 
     # Fallback: use evidence retrieval to infer best matching scheme via evidence row source_url.
@@ -69,6 +91,13 @@ def _pick_scheme_for_question(question: str, schemes_db: dict[str, Any]) -> dict
                 return s
 
     return schemes[0]
+
+
+def _find_evidence_text(schemes_db: dict[str, Any], *, scheme_name: str, field_name: str) -> str | None:
+    for ev in schemes_db.get("evidence", []):
+        if ev.get("field_name") == field_name and ev.get("scheme_name") == scheme_name:
+            return str(ev.get("evidence_text") or "").strip() or None
+    return None
 
 
 def _find_exit_load_evidence_text(schemes_db: dict[str, Any], *, scheme_name: str) -> str | None:
@@ -109,22 +138,72 @@ def answer_question(question: str) -> SmartSyncAnswer:
         )
         return SmartSyncAnswer(text=msg, scheme_citation=None, fee_citation=None)
 
+    # Concept definition (not scheme-specific).
+    if _SIP_DEF_RE.search(question.strip()):
+        msg = (
+            "SIP (Systematic Investment Plan) is a way to invest a fixed amount at regular intervals into a mutual fund scheme. "
+            "It’s a contribution method; the scheme’s terms (like minimum SIP amount) depend on the specific scheme.\n\n"
+            f"Source: {_AMFI_SIP_URL}\n"
+            f"Last updated from sources: {iso_now()}"
+        )
+        return SmartSyncAnswer(text=msg, scheme_citation=_AMFI_SIP_URL, fee_citation=None)
+
     schemes_db = load_schemes_json()
-    scheme = _pick_scheme_for_question(question, schemes_db)
-    if not scheme:
+    schemes = schemes_db.get("schemes", []) or []
+
+    wants_why = bool(re.search(r"\b(why|charged|charge|deducted)\b", question, re.IGNORECASE))
+    wants_exit_load = "exit load" in question.lower() or "exitload" in question.lower()
+    wants_min_sip = bool(re.search(r"\b(min(imum)?\s+)?sip\b", question, re.IGNORECASE))
+    wants_expense = bool(re.search(r"\bexpense\s+ratio\b", question, re.IGNORECASE))
+    wants_lockin = bool(re.search(r"\block[- ]?in\b|\belss\b", question, re.IGNORECASE))
+    wants_benchmark = bool(re.search(r"\bbenchmark\b", question, re.IGNORECASE))
+    wants_aum = bool(re.search(r"\baum\b", question, re.IGNORECASE))
+    wants_inception = bool(re.search(r"\binception\b|launch date|start date", question, re.IGNORECASE))
+    wants_risk = bool(re.search(r"\brisk\b|riskometer|risk level", question, re.IGNORECASE))
+    wants_why_seeing = bool(_WHY_SEE_RE.search(question))
+
+    is_scheme_specific = (
+        wants_exit_load
+        or wants_min_sip
+        or wants_expense
+        or wants_lockin
+        or wants_benchmark
+        or wants_aum
+        or wants_inception
+        or wants_risk
+    )
+    scheme = _pick_scheme_for_question(question, schemes_db) if is_scheme_specific else None
+
+    # If user asked a scheme-specific fact but we can't confidently infer a scheme, ask for scheme name.
+    if is_scheme_specific and schemes and scheme is None:
+        known = ", ".join([str(s.get("scheme_name")) for s in schemes[:5]])
+        msg = (
+            "Which HDFC scheme do you mean? I can answer facts like exit load / minimum SIP / expense ratio with a source link.\n\n"
+            f"Available in my current sources: {known}\n\n"
+            f"Last updated from sources: {iso_now()}"
+        )
+        return SmartSyncAnswer(text=msg, scheme_citation=None, fee_citation=None)
+    if is_scheme_specific and not scheme:
         msg = f"I couldn’t find scheme data in the current sources.\n\nLast updated from sources: {iso_now()}"
         return SmartSyncAnswer(text=msg, scheme_citation=None, fee_citation=None)
 
     scheme_name = str(scheme.get("scheme_name"))
     scheme_url = str(scheme.get("source_url"))
 
-    # Evidence-backed scheme fact snippet.
-    exit_load_evidence = _find_exit_load_evidence_text(schemes_db, scheme_name=scheme_name)
-    exit_load_value = str(scheme.get("exit_load") or "not found in sources")
-    scheme_fact_line = exit_load_evidence or f"Exit Load | {exit_load_value}"
+    def _pulse_context_snippet() -> str:
+        pulse = load_latest_pulse()
+        if not pulse:
+            return "Weekly Pulse context: (not available yet — run Phase 2 to generate a pulse artifact.)"
+        top = pulse.get("top_themes") or pulse.get("topThemes") or []
+        top_theme = top[0] if isinstance(top, list) and top else None
+        pulse_id = pulse.get("pulse_id") or pulse.get("pulseId") or "latest"
+        if top_theme:
+            return f"Weekly Pulse context (internal): pulse_id={pulse_id}; top_theme={top_theme}"
+        return f"Weekly Pulse context (internal): pulse_id={pulse_id}"
 
-    wants_why = bool(re.search(r"\b(why|charged|charge|deducted)\b", question, re.IGNORECASE))
-    wants_exit_load = "exit load" in question.lower() or "exitload" in question.lower()
+    # Evidence-backed scheme fact snippet for exit load.
+    exit_load_value = str(scheme.get("exit_load") or "not found in sources")
+    scheme_fact_line = (_find_evidence_text(schemes_db, scheme_name=scheme_name, field_name="exit_load")) or f"Exit Load | {exit_load_value}"
 
     if wants_exit_load and wants_why:
         fee_db = _load_fee_explainers()
@@ -141,9 +220,137 @@ def answer_question(question: str) -> SmartSyncAnswer:
         )
         return SmartSyncAnswer(text=text, scheme_citation=scheme_url, fee_citation=fee_url)
 
-    # Fact-only response (exit load).
-    text = f"{scheme_fact_line}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
-    return SmartSyncAnswer(text=text, scheme_citation=scheme_url, fee_citation=None)
+    if wants_exit_load:
+        extra = ""
+        if wants_why_seeing:
+            extra = (
+                "\n\nWhy you might see this in-app (general):\n"
+                "- You’re viewing scheme terms (factsheet/KIM/SID summary) for this scheme.\n"
+                "- Exit load applies only when redeeming within the scheme’s exit-load window; the exact window is scheme-defined.\n\n"
+                + _pulse_context_snippet()
+            )
+        text = f"{scheme_fact_line}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        return SmartSyncAnswer(text=text, scheme_citation=scheme_url, fee_citation=None)
+
+    if wants_min_sip:
+        min_sip_raw = scheme.get("min_sip_raw") or scheme.get("min_sip")
+        if not min_sip_raw:
+            msg = f"I couldn’t find the minimum SIP for {scheme_name} in the current sources.\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+            return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+        extra = ""
+        if wants_why_seeing:
+            extra = (
+                "\n\nWhy you might see this in-app (general):\n"
+                "- This is the scheme’s minimum allowed SIP installment amount.\n"
+                "- If you tried to set up a SIP below this minimum, the app may show this value as a constraint.\n\n"
+                + _pulse_context_snippet()
+            )
+        msg = f"Minimum SIP | {min_sip_raw}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+
+    if wants_expense:
+        v = scheme.get("expense_ratio")
+        ev = _find_evidence_text(schemes_db, scheme_name=scheme_name, field_name="expense_ratio")
+        if not (ev or v):
+            msg = f"I couldn’t find the expense ratio for {scheme_name} in the current sources.\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+            return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+        extra = ""
+        if wants_why_seeing:
+            extra = (
+                "\n\nWhy you might see this in-app (general):\n"
+                "- Expense ratio is a recurring scheme cost disclosed by the fund; apps show it as a factual scheme attribute.\n\n"
+                + _pulse_context_snippet()
+            )
+        msg = f"{ev or f'Expense ratio | {v}'}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+
+    if wants_lockin:
+        v = scheme.get("lock_in")
+        ev = _find_evidence_text(schemes_db, scheme_name=scheme_name, field_name="lock_in")
+        if not (ev or v):
+            msg = f"I couldn’t find the lock-in for {scheme_name} in the current sources.\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+            return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+        extra = ""
+        if wants_why_seeing:
+            extra = (
+                "\n\nWhy you might see this in-app (general):\n"
+                "- Lock-in is a scheme restriction (common for ELSS). Apps show it so users know redemption constraints.\n\n"
+                + _pulse_context_snippet()
+            )
+        msg = f"{ev or f'Lock In | {v}'}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+
+    if wants_benchmark:
+        v = scheme.get("benchmark")
+        ev = _find_evidence_text(schemes_db, scheme_name=scheme_name, field_name="benchmark")
+        if not (ev or v):
+            msg = f"I couldn’t find the benchmark for {scheme_name} in the current sources.\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+            return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+        extra = ""
+        if wants_why_seeing:
+            extra = (
+                "\n\nWhy you might see this in-app (general):\n"
+                "- Benchmark is the reference index disclosed for the scheme; apps show it as a factual comparison baseline.\n\n"
+                + _pulse_context_snippet()
+            )
+        msg = f"{ev or f'Benchmark | {v}'}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+
+    if wants_aum:
+        v = scheme.get("aum")
+        ev = _find_evidence_text(schemes_db, scheme_name=scheme_name, field_name="aum")
+        if not (ev or v):
+            msg = f"I couldn’t find the AUM for {scheme_name} in the current sources.\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+            return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+        extra = ""
+        if wants_why_seeing:
+            extra = (
+                "\n\nWhy you might see this in-app (general):\n"
+                "- AUM is the total assets managed by the scheme, typically shown as a scheme size metric.\n\n"
+                + _pulse_context_snippet()
+            )
+        msg = f"{ev or f'AUM | {v}'}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+
+    if wants_inception:
+        v = scheme.get("inception_date")
+        ev = _find_evidence_text(schemes_db, scheme_name=scheme_name, field_name="inception_date")
+        if not (ev or v):
+            msg = f"I couldn’t find the inception date for {scheme_name} in the current sources.\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+            return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+        extra = ""
+        if wants_why_seeing:
+            extra = (
+                "\n\nWhy you might see this in-app (general):\n"
+                "- Inception date is when the scheme started; apps show it as a factual scheme attribute.\n\n"
+                + _pulse_context_snippet()
+            )
+        msg = f"{ev or f'Inception Date | {v}'}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+
+    if wants_risk:
+        v = scheme.get("risk_level")
+        ev = _find_evidence_text(schemes_db, scheme_name=scheme_name, field_name="risk_level")
+        if not (ev or v):
+            msg = f"I couldn’t find the risk level for {scheme_name} in the current sources.\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+            return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+        extra = ""
+        if wants_why_seeing:
+            extra = (
+                "\n\nWhy you might see this in-app (general):\n"
+                "- Risk level/riskometer is disclosed for the scheme; apps show it as a factual risk label.\n\n"
+                + _pulse_context_snippet()
+            )
+        msg = f"{ev or f'Risk | {v}'}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+
+    # If it's not one of the supported scheme facts, refuse to hallucinate.
+    msg = (
+        "I can answer facts about the configured HDFC schemes (exit load, minimum SIP, expense ratio, lock-in, benchmark, AUM, inception date, risk) with source links. "
+        "Ask one of those, and include the scheme name (e.g., “HDFC Flexi Cap”).\n\n"
+        f"Last updated from sources: {iso_now()}"
+    )
+    return SmartSyncAnswer(text=msg, scheme_citation=None, fee_citation=None)
 
 
 def answer_question_gemini(question: str) -> SmartSyncAnswer:
@@ -184,7 +391,12 @@ Original body:
 {body}
 """.strip()
 
-    rewritten = generate_text(prompt)
+    try:
+        rewritten = generate_text(prompt)
+    except Exception:
+        # If Gemini isn't configured (missing key) or request fails,
+        # fall back to the deterministic grounded answer.
+        return base
     if not rewritten:
         return base
 
