@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+
+# Optional: local outputs (keep if you want them versioned)
+data/state/pulses/*.json
+

@@ -1,0 +1,1038 @@
+{
+  "product": "INDMoney",
+  "amc": "HDFC",
+  "ingested_at": "2026-04-25T19:28:34+00:00",
+  "schemes": [
+    {
+      "scheme_id": "scheme_01",
+      "scheme_name": "hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "evidence_chunk_ids": [
+        "scheme_01_chunk_0000",
+        "scheme_01_chunk_0001",
+        "scheme_01_chunk_0002",
+        "scheme_01_chunk_0003",
+        "scheme_01_chunk_0004",
+        "scheme_01_chunk_0005",
+        "scheme_01_chunk_0006",
+        "scheme_01_chunk_0007",
+        "scheme_01_chunk_0008",
+        "scheme_01_chunk_0009",
+        "scheme_01_chunk_0010",
+        "scheme_01_chunk_0011",
+        "scheme_01_chunk_0012",
+        "scheme_01_chunk_0013",
+        "scheme_01_chunk_0014",
+        "scheme_01_chunk_0015",
+        "scheme_01_chunk_0016",
+        "scheme_01_chunk_0017",
+        "scheme_01_chunk_0018",
+        "scheme_01_chunk_0019",
+        "scheme_01_chunk_0020",
+        "scheme_01_chunk_0021",
+        "scheme_01_chunk_0022",
+        "scheme_01_chunk_0023",
+        "scheme_01_chunk_0024",
+        "scheme_01_chunk_0025",
+        "scheme_01_chunk_0026",
+        "scheme_01_chunk_0027",
+        "scheme_01_chunk_0028",
+        "scheme_01_chunk_0029",
+        "scheme_01_chunk_0030",
+        "scheme_01_chunk_0031",
+        "scheme_01_chunk_0032",
+        "scheme_01_chunk_0033",
+        "scheme_01_chunk_0034",
+        "scheme_01_chunk_0035",
+        "scheme_01_chunk_0036",
+        "scheme_01_chunk_0037",
+        "scheme_01_chunk_0038",
+        "scheme_01_chunk_0039",
+        "scheme_01_chunk_0040",
+        "scheme_01_chunk_0041",
+        "scheme_01_chunk_0042",
+        "scheme_01_chunk_0043",
+        "scheme_01_chunk_0044",
+        "scheme_01_chunk_0045",
+        "scheme_01_chunk_0046",
+        "scheme_01_chunk_0047",
+        "scheme_01_chunk_0048",
+        "scheme_01_chunk_0049",
+        "scheme_01_chunk_0050",
+        "scheme_01_chunk_0051",
+        "scheme_01_chunk_0052",
+        "scheme_01_chunk_0053",
+        "scheme_01_chunk_0054",
+        "scheme_01_chunk_0055"
+      ]
+    },
+    {
+      "scheme_id": "scheme_02",
+      "scheme_name": "hdfc-small-cap-fund-direct-growth-option-3580",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "evidence_chunk_ids": [
+        "scheme_02_chunk_0000",
+        "scheme_02_chunk_0001",
+        "scheme_02_chunk_0002",
+        "scheme_02_chunk_0003",
+        "scheme_02_chunk_0004",
+        "scheme_02_chunk_0005",
+        "scheme_02_chunk_0006",
+        "scheme_02_chunk_0007",
+        "scheme_02_chunk_0008",
+        "scheme_02_chunk_0009",
+        "scheme_02_chunk_0010",
+        "scheme_02_chunk_0011",
+        "scheme_02_chunk_0012",
+        "scheme_02_chunk_0013",
+        "scheme_02_chunk_0014",
+        "scheme_02_chunk_0015",
+        "scheme_02_chunk_0016",
+        "scheme_02_chunk_0017",
+        "scheme_02_chunk_0018",
+        "scheme_02_chunk_0019",
+        "scheme_02_chunk_0020",
+        "scheme_02_chunk_0021",
+        "scheme_02_chunk_0022",
+        "scheme_02_chunk_0023",
+        "scheme_02_chunk_0024",
+        "scheme_02_chunk_0025",
+        "scheme_02_chunk_0026",
+        "scheme_02_chunk_0027",
+        "scheme_02_chunk_0028",
+        "scheme_02_chunk_0029",
+        "scheme_02_chunk_0030",
+        "scheme_02_chunk_0031",
+        "scheme_02_chunk_0032",
+        "scheme_02_chunk_0033",
+        "scheme_02_chunk_0034",
+        "scheme_02_chunk_0035",
+        "scheme_02_chunk_0036",
+        "scheme_02_chunk_0037",
+        "scheme_02_chunk_0038",
+        "scheme_02_chunk_0039",
+        "scheme_02_chunk_0040",
+        "scheme_02_chunk_0041",
+        "scheme_02_chunk_0042",
+        "scheme_02_chunk_0043",
+        "scheme_02_chunk_0044",
+        "scheme_02_chunk_0045",
+        "scheme_02_chunk_0046",
+        "scheme_02_chunk_0047",
+        "scheme_02_chunk_0048",
+        "scheme_02_chunk_0049",
+        "scheme_02_chunk_0050",
+        "scheme_02_chunk_0051",
+        "scheme_02_chunk_0052",
+        "scheme_02_chunk_0053",
+        "scheme_02_chunk_0054",
+        "scheme_02_chunk_0055"
+      ]
+    },
+    {
+      "scheme_id": "scheme_03",
+      "scheme_name": "hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "evidence_chunk_ids": [
+        "scheme_03_chunk_0000",
+        "scheme_03_chunk_0001",
+        "scheme_03_chunk_0002",
+        "scheme_03_chunk_0003",
+        "scheme_03_chunk_0004",
+        "scheme_03_chunk_0005",
+        "scheme_03_chunk_0006",
+        "scheme_03_chunk_0007",
+        "scheme_03_chunk_0008",
+        "scheme_03_chunk_0009",
+        "scheme_03_chunk_0010",
+        "scheme_03_chunk_0011",
+        "scheme_03_chunk_0012",
+        "scheme_03_chunk_0013",
+        "scheme_03_chunk_0014",
+        "scheme_03_chunk_0015",
+        "scheme_03_chunk_0016",
+        "scheme_03_chunk_0017",
+        "scheme_03_chunk_0018",
+        "scheme_03_chunk_0019",
+        "scheme_03_chunk_0020",
+        "scheme_03_chunk_0021",
+        "scheme_03_chunk_0022",
+        "scheme_03_chunk_0023",
+        "scheme_03_chunk_0024",
+        "scheme_03_chunk_0025",
+        "scheme_03_chunk_0026",
+        "scheme_03_chunk_0027",
+        "scheme_03_chunk_0028",
+        "scheme_03_chunk_0029",
+        "scheme_03_chunk_0030",
+        "scheme_03_chunk_0031",
+        "scheme_03_chunk_0032",
+        "scheme_03_chunk_0033",
+        "scheme_03_chunk_0034",
+        "scheme_03_chunk_0035",
+        "scheme_03_chunk_0036",
+        "scheme_03_chunk_0037",
+        "scheme_03_chunk_0038",
+        "scheme_03_chunk_0039",
+        "scheme_03_chunk_0040",
+        "scheme_03_chunk_0041",
+        "scheme_03_chunk_0042",
+        "scheme_03_chunk_0043",
+        "scheme_03_chunk_0044",
+        "scheme_03_chunk_0045",
+        "scheme_03_chunk_0046",
+        "scheme_03_chunk_0047",
+        "scheme_03_chunk_0048",
+        "scheme_03_chunk_0049",
+        "scheme_03_chunk_0050",
+        "scheme_03_chunk_0051",
+        "scheme_03_chunk_0052",
+        "scheme_03_chunk_0053",
+        "scheme_03_chunk_0054",
+        "scheme_03_chunk_0055"
+      ]
+    }
+  ],
+  "evidence_chunks": [
+    {
+      "chunk_id": "scheme_01_chunk_0000",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "Title: HDFC Large Cap Fund - Latest NAV, Returns, Performance Vs Benchmark | INDmoney\n\nURL Source: https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989\n\nMarkdown Content:\n# HDFC Large Cap Fund - Latest NAV, Returns, Performance Vs Benchmark | INDmoney\n\n[![Image 8: INDmoney Logo](https://indcdn.indmoney.com/cdn/images/fe/ind-money-logo.svg)](https://www.indmoney.com/)\nINDmoney\n\n[US Stocks](https://www.indmoney.com/us-stocks \"US Stocks\")[Indian Stocks](https://www.indmoney.com/stocks \"Indian Stocks\")[ETFs](https://www.indmoney.com/stocks/etf \"ETFs\")[Mutual Funds](https://www.indmoney.com/mutual-funds \"Mutual Funds\")[IPO](https://www.indmoney.com/ipo \"IPO\")\n\n* * *\n\n[Features](https://www.indmoney.com/features \"Features\")[Pricing](https://www.indmoney.com/pricing \"Pricing\")\n\nLogin\n\nLogin Open Demat Account\n\n* Fund Price\n\n* Performance\n\n* Peer Comparison\n\n*"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0001",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "/www.indmoney.com/pricing \"Pricing\")\n\nLogin\n\nLogin Open Demat Account\n\n* Fund Price\n\n* Performance\n\n* Peer Comparison\n\n* Calculator\n\n* Asset Allocation\n\n* Sector Allocation\n\n* Holdings\n\n* Overview\n\n* About\n\n* Compare Funds\n\n* FAQs\n\n1. [Home](https://www.indmoney.com/ \"Home\")>\n2. [Mutual funds](https://www.indmoney.com/mutual-funds \"Mutual funds\")>\n3. [HDFC Large Cap Fund](https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989 \"HDFC Large Cap Fund\")\n\n![Image 9: HDFC Large Cap Fund](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=63/https://indcdn.indmoney.com/public/images/amc_hdfc.png)\n\n# HDFC Large Cap Fund\n\n[Equity](https://www.indmoney.com/mutual-funds/equity-funds \"Equity\")|[HDFC Mutual Fund](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund \"HDFC Mutual Fund\")|[Large-Cap](https://www.indmoney.com/mutual-funds/equity/l"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0002",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ney.com/mutual-funds/amc/hdfc-mutual-fund \"HDFC Mutual Fund\")|[Large-Cap](https://www.indmoney.com/mutual-funds/equity/large-cap-funds \"Large-Cap\")\n\nGet the latest NAV of HDFC Large Cap Fund. View historical returns compared to its benchmark and category average. Know which stocks and sectors the fund is investing in. Get an estimate of returns from the SIP and lump sum returns calculator. View detailed holding analysis and peer comparison. Get INDmoney ranking of the fund.\n\n₹1189.75\n\n▼-1%1D\n\nNAV as on 24 Apr 2026\n\n13.18%/per year\n\nSince Inception\n\nInvest Now\n\nAbsolute Gain%\n▲▼\n\n36431 people have invested ₹ 8.4Cr in HDFC Large Cap Fund in the last three months\n\n## HDFC Large Cap Fund Performance vs. Nifty 100\n\nFund returns vs Benchmark returns vs Category Average returns as on (24-Apr-26)\n\nThe fund has outperformed the benchmark (Nifty 100) over 3Y, 5Y, but underperformed over 1Y.\n\n| Per"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0003",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "s as on (24-Apr-26)\n\nThe fund has outperformed the benchmark (Nifty 100) over 3Y, 5Y, but underperformed over 1Y.\n\n| Period | 1M | 3M | 6M | 1Y | 3Y | 5Y |\n| --- | --- | --- | --- | --- | --- | --- |\n| This Fund | 4.48% | -3.63% | -5.56% | -0.76% | 13.99% | 15.01% |\n| Nifty 100 | 5.65% | -2.91% | -5.97% | -0.14% | 12.23% | 11.34% |\n| Large-Cap Avg | 5.69% | -2.35% | -5.6% | 0.5% | 13.89% | 12.7% |\n| Best in Large-Cap | 13.42% | 6.27% | 1.04% | 9.58% | 18.86% | 18.93% |\n| Worst in Large-Cap | 5.24% | -3.71% | -7.23% | -5.98% | 11.92% | 10.08% |\n| Category Rank | 11/20 | 9/21 | 10/21 | 6/19 | 7/19 | -- |\n\n## HDFC Large Cap Fund Ranking and Peer Comparison\n\nRanked based on performance, risk management and cost efficiency\n\n12\n\n/20\n\n55% Performance\n\n44% Risk Management\n\n34% Cost\n\nRanked 12 out of 20 mutual funds in the large-cap category as per INDmoney.\n\n| Fund Name | INDmoney Rank | AUM (in"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0004",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "Cost\n\nRanked 12 out of 20 mutual funds in the large-cap category as per INDmoney.\n\n| Fund Name | INDmoney Rank | AUM (in Crs.) | Expense Ratio | 1Y Returns | 3Y Returns | 3Y Alpha | 3Y Beta | 3Y Sharpe | 3Y Sortino | 3Y Info Ratio |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| [HDFC Large Cap Fund](https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989 \"HDFC Large Cap Fund\") | 12/20 | 35,458Cr | 1.03% | -0.76% | 13.99% | 0.95 | 0.96 | 0.44 | 0.61 | 0.39 |\n| [Nippon India Large Cap Fund](https://www.indmoney.com/mutual-funds/nippon-india-large-cap-fund-direct-plan-growth-plan-3040 \"Nippon India Large Cap Fund\") | 1/20 | 46,521Cr | 0.71% | 3.85% | 18.17% | 4.04 | 0.96 | 0.68 | 0.97 | 1.51 |\n| [ICICI Prudential Large Cap Fund](https://www.indmoney.com/mutual-funds/icici-prudential-large-cap-fund-direct-plan-growth-2995 \"ICICI Pruden"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0005",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ge Cap Fund](https://www.indmoney.com/mutual-funds/icici-prudential-large-cap-fund-direct-plan-growth-2995 \"ICICI Prudential Large Cap Fund\") | 2/20 | 69,948Cr | 0.87% | 1.12% | 16.6% | 3.32 | 0.92 | 0.62 | 0.90 | 1.26 |\n| [Edelweiss Large Cap Fund](https://www.indmoney.com/mutual-funds/edelweiss-large-cap-fund-direct-plan-growth-option-2965 \"Edelweiss Large Cap Fund\") | 3/20 | 1,322Cr | 0.59% | 1.36% | 14.81% | 1.54 | 0.97 | 0.49 | 0.67 | 0.94 |\n\nSee all\n\n![Image 10: Positive: Beats FD returns for both 3Y & 5Y](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\nLarger AUM within category\n\n![Image 11: Positive: Beats FD returns for both 3Y & 5Y](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\n5Y returns in the top 25% of the cate"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0006",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ty=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\n5Y returns in the top 25% of the category\n\n![Image 12: Positive: Beats FD returns for both 3Y & 5Y](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\nBeats FD returns for both 3Y & 5Y\n\n![Image 13: Negative: No bad points found for this fund.](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/mutual-funds-dislike.png)\n\nNo bad points found for this fund.\n\n## HDFC Large Cap Fund Returns Calculator\n\nCalculate SIP and lumpsum returns based on historical performance\n\n₹1L\n\n₹10L\n\n \n\n* 1-time \n* SIP \n\nTotal Investment\n\n0\n\nProfit\n\n* * *\n\nTotal Corpus\n\n0\n\nAbsolute Return\n\n▲\n\n▼\n\n* * *\n\n## HDFC Large Cap Fund Asset Allocation\n\nSee fund asset allocation details as on (13-Apr-26)\n\nFund D"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0007",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "eturn\n\n▲\n\n▼\n\n* * *\n\n## HDFC Large Cap Fund Asset Allocation\n\nSee fund asset allocation details as on (13-Apr-26)\n\nFund Distribution\n\nas on (13-Apr-26)\n\nEquity 96.5%\n\nDebt & Cash 3.5%\n\nLarge cap\n\n83.2%\n\n* * *\n\nMid cap\n\n13.3%\n\n* * *\n\n## HDFC Large Cap Fund Sector Allocation\n\nSee fund sector allocation details as on (13-Apr-26)\n\nSector Allocation\n\nEquity 96.5%\n\nDebt & Cash 3.5%\n\nFinancial Services\n\n33.6%\n\nConsumer Cyclical\n\n19%\n\nHealth\n\n9.4%\n\nIndustrial\n\n7.3%\n\nCommunication\n\n6%\n\nBasic Materials\n\n5.6%\n\nEnergy\n\n5.2%\n\nConsumer Defensive\n\n4.9%\n\nTech\n\n4.6%\n\nUtilities\n\n4.2%\n\nReal Estate\n\n0.4%\n\n### Sector Changes\n\nAll changes are between Apr'26 and Jan'26\n\nTop 3 Sectors in March were Financial Services, Government & Consumer Cyclical\n\nMar'26\n\nFinancial Services\n\n38%\n\nGovernment\n\n24%\n\nConsumer Cyclical\n\n19%\n\nFeb'26\n\nFinancial Services\n\n38%\n\nGovernment\n\n24%\n\nConsumer Cyclical\n\n19%\n\n## HDFC Large Cap"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0008",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "24%\n\nConsumer Cyclical\n\n19%\n\nFeb'26\n\nFinancial Services\n\n38%\n\nGovernment\n\n24%\n\nConsumer Cyclical\n\n19%\n\n## HDFC Large Cap Fund Holdings Details\n\nas on (31-Mar-26)\n\nEquity\n\nDebt & Cash\n\n| Holdings | Weight% | | 1M Change |\n| --- | --- | --- | --- |\n| [ICICI Bank Ltd](https://www.indmoney.com/stocks/icici-bank-ltd-share-price \"ICICI Bank Ltd\") | 9.39% | | 0% |\n| [HDFC Bank Ltd](https://www.indmoney.com/stocks/hdfc-bank-ltd-share-price \"HDFC Bank Ltd\") | 8% | | 0% |\n| [Bharti Airtel Ltd](https://www.indmoney.com/stocks/bharti-airtel-ltd-share-price \"Bharti Airtel Ltd\") | 5.99% | | 0% |\n| [Reliance Industries Ltd](https://www.indmoney.com/stocks/reliance-industries-ltd-share-price \"Reliance Industries Ltd\") | 5.4% | | 0% |\n| [Kotak Mahindra Bank Ltd](https://www.indmoney.com/stocks/kotak-mahindra-bank-ltd-share-price \"Kotak Mahindra Bank Ltd\") | 5.13% | | 0% |\n\nSee all\n\n### Portfolio Changes"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0009",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "/stocks/kotak-mahindra-bank-ltd-share-price \"Kotak Mahindra Bank Ltd\") | 5.13% | | 0% |\n\nSee all\n\n### Portfolio Changes\n\nAll changes are between Jan'26 and Mar'26\n\nTop Stocks bought last month\n\n![Image 14: Bharti Airtel Ltd's allocation increased from 5.59% to 5.99%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nKotak Mahindra Bank Ltd's allocation increased from 4.42% to 5.13%\n\n![Image 15: Bharti Airtel Ltd's allocation increased from 5.59% to 5.99%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nReliance Industries Ltd's allocation increased from 4.96% to 5.4%\n\n![Image 16: Bharti Airtel Ltd's allocation increased from 5.59% to 5.99%](https://indcdn.indmoney.com/cdn-cgi/image/quality"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0010",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "mage 16: Bharti Airtel Ltd's allocation increased from 5.59% to 5.99%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nBharti Airtel Ltd's allocation increased from 5.59% to 5.99%\n\nTop Stocks sold last month\n\n![Image 17: Axis Bank Ltd's allocation decreased from 3.7 % to 3.51 % ](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nICICI Bank Ltd's allocation decreased from 9.5 % to 9.39 % \n\n![Image 18: Axis Bank Ltd's allocation decreased from 3.7 % to 3.51 % ](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nHDFC Bank Ltd's allocation decreased from 8.58 % to 8 % \n\n![Image 19: Axis Bank Ltd's allocation"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0011",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "location_down_img.png)\n\nHDFC Bank Ltd's allocation decreased from 8.58 % to 8 % \n\n![Image 19: Axis Bank Ltd's allocation decreased from 3.7 % to 3.51 % ](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nAxis Bank Ltd's allocation decreased from 3.7 % to 3.51 % \n\n## HDFC Large Cap Fund Overview\n\nGet key fund statistics, minimum investment details, AUM, expense ratio, exit load, and tax treatment.\n\nExpense ratio 1.03%\nBenchmark Nifty 100 TR INR\nAUM₹35458 Cr\nInception Date 1 January, 2013\nMin Lumpsum/SIP₹100/₹100\nExit Load 1.0%\nLock In No Lock-in\nTurnOver 12.76%\nRisk![Image 20: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)\n\n![Image 21: pointer](https://indcdn.indmoney.com/public/images/Group-96373.svg)\n\nVery High Risk\n\n## About HDFC Large Cap Fund\n\n### Overview of HDFC La"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0012",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ndcdn.indmoney.com/public/images/Group-96373.svg)\n\nVery High Risk\n\n## About HDFC Large Cap Fund\n\n### Overview of HDFC Large Cap Fund - Direct Plan - Growth Option\n\nThe HDFC Large Cap Fund - Direct Plan - Growth Option is a prominent player in the large-cap mutual fund category, boasting a substantial Assets Under Management (AUM) of ₹33,913.31 Crores, ranking it 5th in its category. This fund is designed to provide investors with exposure to large-cap equities, aiming for stable returns with lower volatility. Its expense ratio of 1.01% places it as the 9th most cost-effective option in its category, making it an attractive choice for cost-conscious investors.\n\n### Sector and Market Cap Allocation\n\nThe fund exhibits a well-diversified sector allocation, with a significant 34.35% invested in the financial sector, reflecting its alignment with market indices where financials are heavily wei"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0013",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "t 34.35% invested in the financial sector, reflecting its alignment with market indices where financials are heavily weighted. Other notable allocations include 12.26% in cyclical sectors and 9.80% in technology, indicating a balanced approach between growth and stability. The fund's market cap allocation is heavily skewed towards large-cap stocks, with 93.34% of its portfolio dedicated to this segment, ensuring a focus on established companies with a track record of performance.\n\n### Performance and Risk Metrics\n\nThe fund's performance metrics reveal a mixed picture. Over a 3-year period, it has achieved an alpha of 4.61, indicating a strong excess return over its benchmark. However, the 1-year alpha is slightly negative at -0.22. The fund's batting average, which measures the percentage of time it outperforms its benchmark, stands at 61.11% over three years. In terms of risk, the fund'"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0014",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ures the percentage of time it outperforms its benchmark, stands at 61.11% over three years. In terms of risk, the fund's beta is consistently below 1, suggesting lower volatility compared to the market, while its Sharpe ratio of 0.713 over three years indicates a favorable risk-adjusted return.\n\n### Capture Ratios and Volatility\n\nThe fund's capture ratios demonstrate its ability to perform in varying market conditions. Over a 3-year period, the fund has an up market capture ratio of 103.76%, indicating it outperforms the benchmark in rising markets. Conversely, its down market capture ratio of 78.8% suggests it falls less than the benchmark during downturns, highlighting its defensive characteristics. The standard deviation, a measure of volatility, is 12.989 over three years, which is lower than the category average, reinforcing its relatively stable performance.\n\n### Comparative Analy"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0015",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "e years, which is lower than the category average, reinforcing its relatively stable performance.\n\n### Comparative Analysis with Large-Cap Category\n\nWhen compared to the large-cap category, the HDFC Large Cap Fund shows a superior performance in several metrics. Its 3-year alpha of 4.61 significantly outpaces the category's -0.29, and its Sharpe ratio of 0.713 is notably higher than the category's 0.398. The fund's information ratio, which measures excess return per unit of risk, is 1.74 over three years, outperforming the category's -0.38. These metrics underscore the fund's ability to deliver better risk-adjusted returns than its peers.\n\nKnow more about HDFC Large Cap Fund\n\n### Fund Manager\n\n#### Rahul Baijal\n\nFund Manager of HDFC Large Cap Fund, since 29 July 2022\n\n#### Dhruv Muchhal\n\nFund Manager of HDFC Large Cap Fund, since 22 June 2023\n\n[Learn more about HDFC Mutual Fund](https://"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0016",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "### Dhruv Muchhal\n\nFund Manager of HDFC Large Cap Fund, since 22 June 2023\n\n[Learn more about HDFC Mutual Fund](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund \"Learn more about HDFC Mutual Fund\")\n\n### AUM Change\n\nAll changes are between Jan'26 and Mar'26\n\n| Parameters | Mar'26 | Feb'26 | Jan'26 |\n| --- | --- | --- | --- |\n| AUM | ₹ 40.1K Cr | ₹ 40.1K Cr | ₹ 39.6K Cr |\n\n* AUM of the fund stands at 40.1K Cr as of Mar'26\n* AUM has remained same between Mar'26 and Feb'26\n\n## Compare HDFC Large Cap Fund\n\nHDFC Large Cap Fund\n\nVS\n\nICICI Prudential Large Cap Fund\n\n## Frequently Asked Questions for HDFC Large Cap Fund\n\n### How do I invest in HDFC Large Cap Fund?\n\nINDmoney makes it simple to invest in the HDFC Large Cap Fund. To do so, follow the steps below:\n\n* Download the INDmoney app.\n* Search for ‘HDFC Large Cap Fund’.\n* Select whether you want to invest in SIP or lump sum.\n* Ente"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0017",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "oad the INDmoney app.\n* Search for ‘HDFC Large Cap Fund’.\n* Select whether you want to invest in SIP or lump sum.\n* Enter the amount you wish to invest.\n* Set up payments via bank mandate or UPI.\n\n### What is the current NAV of HDFC Large Cap Fund?\n\nThe NAV of the fund today is ₹1189.75. NAV or Net Asset Value is the per unit price of a mutual fund. For example, if the NAV of a fund is ₹10, it means you can get 1000 units of that mutual fund at ₹10,000.\n\n### What is the return on the fund?\n\nHDFC Large Cap Fund fund has generated a return of -0.76% in 1 year, 13.99% in 3 years, 15.01% in 5 years.\n\n### Who is the fund manager of HDFC Large Cap Fund?\n\nThe fund managers are Rahul Baijal, Dhruv Muchhal.\n\n### What is the exit load of the fund?\n\nThe exit load is 1% if redeemed in 0-1 Years. Exit load is a fee levied for ‘exiting’ the fund earlier than a stipulated period, usually 1 year.\n\n### W"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0018",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "in 0-1 Years. Exit load is a fee levied for ‘exiting’ the fund earlier than a stipulated period, usually 1 year.\n\n### What is the expense ratio of the fund?\n\nThe expense ratio is 1.03%. The Expense Ratio is a fee charged for managing the fund. This includes commissions, administrative costs etc.\n\n### What is the AUM of the fund?\n\nThe AUM of the fund is ₹35458 Cr. AUM stands for Assets Under Management. It refers to the total assets managed by the fund.\n\n### What are the top holdings of HDFC Large Cap Fund?\n\nThe top 3 holdings of the fund are ICICI Bank Ltd(9.39%), HDFC Bank Ltd(8%), Bharti Airtel Ltd(5.99%)\n\nInvest Now\n\n![Image 22: INDmoney Super Money App Logo](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=240/https://indcdn.indmoney.com/public/images/fe/IND_logo_white_tm.png)\n\nINDmoney Tech Pvt. Ltd.\n\n616, 6th Floor Suncity Success Tower, \n\nSector 65, Gurugram"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0019",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "c/images/fe/IND_logo_white_tm.png)\n\nINDmoney Tech Pvt. Ltd.\n\n616, 6th Floor Suncity Success Tower, \n\nSector 65, Gurugram, Haryana, India - 122005\n\n[](https://www.facebook.com/indmoney \"INDmoney Facebook\")[](https://in.linkedin.com/company/indmoney \"INDmoney LinkedIn\")[](https://x.com/INDmoneyApp/ \"INDmoney X\")[](https://www.youtube.com/channel/UCm7xZ9sbqhuARuDDcckh8Jg \"INDmoney YouTube\")[](https://www.instagram.com/indmoneyapp/ \"INDmoney Instagram\")[](https://www.reddit.com/r/INDmoneyApp/ \"INDmoney Reddit\")[](https://www.quora.com/profile/INDmoney-3/ \"INDmoney Quora\")\n\nAll Rights Reserved | © Copyright 2026\n\nPRODUCTS\n\n* [US Stocks](https://www.indmoney.com/us-stocks \"US Stocks\")\n* [Indian Stocks](https://www.indmoney.com/stocks \"Indian Stocks\")\n* [Mutual Funds](https://www.indmoney.com/mutual-funds \"Mutual Funds\")\n* [Futures & Options](https://www.indmoney.com/futures-and-options \"Future"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0020",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "www.indmoney.com/mutual-funds \"Mutual Funds\")\n* [Futures & Options](https://www.indmoney.com/futures-and-options \"Futures & Options\")\n* [IPO](https://www.indmoney.com/ipo \"IPO\")\n* [ETFs](https://www.indmoney.com/stocks/etf \"ETFs\")\n\nCOMPANY\n\n* [About Us](https://www.indmoney.com/about \"About Us\")\n* [Blog](https://www.indmoney.com/blog \"Blog\")\n* [Customer Service](https://www.indmoney.com/customer-service \"Customer Service\")\n* [Fraud Awareness](https://www.indmoney.com/page/fraud-awareness \"Fraud Awareness\")\n* [Sitemap](https://www.indmoney.com/sitemap \"Sitemap\")\n\nLEGAL & REGULATORY\n\n* [Privacy Policy](https://www.indmoney.com/privacy-policy \"Privacy Policy\")\n* [Terms & Conditions](https://www.indmoney.com/terms-of-services \"Terms & Conditions\")\n* [Legal & Regulatory](https://www.indmoney.com/page/policy-center \"Legal & Regulatory\")\n* [Grievance Redressal Policy](https://www.indmoney.com/g"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0021",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ps://www.indmoney.com/page/policy-center \"Legal & Regulatory\")\n* [Grievance Redressal Policy](https://www.indmoney.com/grievance-redressal-policy \"Grievance Redressal Policy\")\n\n* * *\n\nIndian Share Market US Stocks Mutual Funds Calculators Indices\n\nPopular Stocks\n\n* [Tata Motors](https://www.indmoney.com/stocks/tata-motors-ltd-share-price \"Tata Motors\")\n* [Reliance Industries](https://www.indmoney.com/stocks/reliance-industries-ltd-share-price \"Reliance Industries\")\n* [HDFC Bank](https://www.indmoney.com/stocks/hdfc-bank-ltd-share-price \"HDFC Bank\")\n* [SBI](https://www.indmoney.com/stocks/state-bank-of-india-share-price \"SBI\")\n* [TCS](https://www.indmoney.com/stocks/tata-consultancy-services-ltd-share-price \"TCS\")\n* [ICICI Bank](https://www.indmoney.com/stocks/icici-bank-ltd-share-price \"ICICI Bank\")\n* [Infosys](https://www.indmoney.com/stocks/infosys-ltd-share-price \"Infosys\")\n* [Bajaj F"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0022",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "-ltd-share-price \"ICICI Bank\")\n* [Infosys](https://www.indmoney.com/stocks/infosys-ltd-share-price \"Infosys\")\n* [Bajaj Finance](https://www.indmoney.com/stocks/bajaj-finance-ltd-share-price \"Bajaj Finance\")\n* [Adani Power](https://www.indmoney.com/stocks/adani-power-ltd-share-price \"Adani Power\")\n* [IRCTC](https://www.indmoney.com/stocks/indian-railway-catering-and-tourism-corporation-ltd-share-price \"IRCTC\")\n* [ITC](https://www.indmoney.com/stocks/itc-ltd-share-price \"ITC\")\n* [LIC](https://www.indmoney.com/stocks/life-insurance-corporation-of-india-share-price \"LIC\")\n* [Wipro](https://www.indmoney.com/stocks/wipro-ltd-share-price \"Wipro\")\n* [Coal India](https://www.indmoney.com/stocks/coal-india-ltd-share-price \"Coal India\")\n* [Asian Paints](https://www.indmoney.com/stocks/asian-paints-ltd-share-price \"Asian Paints\")\n\nSectors\n\n* [Banking](https://www.indmoney.com/stocks/sectors/banking"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0023",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ocks/asian-paints-ltd-share-price \"Asian Paints\")\n\nSectors\n\n* [Banking](https://www.indmoney.com/stocks/sectors/banking \"Banking\")\n* [IT](https://www.indmoney.com/stocks/sectors/it \"IT\")\n* [Pharma](https://www.indmoney.com/stocks/sectors/pharma \"Pharma\")\n* [Auto](https://www.indmoney.com/stocks/sectors/auto \"Auto\")\n* [FMCG](https://www.indmoney.com/stocks/sectors/fmcg \"FMCG\")\n* [Defence](https://www.indmoney.com/stocks/sectors/defence \"Defence\")\n* [Power](https://www.indmoney.com/stocks/sectors/power \"Power\")\n* [Infrastructure](https://www.indmoney.com/stocks/sectors/infrastructure \"Infrastructure\")\n* [Real Estate](https://www.indmoney.com/stocks/sectors/real-estate \"Real Estate\")\n* [PSU](https://www.indmoney.com/stocks/sectors/psu \"PSU\")\n* [Railway](https://www.indmoney.com/stocks/sectors/railway \"Railway\")\n* [Capital Goods](https://www.indmoney.com/stocks/sectors/capital-goods \"Capital"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0024",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "y.com/stocks/sectors/railway \"Railway\")\n* [Capital Goods](https://www.indmoney.com/stocks/sectors/capital-goods \"Capital Goods\")\n* [Finance](https://www.indmoney.com/stocks/sectors/finance \"Finance\")\n* [Oil & Gas](https://www.indmoney.com/stocks/sectors/oil-gas \"Oil & Gas\")\n* [Healthcare](https://www.indmoney.com/stocks/sectors/healthcare \"Healthcare\")\n\nThemes\n\n* [AI Stocks](https://www.indmoney.com/stocks/themes/ai \"AI Stocks\")\n* [EV Stocks](https://www.indmoney.com/stocks/themes/ev \"EV Stocks\")\n* [Green Energy](https://www.indmoney.com/stocks/themes/green-energy \"Green Energy\")\n* [Semiconductor](https://www.indmoney.com/stocks/themes/semiconductor \"Semiconductor\")\n* [Solar](https://www.indmoney.com/stocks/themes/solar \"Solar\")\n* [Drone](https://www.indmoney.com/stocks/themes/drone \"Drone\")\n* [Green Hydrogen](https://www.indmoney.com/stocks/themes/green-hydrogen \"Green Hydrogen\")\n* [Cyb"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0025",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "/themes/drone \"Drone\")\n* [Green Hydrogen](https://www.indmoney.com/stocks/themes/green-hydrogen \"Green Hydrogen\")\n* [Cybersecurity](https://www.indmoney.com/stocks/themes/cybersecurity \"Cybersecurity\")\n\nGroups\n\n* [Tata Group](https://www.indmoney.com/stocks/groups/tata-group \"Tata Group\")\n* [Adani Group](https://www.indmoney.com/stocks/groups/adani-group \"Adani Group\")\n* [Reliance Group](https://www.indmoney.com/stocks/groups/mukesh-ambani-group \"Reliance Group\")\n* [Bajaj Group](https://www.indmoney.com/stocks/groups/bajaj-group \"Bajaj Group\")\n* [Birla Group](https://www.indmoney.com/stocks/groups/birla-group \"Birla Group\")\n* [HDFC Group](https://www.indmoney.com/stocks/groups/hdfc-group \"HDFC Group\")\n* [Mahindra Group](https://www.indmoney.com/stocks/groups/mahindra-group \"Mahindra Group\")\n* [L&T Group](https://www.indmoney.com/stocks/groups/lt-group \"L&T Group\")\n* [Godrej Group](https:"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0026",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "oup \"Mahindra Group\")\n* [L&T Group](https://www.indmoney.com/stocks/groups/lt-group \"L&T Group\")\n* [Godrej Group](https://www.indmoney.com/stocks/groups/godrej-group \"Godrej Group\")\n* [ICICI Group](https://www.indmoney.com/stocks/groups/icici-group \"ICICI Group\")\n* [Jindal Group](https://www.indmoney.com/stocks/groups/jindal-group \"Jindal Group\")\n* [Murugappa Group](https://www.indmoney.com/stocks/groups/murugappa-group \"Murugappa Group\")\n\nScreens\n\n* [Large Cap Stocks](https://www.indmoney.com/stocks/screens/large-cap \"Large Cap Stocks\")\n* [Mid Cap Stocks](https://www.indmoney.com/stocks/screens/mid-cap \"Mid Cap Stocks\")\n* [Small Cap Stocks](https://www.indmoney.com/stocks/screens/small-cap \"Small Cap Stocks\")\n* [Penny Stocks](https://www.indmoney.com/stocks/screens/penny-stocks \"Penny Stocks\")\n* [Dividend Stocks](https://www.indmoney.com/stocks/screens/dividend-stocks \"Dividend Stocks\")"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0027",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ny-stocks \"Penny Stocks\")\n* [Dividend Stocks](https://www.indmoney.com/stocks/screens/dividend-stocks \"Dividend Stocks\")\n* [High Return Stocks](https://www.indmoney.com/stocks/screens/high-return-stocks \"High Return Stocks\")\n* [Multibagger Stocks](https://www.indmoney.com/stocks/screens/multibagger-stocks \"Multibagger Stocks\")\n* [View all Screens](https://www.indmoney.com/stocks/screens \"View all Screens\")\n* [Stock Screener](https://www.indmoney.com/stocks/screener \"Stock Screener\")\n\nShare Market Today\n\n* [Share Market Today](https://www.indmoney.com/share-market-today \"Share Market Today\")\n* [Top Gainers](https://www.indmoney.com/share-market-today/top-gainers \"Top Gainers\")\n* [Top Losers](https://www.indmoney.com/share-market-today/top-losers \"Top Losers\")\n* [Most Active](https://www.indmoney.com/share-market-today/most-active \"Most Active\")\n* [52-Week High](https://www.indmoney.com/sh"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0028",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ive](https://www.indmoney.com/share-market-today/most-active \"Most Active\")\n* [52-Week High](https://www.indmoney.com/share-market-today/52-week-high \"52-Week High\")\n* [52-Week Low](https://www.indmoney.com/share-market-today/52-week-low \"52-Week Low\")\n* [Upper Circuit](https://www.indmoney.com/share-market-today/upper-circuit \"Upper Circuit\")\n* [Lower Circuit](https://www.indmoney.com/share-market-today/lower-circuit \"Lower Circuit\")\n* [Trending Stocks](https://www.indmoney.com/share-market-today/trending-stocks \"Trending Stocks\")\n* [Stocks to Buy](https://www.indmoney.com/share-market-today/stocks-to-buy \"Stocks to Buy\")\n* [Intraday Stocks](https://www.indmoney.com/share-market-today/intraday-stocks \"Intraday Stocks\")\n\nPopular Stocks\n\n* [NVIDIA](https://www.indmoney.com/us-stocks/nvidia-corporation-share-price-nvda \"NVIDIA\")\n* [Tesla](https://www.indmoney.com/us-stocks/tesla-inc-share-"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0029",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "om/us-stocks/nvidia-corporation-share-price-nvda \"NVIDIA\")\n* [Tesla](https://www.indmoney.com/us-stocks/tesla-inc-share-price-tsla \"Tesla\")\n* [Apple](https://www.indmoney.com/us-stocks/apple-inc-share-price-aapl \"Apple\")\n* [Microsoft](https://www.indmoney.com/us-stocks/microsoft-corporation-share-price-msft \"Microsoft\")\n* [Amazon](https://www.indmoney.com/us-stocks/amazon-com-inc-share-price-amzn \"Amazon\")\n* [Google](https://www.indmoney.com/us-stocks/alphabet-inc-class-a-shares-share-price-googl \"Google\")\n* [Meta](https://www.indmoney.com/us-stocks/meta-platforms-inc-share-price-meta \"Meta\")\n* [Broadcom](https://www.indmoney.com/us-stocks/broadcom-inc-share-price-avgo \"Broadcom\")\n* [AMD](https://www.indmoney.com/us-stocks/advanced-micro-devices-inc-share-price-amd \"AMD\")\n* [Netflix](https://www.indmoney.com/us-stocks/netflix-inc-share-price-nflx \"Netflix\")\n* [ServiceNow](https://www.ind"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0030",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "\")\n* [Netflix](https://www.indmoney.com/us-stocks/netflix-inc-share-price-nflx \"Netflix\")\n* [ServiceNow](https://www.indmoney.com/us-stocks/servicenow-inc-share-price-now \"ServiceNow\")\n* [Walmart](https://www.indmoney.com/us-stocks/walmart-inc-share-price-wmt \"Walmart\")\n* [Uber](https://www.indmoney.com/us-stocks/uber-technologies-inc-share-price-uber \"Uber\")\n* [Salesforce](https://www.indmoney.com/us-stocks/salesforce-inc-share-price-crm \"Salesforce\")\n* [Adobe](https://www.indmoney.com/us-stocks/adobe-systems-inc-share-price-adbe \"Adobe\")\n\nSectors\n\n* [Tech Stocks](https://www.indmoney.com/us-stocks/tech-stocks \"Tech Stocks\")\n* [Semiconductor Stocks](https://www.indmoney.com/us-stocks/semiconductor-stocks \"Semiconductor Stocks\")\n* [AI Stocks](https://www.indmoney.com/us-stocks/ai-stocks \"AI Stocks\")\n* [Healthcare Stocks](https://www.indmoney.com/us-stocks/healthcare-stocks \"Healthcare St"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0031",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "-stocks/ai-stocks \"AI Stocks\")\n* [Healthcare Stocks](https://www.indmoney.com/us-stocks/healthcare-stocks \"Healthcare Stocks\")\n* [Pharma Stocks](https://www.indmoney.com/us-stocks/pharma-stocks \"Pharma Stocks\")\n* [Finance Stocks](https://www.indmoney.com/us-stocks/finance-stocks \"Finance Stocks\")\n* [Energy Stocks](https://www.indmoney.com/us-stocks/energy-stocks \"Energy Stocks\")\n* [Defence Stocks](https://www.indmoney.com/us-stocks/defence-stocks \"Defence Stocks\")\n\nThemes\n\n* [EV Stocks](https://www.indmoney.com/us-stocks/ev-stocks \"EV Stocks\")\n* [E-commerce Stocks](https://www.indmoney.com/us-stocks/e-commerce-stocks \"E-commerce Stocks\")\n* [Travel Stocks](https://www.indmoney.com/us-stocks/travel-stocks \"Travel Stocks\")\n* [Dividend Stocks](https://www.indmoney.com/us-stocks/dividend-stocks \"Dividend Stocks\")\n* [FAANG Stocks](https://www.indmoney.com/us-stocks/faang \"FAANG Stocks\")\n* [Bra"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0032",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ocks/dividend-stocks \"Dividend Stocks\")\n* [FAANG Stocks](https://www.indmoney.com/us-stocks/faang \"FAANG Stocks\")\n* [Brands](https://www.indmoney.com/us-stocks/brands \"Brands\")\n\nScreens\n\n* [Mega Cap Stocks](https://www.indmoney.com/us-stocks/mega-cap-stocks \"Mega Cap Stocks\")\n* [Large Cap Stocks](https://www.indmoney.com/us-stocks/large-cap-stocks \"Large Cap Stocks\")\n* [Mid Cap Stocks](https://www.indmoney.com/us-stocks/mid-cap-stocks \"Mid Cap Stocks\")\n* [Small Cap Stocks](https://www.indmoney.com/us-stocks/small-cap-stocks \"Small Cap Stocks\")\n* [Highest Returns](https://www.indmoney.com/us-stocks/highest-returns \"Highest Returns\")\n* [US Stock Screener](https://www.indmoney.com/us-stocks/screener \"US Stock Screener\")\n\nPortfolio\n\n* [Warren Buffett](https://www.indmoney.com/us-stocks/warren-buffet \"Warren Buffett\")\n* [Cathie Wood](https://www.indmoney.com/us-stocks/cathie-wood \"Cathie Wood"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0033",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "om/us-stocks/warren-buffet \"Warren Buffett\")\n* [Cathie Wood](https://www.indmoney.com/us-stocks/cathie-wood \"Cathie Wood\")\n* [Ray Dalio](https://www.indmoney.com/us-stocks/ray-dalio \"Ray Dalio\")\n* [George Soros](https://www.indmoney.com/us-stocks/george-soros \"George Soros\")\n* [Jim Simons](https://www.indmoney.com/us-stocks/jim-simons \"Jim Simons\")\n* [Bill Ackman](https://www.indmoney.com/us-stocks/bill-ackman \"Bill Ackman\")\n* [Tiger Global](https://www.indmoney.com/us-stocks/tiger-global \"Tiger Global\")\n* [Steven Cohen](https://www.indmoney.com/us-stocks/steven-cohen \"Steven Cohen\")\n\nUS Market Today\n\n* [Top Gainers](https://www.indmoney.com/us-stocks/top-gainers \"Top Gainers\")\n* [Top Losers](https://www.indmoney.com/us-stocks/top-losers \"Top Losers\")\n* [US Stock Market Timings](https://www.indmoney.com/us-stocks/us-stock-market-timings \"US Stock Market Timings\")\n* [US Market Holidays](h"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0034",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "Timings](https://www.indmoney.com/us-stocks/us-stock-market-timings \"US Stock Market Timings\")\n* [US Market Holidays](https://www.indmoney.com/us-stocks/us-market-holidays \"US Market Holidays\")\n\nEquity Funds\n\n* [Large Cap Funds](https://www.indmoney.com/mutual-funds/equity/large-cap-funds \"Large Cap Funds\")\n* [Mid Cap Funds](https://www.indmoney.com/mutual-funds/equity/mid-cap-funds \"Mid Cap Funds\")\n* [Small Cap Funds](https://www.indmoney.com/mutual-funds/equity/small-cap-funds \"Small Cap Funds\")\n* [Flexi Cap Funds](https://www.indmoney.com/mutual-funds/equity/flexi-cap \"Flexi Cap Funds\")\n* [Multi Cap Funds](https://www.indmoney.com/mutual-funds/equity/multi-cap-funds \"Multi Cap Funds\")\n* [Large & Mid Cap Funds](https://www.indmoney.com/mutual-funds/equity/large-mid-cap \"Large & Mid Cap Funds\")\n* [ELSS Tax Saver Funds](https://www.indmoney.com/mutual-funds/collection/elss-funds \"ELSS T"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0035",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "ap \"Large & Mid Cap Funds\")\n* [ELSS Tax Saver Funds](https://www.indmoney.com/mutual-funds/collection/elss-funds \"ELSS Tax Saver Funds\")\n* [Index Funds](https://www.indmoney.com/mutual-funds/equity/index-funds \"Index Funds\")\n* [Nifty 50 Index Funds](https://www.indmoney.com/mutual-funds/equity/nifty-50-index-funds \"Nifty 50 Index Funds\")\n* [Value Funds](https://www.indmoney.com/mutual-funds/equity/value \"Value Funds\")\n* [Contra Funds](https://www.indmoney.com/mutual-funds/equity/contra \"Contra Funds\")\n* [Sector Technology](https://www.indmoney.com/mutual-funds/equity/sector-technology \"Sector Technology\")\n* [Sector Financial Services](https://www.indmoney.com/mutual-funds/equity/sector-financial-services \"Sector Financial Services\")\n* [Equity Infrastructure](https://www.indmoney.com/mutual-funds/equity/equity-infrastructure \"Equity Infrastructure\")\n\nDebt Funds\n\n* [Liquid Funds](https://w"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0036",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": ".indmoney.com/mutual-funds/equity/equity-infrastructure \"Equity Infrastructure\")\n\nDebt Funds\n\n* [Liquid Funds](https://www.indmoney.com/mutual-funds/debt/liquid-funds \"Liquid Funds\")\n* [Overnight Fund](https://www.indmoney.com/mutual-funds/debt/overnight \"Overnight Fund\")\n* [Ultra Short Funds](https://www.indmoney.com/mutual-funds/debt/ultra-short-funds \"Ultra Short Funds\")\n* [Short Term Funds](https://www.indmoney.com/mutual-funds/debt/short-term-funds \"Short Term Funds\")\n* [Low Duration Funds](https://www.indmoney.com/mutual-funds/debt/low-duration-funds \"Low Duration Funds\")\n* [Medium Duration Fund](https://www.indmoney.com/mutual-funds/debt/medium-duration \"Medium Duration Fund\")\n* [Long Duration](https://www.indmoney.com/mutual-funds/debt/long-duration \"Long Duration\")\n* [Dynamic Bond Fund](https://www.indmoney.com/mutual-funds/debt/dynamic-bond \"Dynamic Bond Fund\")\n* [Corporate Bon"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0037",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "on\")\n* [Dynamic Bond Fund](https://www.indmoney.com/mutual-funds/debt/dynamic-bond \"Dynamic Bond Fund\")\n* [Corporate Bond Funds](https://www.indmoney.com/mutual-funds/debt/corporate-bond-funds \"Corporate Bond Funds\")\n* [GILT Funds](https://www.indmoney.com/mutual-funds/debt/gilt-funds \"GILT Funds\")\n* [Banking PSU](https://www.indmoney.com/mutual-funds/debt/banking-psu \"Banking PSU\")\n* [Money Market Funds](https://www.indmoney.com/mutual-funds/debt/money-market-funds \"Money Market Funds\")\n\nHybrid Funds\n\n* [Aggressive Funds](https://www.indmoney.com/mutual-funds/hybrid/aggressive-funds \"Aggressive Funds\")\n* [Balanced Advantage Fund](https://www.indmoney.com/mutual-funds/hybrid/balanced-funds \"Balanced Advantage Fund\")\n* [Multi Asset Funds](https://www.indmoney.com/mutual-funds/hybrid/multi-asset-funds \"Multi Asset Funds\")\n* [Arbitrage Funds](https://www.indmoney.com/mutual-funds/hybrid/arb"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0038",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "funds/hybrid/multi-asset-funds \"Multi Asset Funds\")\n* [Arbitrage Funds](https://www.indmoney.com/mutual-funds/hybrid/arbitrage-funds \"Arbitrage Funds\")\n* [Conservative Allocation](https://www.indmoney.com/mutual-funds/hybrid/conservative-allocation \"Conservative Allocation\")\n* [Equity Savings Funds](https://www.indmoney.com/mutual-funds/hybrid/equity-savings \"Equity Savings Funds\")\n* [Fund of Funds](https://www.indmoney.com/mutual-funds/hybrid/fund-of-funds \"Fund of Funds\")\n* [Retirement Fund](https://www.indmoney.com/mutual-funds/hybrid/retirement \"Retirement Fund\")\n\nCollections\n\n* [Best SIP Funds](https://www.indmoney.com/mutual-funds/collection/best-sip-funds \"Best SIP Funds\")\n* [High Return Funds](https://www.indmoney.com/mutual-funds/collection/high-return-mutual-funds \"High Return Funds\")\n* [ELSS Funds](https://www.indmoney.com/mutual-funds/collection/elss-funds \"ELSS Funds\")\n* [Lo"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0039",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "unds \"High Return Funds\")\n* [ELSS Funds](https://www.indmoney.com/mutual-funds/collection/elss-funds \"ELSS Funds\")\n* [Low Risk Funds](https://www.indmoney.com/mutual-funds/collection/best-low-risk-mutual-funds \"Low Risk Funds\")\n* [Gold Mutual Funds](https://www.indmoney.com/mutual-funds/collection/precious-metals-funds \"Gold Mutual Funds\")\n* [Trending Funds](https://www.indmoney.com/mutual-funds/collection/investors-choice \"Trending Funds\")\n* [Short Term Funds](https://www.indmoney.com/mutual-funds/collection/short-term-mutual-funds \"Short Term Funds\")\n* [Super Saver Funds](https://www.indmoney.com/mutual-funds/collection/super-saver \"Super Saver Funds\")\n\nTop AMCs\n\n* [HDFC Mutual Funds](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund \"HDFC Mutual Funds\")\n* [ICICI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/icici-prudential-mutual-fund \"ICICI Mutual Funds\")\n* [SBI M"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0040",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "CICI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/icici-prudential-mutual-fund \"ICICI Mutual Funds\")\n* [SBI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/sbi-mutual-fund \"SBI Mutual Funds\")\n* [Nippon Mutual Funds](https://www.indmoney.com/mutual-funds/amc/nippon-india-mutual-fund \"Nippon Mutual Funds\")\n* [Kotak Mutual Funds](https://www.indmoney.com/mutual-funds/amc/kotak-mutual-fund \"Kotak Mutual Funds\")\n* [Axis Mutual Funds](https://www.indmoney.com/mutual-funds/amc/axis-mutual-fund \"Axis Mutual Funds\")\n* [Mirae Mutual Funds](https://www.indmoney.com/mutual-funds/amc/mirae-asset-mutual-fund \"Mirae Mutual Funds\")\n* [PPFAS Mutual Funds](https://www.indmoney.com/mutual-funds/amc/parag-parikh-mutual-fund \"PPFAS Mutual Funds\")\n* [Aditya Birla Sun Life Mutual Funds](https://www.indmoney.com/mutual-funds/amc/aditya-birla-mutual-fund \"Aditya Birla Sun Life Mutual Funds\")\n*"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0041",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "Mutual Funds](https://www.indmoney.com/mutual-funds/amc/aditya-birla-mutual-fund \"Aditya Birla Sun Life Mutual Funds\")\n* [UTI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/uti-mutual-fund \"UTI Mutual Funds\")\n* [Motilal Oswal Mutual Funds](https://www.indmoney.com/mutual-funds/amc/motilal-oswal-mutual-fund \"Motilal Oswal Mutual Funds\")\n* [Tata Mutual Funds](https://www.indmoney.com/mutual-funds/amc/tata-mutual-fund \"Tata Mutual Funds\")\n* [Jio BlackRock Mutual Funds](https://www.indmoney.com/mutual-funds/amc/jio-blackrock-mutual-fund \"Jio BlackRock Mutual Funds\")\n* [Quant Mutual Funds](https://www.indmoney.com/mutual-funds/amc/quant-mutual-fund \"Quant Mutual Funds\")\n\nOthers\n\n* [NFO](https://www.indmoney.com/mutual-funds/nfo \"NFO\")\n* [Compare Mutual Funds](https://www.indmoney.com/mutual-funds/compare \"Compare Mutual Funds\")\n* [Mutual Funds Screener](https://www.indmoney.com/mutua"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0042",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "//www.indmoney.com/mutual-funds/compare \"Compare Mutual Funds\")\n* [Mutual Funds Screener](https://www.indmoney.com/mutual-funds/all \"Mutual Funds Screener\")\n\nSIP & Investment\n\n* [SIP Calculator](https://www.indmoney.com/calculators/sip-calculator \"SIP Calculator\")\n* [Lumpsum Calculator](https://www.indmoney.com/calculators/lumpsum-calculator \"Lumpsum Calculator\")\n* [SWP Calculator](https://www.indmoney.com/calculators/swp-calculator \"SWP Calculator\")\n* [STP Calculator](https://www.indmoney.com/calculators/stp-calculator \"STP Calculator\")\n* [Direct vs Regular Funds Calculator](https://www.indmoney.com/calculators/direct-regular-mutual-funds \"Direct vs Regular Funds Calculator\")\n* [CAGR Calculator](https://www.indmoney.com/calculators/cagr-calculator \"CAGR Calculator\")\n* [Brokerage Calculator](https://www.indmoney.com/calculators/brokerage-calculator \"Brokerage Calculator\")\n* [Stock Averag"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0043",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "[Brokerage Calculator](https://www.indmoney.com/calculators/brokerage-calculator \"Brokerage Calculator\")\n* [Stock Average Calculator](https://www.indmoney.com/calculators/stock-average-calculator \"Stock Average Calculator\")\n* [MTF Calculator](https://www.indmoney.com/calculators/mtf-calculator \"MTF Calculator\")\n\nFD & Savings\n\n* [Fixed Deposit Calculator](https://www.indmoney.com/calculators/fixed-deposit-calculator \"Fixed Deposit Calculator\")\n* [RD Calculator](https://www.indmoney.com/calculators/rd-calculator \"RD Calculator\")\n* [Post Office FD Calculator](https://www.indmoney.com/calculators/post-office-fd-calculator \"Post Office FD Calculator\")\n* [Post Office RD Calculator](https://www.indmoney.com/calculators/post-office-rd-calculator \"Post Office RD Calculator\")\n* [Post Office MIS Calculator](https://www.indmoney.com/calculators/post-office-monthly-income-scheme-calculator \"Post Offi"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0044",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "Post Office MIS Calculator](https://www.indmoney.com/calculators/post-office-monthly-income-scheme-calculator \"Post Office MIS Calculator\")\n\nPPF & Govt Schemes\n\n* [NPS Calculator](https://www.indmoney.com/calculators/nps-calculator \"NPS Calculator\")\n* [PPF Calculator](https://www.indmoney.com/calculators/ppf-calculator \"PPF Calculator\")\n* [Post Office PPF Calculator](https://www.indmoney.com/calculators/post-office-ppf-calculator \"Post Office PPF Calculator\")\n* [NSC Calculator](https://www.indmoney.com/calculators/nsc-calculator \"NSC Calculator\")\n* [SSY Calculator](https://www.indmoney.com/calculators/ssy-calculator \"SSY Calculator\")\n* [APY Calculator](https://www.indmoney.com/calculators/apy-calculator \"APY Calculator\")\n* [Retirement Calculator](https://www.indmoney.com/calculators/retirement-calculator \"Retirement Calculator\")\n* [Gratuity Calculator](https://www.indmoney.com/calculator"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0045",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "m/calculators/retirement-calculator \"Retirement Calculator\")\n* [Gratuity Calculator](https://www.indmoney.com/calculators/gratuity-calculator \"Gratuity Calculator\")\n\nEMI & Loans\n\n* [EMI Calculator](https://www.indmoney.com/calculators/emi-calculator \"EMI Calculator\")\n* [Home Loan EMI Calculator](https://www.indmoney.com/calculators/home-loan-emi-calculator \"Home Loan EMI Calculator\")\n* [Personal Loan EMI Calculator](https://www.indmoney.com/calculators/personal-loan-emi-calculator \"Personal Loan EMI Calculator\")\n* [Car Loan EMI Calculator](https://www.indmoney.com/calculators/car-loan-emi-calculator \"Car Loan EMI Calculator\")\n* [Bike Loan EMI Calculator](https://www.indmoney.com/calculators/bike-loan-emi-calculator \"Bike Loan EMI Calculator\")\n* [Education Loan EMI Calculator](https://www.indmoney.com/calculators/education-loan-emi-calculator \"Education Loan EMI Calculator\")\n* [Credit Car"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0046",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "lator](https://www.indmoney.com/calculators/education-loan-emi-calculator \"Education Loan EMI Calculator\")\n* [Credit Card EMI Calculator](https://www.indmoney.com/calculators/credit-card-emi-calculator \"Credit Card EMI Calculator\")\n\nTax & Salary\n\n* [Income Tax Calculator](https://www.indmoney.com/calculators/income-tax-calculator \"Income Tax Calculator\")\n* [Salary Calculator](https://www.indmoney.com/calculators/salary-calculator \"Salary Calculator\")\n* [GST Calculator](https://www.indmoney.com/calculators/gst-calculator \"GST Calculator\")\n* [Inflation Calculator](https://www.indmoney.com/calculators/inflation-calculator \"Inflation Calculator\")\n* [Term Insurance Calculator](https://www.indmoney.com/calculators/term-insurance-calculator \"Term Insurance Calculator\")\n\nInterest Calculators\n\n* [Compound Interest Calculator](https://www.indmoney.com/calculators/compound-interest-calculator \"Comp"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0047",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "st Calculators\n\n* [Compound Interest Calculator](https://www.indmoney.com/calculators/compound-interest-calculator \"Compound Interest Calculator\")\n* [Simple Interest Calculator](https://www.indmoney.com/calculators/simple-interest-calculator \"Simple Interest Calculator\")\n* [Interest Rate Calculator](https://www.indmoney.com/calculators/interest-rate-calculator \"Interest Rate Calculator\")\n* [Discount Calculator](https://www.indmoney.com/calculators/discount-calculator \"Discount Calculator\")\n\nMajor Indices\n\n* [Nifty 50](https://www.indmoney.com/indices/nifty-50 \"Nifty 50\")\n* [Sensex](https://www.indmoney.com/indices/sensex \"Sensex\")\n* [Bank Nifty](https://www.indmoney.com/indices/bank-nifty \"Bank Nifty\")\n* [Nifty Next 50](https://www.indmoney.com/indices/nifty-next-50 \"Nifty Next 50\")\n* [Nifty Financial Services](https://www.indmoney.com/indices/nifty-financial \"Nifty Financial Services\")"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0048",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "fty Next 50\")\n* [Nifty Financial Services](https://www.indmoney.com/indices/nifty-financial \"Nifty Financial Services\")\n* [Nifty Midcap 100](https://www.indmoney.com/indices/nifty-midcap-100 \"Nifty Midcap 100\")\n* [Nifty Smallcap 250](https://www.indmoney.com/indices/nifty-smallcap-250 \"Nifty Smallcap 250\")\n* [Bankex](https://www.indmoney.com/indices/bankex \"Bankex\")\n* [Gift Nifty](https://www.indmoney.com/indices/global-indices/gift-nifty \"Gift Nifty\")\n\nNSE Indices\n\n* [Nifty 100](https://www.indmoney.com/indices/nifty-100 \"Nifty 100\")\n* [Nifty 200](https://www.indmoney.com/indices/nifty-200 \"Nifty 200\")\n* [Nifty 500](https://www.indmoney.com/indices/nifty-500 \"Nifty 500\")\n* [Nifty LargeMidcap 250](https://www.indmoney.com/indices/nifty-largemidcap-250 \"Nifty LargeMidcap 250\")\n* [Nifty MidSmallcap 400](https://www.indmoney.com/indices/nifty-midsmallcap-400 \"Nifty MidSmallcap 400\")\n* [Nift"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0049",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "250\")\n* [Nifty MidSmallcap 400](https://www.indmoney.com/indices/nifty-midsmallcap-400 \"Nifty MidSmallcap 400\")\n* [Nifty Midcap 50](https://www.indmoney.com/indices/nifty-midcap-50 \"Nifty Midcap 50\")\n* [Nifty Midcap 150](https://www.indmoney.com/indices/nifty-midcap-150 \"Nifty Midcap 150\")\n* [Nifty Smallcap 50](https://www.indmoney.com/indices/nifty-smallcap-50 \"Nifty Smallcap 50\")\n* [Nifty Smallcap 100](https://www.indmoney.com/indices/nifty-small-100 \"Nifty Smallcap 100\")\n* [Nifty Private Bank](https://www.indmoney.com/indices/nifty-private-bank \"Nifty Private Bank\")\n* [Nifty PSU Bank](https://www.indmoney.com/indices/nifty-psu-bank \"Nifty PSU Bank\")\n\nNSE Sectoral\n\n* [Nifty IT](https://www.indmoney.com/indices/nifty-it \"Nifty IT\")\n* [Nifty Pharma](https://www.indmoney.com/indices/nifty-pharma \"Nifty Pharma\")\n* [Nifty Auto](https://www.indmoney.com/indices/nifty-auto \"Nifty Auto\")\n* [N"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0050",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "y.com/indices/nifty-pharma \"Nifty Pharma\")\n* [Nifty Auto](https://www.indmoney.com/indices/nifty-auto \"Nifty Auto\")\n* [Nifty Metal](https://www.indmoney.com/indices/nifty-metal \"Nifty Metal\")\n* [Nifty Energy](https://www.indmoney.com/indices/nifty-energy \"Nifty Energy\")\n* [Nifty FMCG](https://www.indmoney.com/indices/nifty-fmcg \"Nifty FMCG\")\n* [Nifty Healthcare](https://www.indmoney.com/indices/nifty-healthcare \"Nifty Healthcare\")\n* [Nifty Realty](https://www.indmoney.com/indices/nifty-realty \"Nifty Realty\")\n* [Nifty Media](https://www.indmoney.com/indices/nifty-media \"Nifty Media\")\n* [Nifty Infrastructure](https://www.indmoney.com/indices/nifty-infra \"Nifty Infrastructure\")\n* [Nifty Consumer Durables](https://www.indmoney.com/indices/nifty-consumer-durables \"Nifty Consumer Durables\")\n* [Nifty Commodities](https://www.indmoney.com/indices/nifty-commodities \"Nifty Commodities\")\n* [Nifty I"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0051",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "umer Durables\")\n* [Nifty Commodities](https://www.indmoney.com/indices/nifty-commodities \"Nifty Commodities\")\n* [Nifty India Consumption](https://www.indmoney.com/indices/nifty-india-consumption \"Nifty India Consumption\")\n\nBSE Indices\n\n* [BSE 500](https://www.indmoney.com/indices/bse-500 \"BSE 500\")\n* [BSE 200](https://www.indmoney.com/indices/bse-200 \"BSE 200\")\n* [BSE 100](https://www.indmoney.com/indices/bse-100 \"BSE 100\")\n* [BSE Mid Cap](https://www.indmoney.com/indices/bse-mid-cap \"BSE Mid Cap\")\n* [BSE Small Cap](https://www.indmoney.com/indices/bse-small-cap \"BSE Small Cap\")\n* [S&P BSE LargeCap](https://www.indmoney.com/indices/sandp-bse-largecap \"S&P BSE LargeCap\")\n* [S&P BSE Sensex 50](https://www.indmoney.com/indices/sandp-bse-sensex-50 \"S&P BSE Sensex 50\")\n\nBSE Sectoral\n\n* [BSE Auto](https://www.indmoney.com/indices/bse-auto \"BSE Auto\")\n* [BSE IT Sector](https://www.indmoney.com/"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0052",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "Sectoral\n\n* [BSE Auto](https://www.indmoney.com/indices/bse-auto \"BSE Auto\")\n* [BSE IT Sector](https://www.indmoney.com/indices/bse-it-sector \"BSE IT Sector\")\n* [BSE Healthcare](https://www.indmoney.com/indices/bse-healthcare \"BSE Healthcare\")\n* [BSE Tech](https://www.indmoney.com/indices/bse-tech \"BSE Tech\")\n* [BSE FMCG Sector](https://www.indmoney.com/indices/bse-fmcg-sector \"BSE FMCG Sector\")\n* [S&P BSE Power](https://www.indmoney.com/indices/sandp-bse-power \"S&P BSE Power\")\n* [S&P BSE Capital Goods](https://www.indmoney.com/indices/sandp-bse-capital-goods \"S&P BSE Capital Goods\")\n* [S&P BSE Oil and Gas](https://www.indmoney.com/indices/sandp-bse-oil-and-gas \"S&P BSE Oil and Gas\")\n* [S&P BSE Metal](https://www.indmoney.com/indices/sandp-bse-metal \"S&P BSE Metal\")\n* [S&P BSE Energy](https://www.indmoney.com/indices/sandp-bse-energy \"S&P BSE Energy\")\n* [S&P BSE Realty](https://www.indmo"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0053",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "S&P BSE Energy](https://www.indmoney.com/indices/sandp-bse-energy \"S&P BSE Energy\")\n* [S&P BSE Realty](https://www.indmoney.com/indices/sandp-bse-realty \"S&P BSE Realty\")\n* [S&P BSE PSU](https://www.indmoney.com/indices/sandp-bse-psu \"S&P BSE PSU\")\n* [S&P BSE Financial Services](https://www.indmoney.com/indices/sandp-bse-fin-ser \"S&P BSE Financial Services\")\n\nGlobal Indices\n\n* [Dow Jones Industrial Average](https://www.indmoney.com/indices/global-indices/dow-jones-industrial-average \"Dow Jones Industrial Average\")\n* [Nasdaq Composite](https://www.indmoney.com/indices/global-indices/nasdaq-composite-index \"Nasdaq Composite\")\n* [S&P 500](https://www.indmoney.com/indices/global-indices/s-p-500 \"S&P 500\")\n* [Nasdaq 100](https://www.indmoney.com/indices/global-indices/nasdaq-100 \"Nasdaq 100\")\n* [Russell 2000](https://www.indmoney.com/indices/global-indices/russell-2000-index \"Russell 2000\")\n*"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0054",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "-100 \"Nasdaq 100\")\n* [Russell 2000](https://www.indmoney.com/indices/global-indices/russell-2000-index \"Russell 2000\")\n* [Russell 1000](https://www.indmoney.com/indices/global-indices/russell-1000-index \"Russell 1000\")\n* [S&P 100](https://www.indmoney.com/indices/global-indices/s-p-100 \"S&P 100\")\n* [All Global Indices](https://www.indmoney.com/indices/global-indices \"All Global Indices\")\n\nINDstocks Private Limited(formerly INDmoney Private Limited) - SEBI registered stock broker & depository participant. Member of NSE, BSE & MCX.\n\nSEBI Stock Broker INZ000305337\n\nNSE 90267 · M70042\n\nBSE 6779\n\nMCX 57600\n\nDepository Participant IN-DP-690-2022\n\nCDSL DP ID 12095500\n\nImportant Links: [SEBI](https://www.sebi.gov.in/)[NSE](https://www.nseindia.com/)[BSE](https://www.bseindia.com/)[MCX](https://www.mcxindia.com/)\n\n* * *\n\nAbout INDmoney\n\n![Image 23: SHAMKRIS](https://indcdn.indmoney.com/cdn-cgi/im"
+    },
+    {
+      "chunk_id": "scheme_01_chunk_0055",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "m/)[MCX](https://www.mcxindia.com/)\n\n* * *\n\nAbout INDmoney\n\n![Image 23: SHAMKRIS](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=150/https://indcdn.indmoney.com/cdn/images/fe/iso-cert-new.png)\nWe hold ISO Information Security Management System ISO/IEC 27001:2022 certification.\n\n[![Image 24: PCI DSS Certified](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=150/https://indcdn.indmoney.com/cdn/images/fe/pci-dss-webseal.png)](https://seal.panaceainfosec.com/index.php?certid=CERT559BB0B082)\nINDmoney Tech Private Limited (Formerly known as Finzoom Investment Advisors Private Limited). holds PCIDSS certification"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0000",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "Title: HDFC Small Cap Fund - Latest NAV, Returns, Performance Vs Benchmark | INDmoney\n\nURL Source: https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580\n\nMarkdown Content:\n# HDFC Small Cap Fund - Latest NAV, Returns, Performance Vs Benchmark | INDmoney\n\n[![Image 10: INDmoney Logo](https://indcdn.indmoney.com/cdn/images/fe/ind-money-logo.svg)](https://www.indmoney.com/)\nINDmoney\n\n[US Stocks](https://www.indmoney.com/us-stocks \"US Stocks\")[Indian Stocks](https://www.indmoney.com/stocks \"Indian Stocks\")[ETFs](https://www.indmoney.com/stocks/etf \"ETFs\")[Mutual Funds](https://www.indmoney.com/mutual-funds \"Mutual Funds\")[IPO](https://www.indmoney.com/ipo \"IPO\")\n\n* * *\n\n[Features](https://www.indmoney.com/features \"Features\")[Pricing](https://www.indmoney.com/pricing \"Pricing\")\n\nLogin\n\n![Image 11: Download Indmoney App QR Code](https://indcdn.indmoney.com/cdn-cgi/"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0001",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": ".indmoney.com/pricing \"Pricing\")\n\nLogin\n\n![Image 11: Download Indmoney App QR Code](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=72/https://indcdn.indmoney.com/cdn/qr_icon_blue.png)\n\nLogin Open Demat Account\n\n* Fund Price\n\n* Performance\n\n* Peer Comparison\n\n* Calculator\n\n* Asset Allocation\n\n* Sector Allocation\n\n* Holdings\n\n* Overview\n\n* About\n\n* Compare Funds\n\n* FAQs\n\n1. [Home](https://www.indmoney.com/ \"Home\")>\n2. [Mutual funds](https://www.indmoney.com/mutual-funds \"Mutual funds\")>\n3. [HDFC Small Cap Fund](https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580 \"HDFC Small Cap Fund\")\n\n![Image 12: HDFC Small Cap Fund](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=63/https://indcdn.indmoney.com/public/images/amc_hdfc.png)\n\n# HDFC Small Cap Fund\n\n[Equity](https://www.indmoney.com/mutual-funds/equity-funds \"Equit"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0002",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "m/public/images/amc_hdfc.png)\n\n# HDFC Small Cap Fund\n\n[Equity](https://www.indmoney.com/mutual-funds/equity-funds \"Equity\")|[HDFC Mutual Fund](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund \"HDFC Mutual Fund\")|[Small-Cap](https://www.indmoney.com/mutual-funds/equity/small-cap-funds \"Small-Cap\")\n\nGet the latest NAV of HDFC Small Cap Fund. View historical returns compared to its benchmark and category average. Know which stocks and sectors the fund is investing in. Get an estimate of returns from the SIP and lump sum returns calculator. View detailed holding analysis and peer comparison. Get INDmoney ranking of the fund.\n\n₹149.87\n\n▼-1.3%1D\n\nNAV as on 24 Apr 2026\n\n18.36%/per year\n\nSince Inception\n\nInvest Now\n\nAbsolute Gain%\n▲▼\n\n1M\n\n3M\n\n6M\n\n1Y\n\n3Y\n\n5Y\n\nMAX\n\n92836 people have invested ₹ 42.1Cr in HDFC Small Cap Fund in the last three months\n\n## HDFC Small Cap Fund Performance vs."
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0003",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "6 people have invested ₹ 42.1Cr in HDFC Small Cap Fund in the last three months\n\n## HDFC Small Cap Fund Performance vs. Nifty Smallcap 250\n\nFund returns vs Benchmark returns vs Category Average returns as on (24-Apr-26)\n\nThe fund has outperformed the benchmark (Nifty Smallcap 250) over 1Y, 5Y, but underperformed over 3Y.\n\n| Period | 1M | 3M | 6M | 1Y | 3Y | 5Y |\n| --- | --- | --- | --- | --- | --- | --- |\n| This Fund | 8.14% | 0.7% | -7.63% | 4.41% | 18% | 20.74% |\n| Nifty Smallcap 250 | 12.63% | 7.18% | -4.67% | 3.14% | 21.4% | 18.53% |\n| Small-Cap Avg | 11.76% | 7.75% | -2.47% | 6.49% | 20.01% | 19.96% |\n| Best in Small-Cap | 20.8% | 17.69% | 4.81% | 20.02% | 32.94% | 25.55% |\n| Worst in Small-Cap | 11.05% | 2.05% | -11.24% | -6.1% | 15.23% | 16.93% |\n| Category Rank | 4/18 | 3/18 | 3/18 | 10/18 | 12/15 | -- |\n\n## HDFC Small Cap Fund Ranking and Peer Comparison\n\nRanked based on perform"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0004",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "| 4/18 | 3/18 | 3/18 | 10/18 | 12/15 | -- |\n\n## HDFC Small Cap Fund Ranking and Peer Comparison\n\nRanked based on performance, risk management and cost efficiency\n\n10\n\n/18\n\n54% Performance\n\n50% Risk Management\n\n48% Cost\n\nRanked 10 out of 18 mutual funds in the small-cap category as per INDmoney.\n\n| Fund Name | INDmoney Rank | AUM (in Crs.) | Expense Ratio | 1Y Returns | 3Y Returns | 3Y Alpha | 3Y Beta | 3Y Sharpe | 3Y Sortino | 3Y Info Ratio |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| [HDFC Small Cap Fund](https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580 \"HDFC Small Cap Fund\") | 10/18 | 33,724Cr | 0.8% | 4.41% | 18% | -1.02 | 0.81 | 0.53 | 0.80 | -0.54 |\n| [Bandhan Small Cap Fund](https://www.indmoney.com/mutual-funds/bandhan-small-cap-fund-direct-growth-1005544 \"Bandhan Small Cap Fund\") | 1/18 | 20,130Cr | 0.51% | 10.19% | 32"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0005",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ual-funds/bandhan-small-cap-fund-direct-growth-1005544 \"Bandhan Small Cap Fund\") | 1/18 | 20,130Cr | 0.51% | 10.19% | 32.35% | 8.81 | 0.90 | 1.05 | 1.76 | 1.88 |\n| [Invesco India Smallcap Fund](https://www.indmoney.com/mutual-funds/invesco-india-smallcap-fund-direct-growth-1002070 \"Invesco India Smallcap Fund\") | 2/18 | 9,208Cr | 0.52% | 9.21% | 26.43% | 4.63 | 0.83 | 0.83 | 1.22 | 0.50 |\n| [Nippon India Small Cap Fund](https://www.indmoney.com/mutual-funds/nippon-india-small-cap-fund-direct-plan-growth-plan-3598 \"Nippon India Small Cap Fund\") | 3/18 | 61,809Cr | 0.67% | 6.85% | 22.19% | 1.32 | 0.85 | 0.67 | 1.02 | -0.02 |\n\nSee all\n\n![Image 13: Positive: Beats FD returns for both 3Y & 5Y](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\nLarger AUM within category\n\n![Image 14: Positive: Beats FD returns for b"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0006",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\nLarger AUM within category\n\n![Image 14: Positive: Beats FD returns for both 3Y & 5Y](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\nBeats FD returns for both 3Y & 5Y\n\n![Image 15: Negative: 3Y returns in the bottom 25% of the category](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/mutual-funds-dislike.png)\n\n3Y returns in the bottom 25% of the category\n\n## HDFC Small Cap Fund Returns Calculator\n\nCalculate SIP and lumpsum returns based on historical performance\n\n₹1L\n\n₹10L\n\n \n\n* 1-time \n* SIP \n\nTotal Investment\n\n₹ 1.0 L\n\nProfit\n\n₹ 4.4K\n\n* * *\n\nTotal Corpus\n\n₹ 1.0 L\n\nAbsolute Return\n\n▲\n\n▼\n\n4.4%\n\n* * *\n\n1M\n\n3M\n\n6M\n\n1Y\n\n3Y\n\n5Y\n\n## HDFC Small Cap Fund Asset Allocation\n\nSee fund asset allocation details as on"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0007",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "▼\n\n4.4%\n\n* * *\n\n1M\n\n3M\n\n6M\n\n1Y\n\n3Y\n\n5Y\n\n## HDFC Small Cap Fund Asset Allocation\n\nSee fund asset allocation details as on (13-Apr-26)\n\nFund Distribution\n\nas on (13-Apr-26)\n\nEquity 89.7%\n\nDebt & Cash 10.3%\n\nSmall cap\n\n74.3%\n\n* * *\n\nMid cap\n\n9.6%\n\n* * *\n\nLarge cap\n\n5.8%\n\n* * *\n\n### Asset Allocation Changes\n\nAll changes are between Apr'26 and Jan'26\n\n![Image 16: Great Eastern Shipping Co Ltd's allocation increased from 1.87% to 2.19%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nMid Cap allocation has gone up from 10.4% to 10.4%\n\n## HDFC Small Cap Fund Sector Allocation\n\nSee fund sector allocation details as on (13-Apr-26)\n\nSector Allocation\n\nEquity 89.7%\n\nDebt & Cash 10.3%\n\nIndustrial\n\n25.1%\n\nConsumer Cyclical\n\n21.2%\n\nTech\n\n14.3%\n\nHealth\n\n13.7%\n\nFinancial Services\n\n12.6%\n\nBasic Materials"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0008",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": ".3%\n\nIndustrial\n\n25.1%\n\nConsumer Cyclical\n\n21.2%\n\nTech\n\n14.3%\n\nHealth\n\n13.7%\n\nFinancial Services\n\n12.6%\n\nBasic Materials\n\n7.9%\n\nConsumer Defensive\n\n3.2%\n\nCommunication\n\n2%\n\n### Sector Changes\n\nAll changes are between Apr'26 and Jan'26\n\nTop 3 Sectors in March were Industrial, Consumer Cyclical & Financial Services\n\nMar'26\n\nIndustrial\n\n25%\n\nConsumer Cyclical\n\n22%\n\nFinancial Services\n\n15%\n\nFeb'26\n\nIndustrial\n\n25%\n\nConsumer Cyclical\n\n22%\n\nFinancial Services\n\n15%\n\n## HDFC Small Cap Fund Holdings Details\n\nas on (31-Mar-26)\n\nEquity\n\n| Holdings | Weight% | | 1M Change |\n| --- | --- | --- | --- |\n| [Aster DM Healthcare Ltd Ordinary Shares](https://www.indmoney.com/stocks/aster-dm-healthcare-ltd-share-price \"Aster DM Healthcare Ltd Ordinary Shares\") | 4.78% | | 0% |\n| [Bank of Baroda](https://www.indmoney.com/stocks/bank-of-baroda-share-price \"Bank of Baroda\") | 3.44% | | 0% |\n| [Firstsource Solut"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0009",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "roda](https://www.indmoney.com/stocks/bank-of-baroda-share-price \"Bank of Baroda\") | 3.44% | | 0% |\n| [Firstsource Solutions Ltd](https://www.indmoney.com/stocks/firstsource-solutions-ltd-share-price \"Firstsource Solutions Ltd\") | 3.42% | | 0.4% |\n| [Eris Lifesciences Ltd Registered Shs](https://www.indmoney.com/stocks/eris-lifesciences-ltd-share-price \"Eris Lifesciences Ltd Registered Shs\") | 2.59% | | 1.8% |\n| [eClerx Services Ltd](https://www.indmoney.com/stocks/eclerx-services-ltd-share-price \"eClerx Services Ltd\") | 2.55% | | 103.3% |\n\nSee all\n\n### Portfolio Changes\n\nAll changes are between Jan'26 and Mar'26\n\nTop Stocks bought last month\n\n![Image 17: Great Eastern Shipping Co Ltd's allocation increased from 1.87% to 2.19%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nAster DM Hea"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0010",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nAster DM Healthcare Ltd Ordinary Shares's allocation increased from 4.21% to 4.78%\n\n![Image 18: Great Eastern Shipping Co Ltd's allocation increased from 1.87% to 2.19%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nKrishna Institute of Medical Sciences Ltd's allocation increased from 1.63% to 2.05%\n\n![Image 19: Great Eastern Shipping Co Ltd's allocation increased from 1.87% to 2.19%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nGreat Eastern Shipping Co Ltd's allocation increased from 1.87% to 2.19%\n\nTop Stocks sold last month\n\n![Image 20: Indian Bank's allocation decreased f"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0011",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "s allocation increased from 1.87% to 2.19%\n\nTop Stocks sold last month\n\n![Image 20: Indian Bank's allocation decreased from 2.56 % to 2.43 % ](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nBank of Baroda's allocation decreased from 4.03 % to 3.44 % \n\n![Image 21: Indian Bank's allocation decreased from 2.56 % to 2.43 % ](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\neClerx Services Ltd's allocation decreased from 2.58 % to 2.55 % \n\n![Image 22: Indian Bank's allocation decreased from 2.56 % to 2.43 % ](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nIndian Bank's allocation decreased from 2.56 % to 2.43"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0012",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "tps://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nIndian Bank's allocation decreased from 2.56 % to 2.43 % \n\n## HDFC Small Cap Fund Overview\n\nGet key fund statistics, minimum investment details, AUM, expense ratio, exit load, and tax treatment.\n\nExpense ratio 0.8%\nBenchmark BSE 250 SmallCap TR INR\nAUM₹33724 Cr\nInception Date 1 January, 2013\nMin Lumpsum/SIP₹100/₹100\nExit Load 1.0%\nLock In No Lock-in\nTurnOver 11.71%\nRisk![Image 23: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)\n\n![Image 24: pointer](https://indcdn.indmoney.com/public/images/Group-96373.svg)\n\nVery High Risk\n\n## About HDFC Small Cap Fund\n\nHDFC Small Cap Fund is a [small-cap mutual fund](https://www.indmoney.com/mutual-funds/equity/small-cap-funds). As per SEBI’s classification, small-cap funds are required to invest at least 65% of their assets in small-cap companies, those ranked 251"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0013",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "sification, small-cap funds are required to invest at least 65% of their assets in small-cap companies, those ranked 251st and below by market capitalization.\n\nThe fund uses the [BSE 250 Small Cap](https://www.indmoney.com/indices/sandp-bse-250-smallcap) TRI as its benchmark, which helps measure its performance against a broad universe of similar [small-cap stocks](https://www.indmoney.com/stocks/category/small-cap-stocks). The fund has a strong presence in sectors like Healthcare, Technology, Financials, Automobiles, and Infrastructure.\n\nIndia offers a wide and fast-growing base of small-cap companies, which the fund house believes can deliver strong long-term returns. HDFC Small Cap Mutual Fund focuses on selecting fundamentally sound businesses with reasonable valuations, aiming to generate alpha while managing risk effectively.\n\nKnow more about HDFC Small Cap Fund\n\n### Fund Manager"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0014",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ions, aiming to generate alpha while managing risk effectively.\n\nKnow more about HDFC Small Cap Fund\n\n### Fund Manager\n\n#### Chirag Setalvad\n\nFund Manager of HDFC Small Cap Fund, since 28 June 2014\n\n#### Dhruv Muchhal\n\nFund Manager of HDFC Small Cap Fund, since 22 June 2023\n\n[Learn more about HDFC Mutual Fund](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund \"Learn more about HDFC Mutual Fund\")\n\n### AUM Change\n\nAll changes are between Jan'26 and Mar'26\n\n| Parameters | Mar'26 | Feb'26 | Jan'26 |\n| --- | --- | --- | --- |\n| AUM | ₹ 37.4K Cr | ₹ 37.4K Cr | ₹ 36.9K Cr |\n\n* AUM of the fund stands at 37.4K Cr as of Mar'26\n* AUM has remained same between Mar'26 and Feb'26\n\n## Compare HDFC Small Cap Fund\n\nHDFC Small Cap Fund\n\nVS\n\nNippon India Small Cap Fund\n\n## Frequently Asked Questions for HDFC Small Cap Fund\n\n### How do I invest in HDFC Small Cap Fund?\n\nINDmoney makes it simple to i"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0015",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ntly Asked Questions for HDFC Small Cap Fund\n\n### How do I invest in HDFC Small Cap Fund?\n\nINDmoney makes it simple to invest in the HDFC Small Cap Fund. To do so, follow the steps below:\n\n* Download the INDmoney app.\n* Search for ‘HDFC Small Cap Fund’.\n* Select whether you want to invest in SIP or lump sum.\n* Enter the amount you wish to invest.\n* Set up payments via bank mandate or UPI.\n\n### What is the current NAV of HDFC Small Cap Fund?\n\nThe NAV of the fund today is ₹149.87. NAV or Net Asset Value is the per unit price of a mutual fund. For example, if the NAV of a fund is ₹10, it means you can get 1000 units of that mutual fund at ₹10,000.\n\n### What is the return on the fund?\n\nHDFC Small Cap Fund fund has generated a return of 4.41% in 1 year, 18.00% in 3 years, 20.74% in 5 years.\n\n### Who is the fund manager of HDFC Small Cap Fund?\n\nThe fund managers are Chirag Setalvad, Dhruv Much"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0016",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": ".74% in 5 years.\n\n### Who is the fund manager of HDFC Small Cap Fund?\n\nThe fund managers are Chirag Setalvad, Dhruv Muchhal.\n\n### What is the exit load of the fund?\n\nThe exit load is 1% if redeemed in 0-1 Years. Exit load is a fee levied for ‘exiting’ the fund earlier than a stipulated period, usually 1 year.\n\n### What is the expense ratio of the fund?\n\nThe expense ratio is 0.80%. The Expense Ratio is a fee charged for managing the fund. This includes commissions, administrative costs etc.\n\n### What is the AUM of the fund?\n\nThe AUM of the fund is ₹33724 Cr. AUM stands for Assets Under Management. It refers to the total assets managed by the fund.\n\n### What are the top holdings of HDFC Small Cap Fund?\n\nThe top 3 holdings of the fund are Aster DM Healthcare Ltd Ordinary Shares(4.78%), Bank of Baroda(3.44%), Firstsource Solutions Ltd(3.42%)\n\nInvest Now\n\nMutual Fund execution provided by\n\n*"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0017",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "hares(4.78%), Bank of Baroda(3.44%), Firstsource Solutions Ltd(3.42%)\n\nInvest Now\n\nMutual Fund execution provided by\n\n* ![Image 25: BSE Star MF Logo](https://indcdn.indmoney.com/cdn-cgi/image/quality=100,format=auto,metadata=copyright,width=50/https://www.indmoney.com/stencil/images?url=/images/grievance-policy/bse.jpeg&w=640&q=75)\n\nINDstocks Private Limited (Formerly known as INDmoney Private Limited) is a SEBI registered Stock Broker and mutual funds distributor. SEBI Registration No. INZ000305337, Trading and Clearing Member of NSE (90267, M70042), BSE (6779), MCX (57600) and BSE Star MF (6779), AMFI Registration No: ARN-254564.\n\nDisclaimer: Mutual Fund investments are subject to market risks, read all scheme related documents carefully. Past performance is not indicative of future returns. Registration granted by SEBI, membership of BASL and certification from NISM in no way guarante"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0018",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ative of future returns. Registration granted by SEBI, membership of BASL and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.\n\n![Image 26: INDmoney Super Money App Logo](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=240/https://indcdn.indmoney.com/public/images/fe/IND_logo_white_tm.png)\n\nINDmoney Tech Pvt. Ltd.\n\n616, 6th Floor Suncity Success Tower, \n\nSector 65, Gurugram, Haryana, India - 122005\n\n[](https://www.facebook.com/indmoney \"INDmoney Facebook\")[](https://in.linkedin.com/company/indmoney \"INDmoney LinkedIn\")[](https://x.com/INDmoneyApp/ \"INDmoney X\")[](https://www.youtube.com/channel/UCm7xZ9sbqhuARuDDcckh8Jg \"INDmoney YouTube\")[](https://www.instagram.com/indmoneyapp/ \"INDmoney Instagram\")[](https://www.reddit.com/r/INDmoneyApp/ \"INDmoney Reddit\")[](https://www.quora.com/profile"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0019",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "neyapp/ \"INDmoney Instagram\")[](https://www.reddit.com/r/INDmoneyApp/ \"INDmoney Reddit\")[](https://www.quora.com/profile/INDmoney-3/ \"INDmoney Quora\")\n\nAll Rights Reserved | © Copyright 2026\n\nPRODUCTS\n\n* [US Stocks](https://www.indmoney.com/us-stocks \"US Stocks\")\n* [Indian Stocks](https://www.indmoney.com/stocks \"Indian Stocks\")\n* [Mutual Funds](https://www.indmoney.com/mutual-funds \"Mutual Funds\")\n* [Futures & Options](https://www.indmoney.com/futures-and-options \"Futures & Options\")\n* [IPO](https://www.indmoney.com/ipo \"IPO\")\n* [ETFs](https://www.indmoney.com/stocks/etf \"ETFs\")\n\nCOMPANY\n\n* [About Us](https://www.indmoney.com/about \"About Us\")\n* [Blog](https://www.indmoney.com/blog \"Blog\")\n* [Customer Service](https://www.indmoney.com/customer-service \"Customer Service\")\n* [Fraud Awareness](https://www.indmoney.com/page/fraud-awareness \"Fraud Awareness\")\n* [Sitemap](https://www.indmoney"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0020",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "\")\n* [Fraud Awareness](https://www.indmoney.com/page/fraud-awareness \"Fraud Awareness\")\n* [Sitemap](https://www.indmoney.com/sitemap \"Sitemap\")\n\nLEGAL & REGULATORY\n\n* [Privacy Policy](https://www.indmoney.com/privacy-policy \"Privacy Policy\")\n* [Terms & Conditions](https://www.indmoney.com/terms-of-services \"Terms & Conditions\")\n* [Legal & Regulatory](https://www.indmoney.com/page/policy-center \"Legal & Regulatory\")\n* [Grievance Redressal Policy](https://www.indmoney.com/grievance-redressal-policy \"Grievance Redressal Policy\")\n\n* * *\n\nIndian Share Market US Stocks Mutual Funds Calculators Indices\n\nPopular Stocks\n\n* [Tata Motors](https://www.indmoney.com/stocks/tata-motors-ltd-share-price \"Tata Motors\")\n* [Reliance Industries](https://www.indmoney.com/stocks/reliance-industries-ltd-share-price \"Reliance Industries\")\n* [HDFC Bank](https://www.indmoney.com/stocks/hdfc-bank-ltd-share-price \"H"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0021",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "stries-ltd-share-price \"Reliance Industries\")\n* [HDFC Bank](https://www.indmoney.com/stocks/hdfc-bank-ltd-share-price \"HDFC Bank\")\n* [SBI](https://www.indmoney.com/stocks/state-bank-of-india-share-price \"SBI\")\n* [TCS](https://www.indmoney.com/stocks/tata-consultancy-services-ltd-share-price \"TCS\")\n* [ICICI Bank](https://www.indmoney.com/stocks/icici-bank-ltd-share-price \"ICICI Bank\")\n* [Infosys](https://www.indmoney.com/stocks/infosys-ltd-share-price \"Infosys\")\n* [Bajaj Finance](https://www.indmoney.com/stocks/bajaj-finance-ltd-share-price \"Bajaj Finance\")\n* [Adani Power](https://www.indmoney.com/stocks/adani-power-ltd-share-price \"Adani Power\")\n* [IRCTC](https://www.indmoney.com/stocks/indian-railway-catering-and-tourism-corporation-ltd-share-price \"IRCTC\")\n* [ITC](https://www.indmoney.com/stocks/itc-ltd-share-price \"ITC\")\n* [LIC](https://www.indmoney.com/stocks/life-insurance-corporati"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0022",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ps://www.indmoney.com/stocks/itc-ltd-share-price \"ITC\")\n* [LIC](https://www.indmoney.com/stocks/life-insurance-corporation-of-india-share-price \"LIC\")\n* [Wipro](https://www.indmoney.com/stocks/wipro-ltd-share-price \"Wipro\")\n* [Coal India](https://www.indmoney.com/stocks/coal-india-ltd-share-price \"Coal India\")\n* [Asian Paints](https://www.indmoney.com/stocks/asian-paints-ltd-share-price \"Asian Paints\")\n\nSectors\n\n* [Banking](https://www.indmoney.com/stocks/sectors/banking \"Banking\")\n* [IT](https://www.indmoney.com/stocks/sectors/it \"IT\")\n* [Pharma](https://www.indmoney.com/stocks/sectors/pharma \"Pharma\")\n* [Auto](https://www.indmoney.com/stocks/sectors/auto \"Auto\")\n* [FMCG](https://www.indmoney.com/stocks/sectors/fmcg \"FMCG\")\n* [Defence](https://www.indmoney.com/stocks/sectors/defence \"Defence\")\n* [Power](https://www.indmoney.com/stocks/sectors/power \"Power\")\n* [Infrastructure](https://ww"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0023",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ectors/defence \"Defence\")\n* [Power](https://www.indmoney.com/stocks/sectors/power \"Power\")\n* [Infrastructure](https://www.indmoney.com/stocks/sectors/infrastructure \"Infrastructure\")\n* [Real Estate](https://www.indmoney.com/stocks/sectors/real-estate \"Real Estate\")\n* [PSU](https://www.indmoney.com/stocks/sectors/psu \"PSU\")\n* [Railway](https://www.indmoney.com/stocks/sectors/railway \"Railway\")\n* [Capital Goods](https://www.indmoney.com/stocks/sectors/capital-goods \"Capital Goods\")\n* [Finance](https://www.indmoney.com/stocks/sectors/finance \"Finance\")\n* [Oil & Gas](https://www.indmoney.com/stocks/sectors/oil-gas \"Oil & Gas\")\n* [Healthcare](https://www.indmoney.com/stocks/sectors/healthcare \"Healthcare\")\n\nThemes\n\n* [AI Stocks](https://www.indmoney.com/stocks/themes/ai \"AI Stocks\")\n* [EV Stocks](https://www.indmoney.com/stocks/themes/ev \"EV Stocks\")\n* [Green Energy](https://www.indmoney.com/"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0024",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "Stocks\")\n* [EV Stocks](https://www.indmoney.com/stocks/themes/ev \"EV Stocks\")\n* [Green Energy](https://www.indmoney.com/stocks/themes/green-energy \"Green Energy\")\n* [Semiconductor](https://www.indmoney.com/stocks/themes/semiconductor \"Semiconductor\")\n* [Solar](https://www.indmoney.com/stocks/themes/solar \"Solar\")\n* [Drone](https://www.indmoney.com/stocks/themes/drone \"Drone\")\n* [Green Hydrogen](https://www.indmoney.com/stocks/themes/green-hydrogen \"Green Hydrogen\")\n* [Cybersecurity](https://www.indmoney.com/stocks/themes/cybersecurity \"Cybersecurity\")\n\nGroups\n\n* [Tata Group](https://www.indmoney.com/stocks/groups/tata-group \"Tata Group\")\n* [Adani Group](https://www.indmoney.com/stocks/groups/adani-group \"Adani Group\")\n* [Reliance Group](https://www.indmoney.com/stocks/groups/mukesh-ambani-group \"Reliance Group\")\n* [Bajaj Group](https://www.indmoney.com/stocks/groups/bajaj-group \"Bajaj Gr"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0025",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "roups/mukesh-ambani-group \"Reliance Group\")\n* [Bajaj Group](https://www.indmoney.com/stocks/groups/bajaj-group \"Bajaj Group\")\n* [Birla Group](https://www.indmoney.com/stocks/groups/birla-group \"Birla Group\")\n* [HDFC Group](https://www.indmoney.com/stocks/groups/hdfc-group \"HDFC Group\")\n* [Mahindra Group](https://www.indmoney.com/stocks/groups/mahindra-group \"Mahindra Group\")\n* [L&T Group](https://www.indmoney.com/stocks/groups/lt-group \"L&T Group\")\n* [Godrej Group](https://www.indmoney.com/stocks/groups/godrej-group \"Godrej Group\")\n* [ICICI Group](https://www.indmoney.com/stocks/groups/icici-group \"ICICI Group\")\n* [Jindal Group](https://www.indmoney.com/stocks/groups/jindal-group \"Jindal Group\")\n* [Murugappa Group](https://www.indmoney.com/stocks/groups/murugappa-group \"Murugappa Group\")\n\nScreens\n\n* [Large Cap Stocks](https://www.indmoney.com/stocks/screens/large-cap \"Large Cap Stocks\")"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0026",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "\"Murugappa Group\")\n\nScreens\n\n* [Large Cap Stocks](https://www.indmoney.com/stocks/screens/large-cap \"Large Cap Stocks\")\n* [Mid Cap Stocks](https://www.indmoney.com/stocks/screens/mid-cap \"Mid Cap Stocks\")\n* [Small Cap Stocks](https://www.indmoney.com/stocks/screens/small-cap \"Small Cap Stocks\")\n* [Penny Stocks](https://www.indmoney.com/stocks/screens/penny-stocks \"Penny Stocks\")\n* [Dividend Stocks](https://www.indmoney.com/stocks/screens/dividend-stocks \"Dividend Stocks\")\n* [High Return Stocks](https://www.indmoney.com/stocks/screens/high-return-stocks \"High Return Stocks\")\n* [Multibagger Stocks](https://www.indmoney.com/stocks/screens/multibagger-stocks \"Multibagger Stocks\")\n* [View all Screens](https://www.indmoney.com/stocks/screens \"View all Screens\")\n* [Stock Screener](https://www.indmoney.com/stocks/screener \"Stock Screener\")\n\nShare Market Today\n\n* [Share Market Today](https://www."
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0027",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ner](https://www.indmoney.com/stocks/screener \"Stock Screener\")\n\nShare Market Today\n\n* [Share Market Today](https://www.indmoney.com/share-market-today \"Share Market Today\")\n* [Top Gainers](https://www.indmoney.com/share-market-today/top-gainers \"Top Gainers\")\n* [Top Losers](https://www.indmoney.com/share-market-today/top-losers \"Top Losers\")\n* [Most Active](https://www.indmoney.com/share-market-today/most-active \"Most Active\")\n* [52-Week High](https://www.indmoney.com/share-market-today/52-week-high \"52-Week High\")\n* [52-Week Low](https://www.indmoney.com/share-market-today/52-week-low \"52-Week Low\")\n* [Upper Circuit](https://www.indmoney.com/share-market-today/upper-circuit \"Upper Circuit\")\n* [Lower Circuit](https://www.indmoney.com/share-market-today/lower-circuit \"Lower Circuit\")\n* [Trending Stocks](https://www.indmoney.com/share-market-today/trending-stocks \"Trending Stocks\")\n* [Sto"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0028",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ower Circuit\")\n* [Trending Stocks](https://www.indmoney.com/share-market-today/trending-stocks \"Trending Stocks\")\n* [Stocks to Buy](https://www.indmoney.com/share-market-today/stocks-to-buy \"Stocks to Buy\")\n* [Intraday Stocks](https://www.indmoney.com/share-market-today/intraday-stocks \"Intraday Stocks\")\n\nPopular Stocks\n\n* [NVIDIA](https://www.indmoney.com/us-stocks/nvidia-corporation-share-price-nvda \"NVIDIA\")\n* [Tesla](https://www.indmoney.com/us-stocks/tesla-inc-share-price-tsla \"Tesla\")\n* [Apple](https://www.indmoney.com/us-stocks/apple-inc-share-price-aapl \"Apple\")\n* [Microsoft](https://www.indmoney.com/us-stocks/microsoft-corporation-share-price-msft \"Microsoft\")\n* [Amazon](https://www.indmoney.com/us-stocks/amazon-com-inc-share-price-amzn \"Amazon\")\n* [Google](https://www.indmoney.com/us-stocks/alphabet-inc-class-a-shares-share-price-googl \"Google\")\n* [Meta](https://www.indmoney.co"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0029",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ps://www.indmoney.com/us-stocks/alphabet-inc-class-a-shares-share-price-googl \"Google\")\n* [Meta](https://www.indmoney.com/us-stocks/meta-platforms-inc-share-price-meta \"Meta\")\n* [Broadcom](https://www.indmoney.com/us-stocks/broadcom-inc-share-price-avgo \"Broadcom\")\n* [AMD](https://www.indmoney.com/us-stocks/advanced-micro-devices-inc-share-price-amd \"AMD\")\n* [Netflix](https://www.indmoney.com/us-stocks/netflix-inc-share-price-nflx \"Netflix\")\n* [ServiceNow](https://www.indmoney.com/us-stocks/servicenow-inc-share-price-now \"ServiceNow\")\n* [Walmart](https://www.indmoney.com/us-stocks/walmart-inc-share-price-wmt \"Walmart\")\n* [Uber](https://www.indmoney.com/us-stocks/uber-technologies-inc-share-price-uber \"Uber\")\n* [Salesforce](https://www.indmoney.com/us-stocks/salesforce-inc-share-price-crm \"Salesforce\")\n* [Adobe](https://www.indmoney.com/us-stocks/adobe-systems-inc-share-price-adbe \"Adobe\""
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0030",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "nc-share-price-crm \"Salesforce\")\n* [Adobe](https://www.indmoney.com/us-stocks/adobe-systems-inc-share-price-adbe \"Adobe\")\n\nSectors\n\n* [Tech Stocks](https://www.indmoney.com/us-stocks/tech-stocks \"Tech Stocks\")\n* [Semiconductor Stocks](https://www.indmoney.com/us-stocks/semiconductor-stocks \"Semiconductor Stocks\")\n* [AI Stocks](https://www.indmoney.com/us-stocks/ai-stocks \"AI Stocks\")\n* [Healthcare Stocks](https://www.indmoney.com/us-stocks/healthcare-stocks \"Healthcare Stocks\")\n* [Pharma Stocks](https://www.indmoney.com/us-stocks/pharma-stocks \"Pharma Stocks\")\n* [Finance Stocks](https://www.indmoney.com/us-stocks/finance-stocks \"Finance Stocks\")\n* [Energy Stocks](https://www.indmoney.com/us-stocks/energy-stocks \"Energy Stocks\")\n* [Defence Stocks](https://www.indmoney.com/us-stocks/defence-stocks \"Defence Stocks\")\n\nThemes\n\n* [EV Stocks](https://www.indmoney.com/us-stocks/ev-stocks \"EV Sto"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0031",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "m/us-stocks/defence-stocks \"Defence Stocks\")\n\nThemes\n\n* [EV Stocks](https://www.indmoney.com/us-stocks/ev-stocks \"EV Stocks\")\n* [E-commerce Stocks](https://www.indmoney.com/us-stocks/e-commerce-stocks \"E-commerce Stocks\")\n* [Travel Stocks](https://www.indmoney.com/us-stocks/travel-stocks \"Travel Stocks\")\n* [Dividend Stocks](https://www.indmoney.com/us-stocks/dividend-stocks \"Dividend Stocks\")\n* [FAANG Stocks](https://www.indmoney.com/us-stocks/faang \"FAANG Stocks\")\n* [Brands](https://www.indmoney.com/us-stocks/brands \"Brands\")\n\nScreens\n\n* [Mega Cap Stocks](https://www.indmoney.com/us-stocks/mega-cap-stocks \"Mega Cap Stocks\")\n* [Large Cap Stocks](https://www.indmoney.com/us-stocks/large-cap-stocks \"Large Cap Stocks\")\n* [Mid Cap Stocks](https://www.indmoney.com/us-stocks/mid-cap-stocks \"Mid Cap Stocks\")\n* [Small Cap Stocks](https://www.indmoney.com/us-stocks/small-cap-stocks \"Small Cap Sto"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0032",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "mid-cap-stocks \"Mid Cap Stocks\")\n* [Small Cap Stocks](https://www.indmoney.com/us-stocks/small-cap-stocks \"Small Cap Stocks\")\n* [Highest Returns](https://www.indmoney.com/us-stocks/highest-returns \"Highest Returns\")\n* [US Stock Screener](https://www.indmoney.com/us-stocks/screener \"US Stock Screener\")\n\nPortfolio\n\n* [Warren Buffett](https://www.indmoney.com/us-stocks/warren-buffet \"Warren Buffett\")\n* [Cathie Wood](https://www.indmoney.com/us-stocks/cathie-wood \"Cathie Wood\")\n* [Ray Dalio](https://www.indmoney.com/us-stocks/ray-dalio \"Ray Dalio\")\n* [George Soros](https://www.indmoney.com/us-stocks/george-soros \"George Soros\")\n* [Jim Simons](https://www.indmoney.com/us-stocks/jim-simons \"Jim Simons\")\n* [Bill Ackman](https://www.indmoney.com/us-stocks/bill-ackman \"Bill Ackman\")\n* [Tiger Global](https://www.indmoney.com/us-stocks/tiger-global \"Tiger Global\")\n* [Steven Cohen](https://www.indmo"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0033",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "an\")\n* [Tiger Global](https://www.indmoney.com/us-stocks/tiger-global \"Tiger Global\")\n* [Steven Cohen](https://www.indmoney.com/us-stocks/steven-cohen \"Steven Cohen\")\n\nUS Market Today\n\n* [Top Gainers](https://www.indmoney.com/us-stocks/top-gainers \"Top Gainers\")\n* [Top Losers](https://www.indmoney.com/us-stocks/top-losers \"Top Losers\")\n* [US Stock Market Timings](https://www.indmoney.com/us-stocks/us-stock-market-timings \"US Stock Market Timings\")\n* [US Market Holidays](https://www.indmoney.com/us-stocks/us-market-holidays \"US Market Holidays\")\n\nEquity Funds\n\n* [Large Cap Funds](https://www.indmoney.com/mutual-funds/equity/large-cap-funds \"Large Cap Funds\")\n* [Mid Cap Funds](https://www.indmoney.com/mutual-funds/equity/mid-cap-funds \"Mid Cap Funds\")\n* [Small Cap Funds](https://www.indmoney.com/mutual-funds/equity/small-cap-funds \"Small Cap Funds\")\n* [Flexi Cap Funds](https://www.indmoney"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0034",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "https://www.indmoney.com/mutual-funds/equity/small-cap-funds \"Small Cap Funds\")\n* [Flexi Cap Funds](https://www.indmoney.com/mutual-funds/equity/flexi-cap \"Flexi Cap Funds\")\n* [Multi Cap Funds](https://www.indmoney.com/mutual-funds/equity/multi-cap-funds \"Multi Cap Funds\")\n* [Large & Mid Cap Funds](https://www.indmoney.com/mutual-funds/equity/large-mid-cap \"Large & Mid Cap Funds\")\n* [ELSS Tax Saver Funds](https://www.indmoney.com/mutual-funds/collection/elss-funds \"ELSS Tax Saver Funds\")\n* [Index Funds](https://www.indmoney.com/mutual-funds/equity/index-funds \"Index Funds\")\n* [Nifty 50 Index Funds](https://www.indmoney.com/mutual-funds/equity/nifty-50-index-funds \"Nifty 50 Index Funds\")\n* [Value Funds](https://www.indmoney.com/mutual-funds/equity/value \"Value Funds\")\n* [Contra Funds](https://www.indmoney.com/mutual-funds/equity/contra \"Contra Funds\")\n* [Sector Technology](https://www.ind"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0035",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "[Contra Funds](https://www.indmoney.com/mutual-funds/equity/contra \"Contra Funds\")\n* [Sector Technology](https://www.indmoney.com/mutual-funds/equity/sector-technology \"Sector Technology\")\n* [Sector Financial Services](https://www.indmoney.com/mutual-funds/equity/sector-financial-services \"Sector Financial Services\")\n* [Equity Infrastructure](https://www.indmoney.com/mutual-funds/equity/equity-infrastructure \"Equity Infrastructure\")\n\nDebt Funds\n\n* [Liquid Funds](https://www.indmoney.com/mutual-funds/debt/liquid-funds \"Liquid Funds\")\n* [Overnight Fund](https://www.indmoney.com/mutual-funds/debt/overnight \"Overnight Fund\")\n* [Ultra Short Funds](https://www.indmoney.com/mutual-funds/debt/ultra-short-funds \"Ultra Short Funds\")\n* [Short Term Funds](https://www.indmoney.com/mutual-funds/debt/short-term-funds \"Short Term Funds\")\n* [Low Duration Funds](https://www.indmoney.com/mutual-funds/debt/"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0036",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "utual-funds/debt/short-term-funds \"Short Term Funds\")\n* [Low Duration Funds](https://www.indmoney.com/mutual-funds/debt/low-duration-funds \"Low Duration Funds\")\n* [Medium Duration Fund](https://www.indmoney.com/mutual-funds/debt/medium-duration \"Medium Duration Fund\")\n* [Long Duration](https://www.indmoney.com/mutual-funds/debt/long-duration \"Long Duration\")\n* [Dynamic Bond Fund](https://www.indmoney.com/mutual-funds/debt/dynamic-bond \"Dynamic Bond Fund\")\n* [Corporate Bond Funds](https://www.indmoney.com/mutual-funds/debt/corporate-bond-funds \"Corporate Bond Funds\")\n* [GILT Funds](https://www.indmoney.com/mutual-funds/debt/gilt-funds \"GILT Funds\")\n* [Banking PSU](https://www.indmoney.com/mutual-funds/debt/banking-psu \"Banking PSU\")\n* [Money Market Funds](https://www.indmoney.com/mutual-funds/debt/money-market-funds \"Money Market Funds\")\n\nHybrid Funds\n\n* [Aggressive Funds](https://www.ind"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0037",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "money.com/mutual-funds/debt/money-market-funds \"Money Market Funds\")\n\nHybrid Funds\n\n* [Aggressive Funds](https://www.indmoney.com/mutual-funds/hybrid/aggressive-funds \"Aggressive Funds\")\n* [Balanced Advantage Fund](https://www.indmoney.com/mutual-funds/hybrid/balanced-funds \"Balanced Advantage Fund\")\n* [Multi Asset Funds](https://www.indmoney.com/mutual-funds/hybrid/multi-asset-funds \"Multi Asset Funds\")\n* [Arbitrage Funds](https://www.indmoney.com/mutual-funds/hybrid/arbitrage-funds \"Arbitrage Funds\")\n* [Conservative Allocation](https://www.indmoney.com/mutual-funds/hybrid/conservative-allocation \"Conservative Allocation\")\n* [Equity Savings Funds](https://www.indmoney.com/mutual-funds/hybrid/equity-savings \"Equity Savings Funds\")\n* [Fund of Funds](https://www.indmoney.com/mutual-funds/hybrid/fund-of-funds \"Fund of Funds\")\n* [Retirement Fund](https://www.indmoney.com/mutual-funds/hybrid/"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0038",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "com/mutual-funds/hybrid/fund-of-funds \"Fund of Funds\")\n* [Retirement Fund](https://www.indmoney.com/mutual-funds/hybrid/retirement \"Retirement Fund\")\n\nCollections\n\n* [Best SIP Funds](https://www.indmoney.com/mutual-funds/collection/best-sip-funds \"Best SIP Funds\")\n* [High Return Funds](https://www.indmoney.com/mutual-funds/collection/high-return-mutual-funds \"High Return Funds\")\n* [ELSS Funds](https://www.indmoney.com/mutual-funds/collection/elss-funds \"ELSS Funds\")\n* [Low Risk Funds](https://www.indmoney.com/mutual-funds/collection/best-low-risk-mutual-funds \"Low Risk Funds\")\n* [Gold Mutual Funds](https://www.indmoney.com/mutual-funds/collection/precious-metals-funds \"Gold Mutual Funds\")\n* [Trending Funds](https://www.indmoney.com/mutual-funds/collection/investors-choice \"Trending Funds\")\n* [Short Term Funds](https://www.indmoney.com/mutual-funds/collection/short-term-mutual-funds \"Shor"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0039",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ce \"Trending Funds\")\n* [Short Term Funds](https://www.indmoney.com/mutual-funds/collection/short-term-mutual-funds \"Short Term Funds\")\n* [Super Saver Funds](https://www.indmoney.com/mutual-funds/collection/super-saver \"Super Saver Funds\")\n\nTop AMCs\n\n* [HDFC Mutual Funds](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund \"HDFC Mutual Funds\")\n* [ICICI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/icici-prudential-mutual-fund \"ICICI Mutual Funds\")\n* [SBI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/sbi-mutual-fund \"SBI Mutual Funds\")\n* [Nippon Mutual Funds](https://www.indmoney.com/mutual-funds/amc/nippon-india-mutual-fund \"Nippon Mutual Funds\")\n* [Kotak Mutual Funds](https://www.indmoney.com/mutual-funds/amc/kotak-mutual-fund \"Kotak Mutual Funds\")\n* [Axis Mutual Funds](https://www.indmoney.com/mutual-funds/amc/axis-mutual-fund \"Axis Mutual Funds\")\n* [Mirae Mut"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0040",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "nds\")\n* [Axis Mutual Funds](https://www.indmoney.com/mutual-funds/amc/axis-mutual-fund \"Axis Mutual Funds\")\n* [Mirae Mutual Funds](https://www.indmoney.com/mutual-funds/amc/mirae-asset-mutual-fund \"Mirae Mutual Funds\")\n* [PPFAS Mutual Funds](https://www.indmoney.com/mutual-funds/amc/parag-parikh-mutual-fund \"PPFAS Mutual Funds\")\n* [Aditya Birla Sun Life Mutual Funds](https://www.indmoney.com/mutual-funds/amc/aditya-birla-mutual-fund \"Aditya Birla Sun Life Mutual Funds\")\n* [UTI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/uti-mutual-fund \"UTI Mutual Funds\")\n* [Motilal Oswal Mutual Funds](https://www.indmoney.com/mutual-funds/amc/motilal-oswal-mutual-fund \"Motilal Oswal Mutual Funds\")\n* [Tata Mutual Funds](https://www.indmoney.com/mutual-funds/amc/tata-mutual-fund \"Tata Mutual Funds\")\n* [Jio BlackRock Mutual Funds](https://www.indmoney.com/mutual-funds/amc/jio-blackrock-mutual-f"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0041",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "und \"Tata Mutual Funds\")\n* [Jio BlackRock Mutual Funds](https://www.indmoney.com/mutual-funds/amc/jio-blackrock-mutual-fund \"Jio BlackRock Mutual Funds\")\n* [Quant Mutual Funds](https://www.indmoney.com/mutual-funds/amc/quant-mutual-fund \"Quant Mutual Funds\")\n\nOthers\n\n* [NFO](https://www.indmoney.com/mutual-funds/nfo \"NFO\")\n* [Compare Mutual Funds](https://www.indmoney.com/mutual-funds/compare \"Compare Mutual Funds\")\n* [Mutual Funds Screener](https://www.indmoney.com/mutual-funds/all \"Mutual Funds Screener\")\n\nSIP & Investment\n\n* [SIP Calculator](https://www.indmoney.com/calculators/sip-calculator \"SIP Calculator\")\n* [Lumpsum Calculator](https://www.indmoney.com/calculators/lumpsum-calculator \"Lumpsum Calculator\")\n* [SWP Calculator](https://www.indmoney.com/calculators/swp-calculator \"SWP Calculator\")\n* [STP Calculator](https://www.indmoney.com/calculators/stp-calculator \"STP Calculator\")"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0042",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "p-calculator \"SWP Calculator\")\n* [STP Calculator](https://www.indmoney.com/calculators/stp-calculator \"STP Calculator\")\n* [Direct vs Regular Funds Calculator](https://www.indmoney.com/calculators/direct-regular-mutual-funds \"Direct vs Regular Funds Calculator\")\n* [CAGR Calculator](https://www.indmoney.com/calculators/cagr-calculator \"CAGR Calculator\")\n* [Brokerage Calculator](https://www.indmoney.com/calculators/brokerage-calculator \"Brokerage Calculator\")\n* [Stock Average Calculator](https://www.indmoney.com/calculators/stock-average-calculator \"Stock Average Calculator\")\n* [MTF Calculator](https://www.indmoney.com/calculators/mtf-calculator \"MTF Calculator\")\n\nFD & Savings\n\n* [Fixed Deposit Calculator](https://www.indmoney.com/calculators/fixed-deposit-calculator \"Fixed Deposit Calculator\")\n* [RD Calculator](https://www.indmoney.com/calculators/rd-calculator \"RD Calculator\")\n* [Post Off"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0043",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "d Deposit Calculator\")\n* [RD Calculator](https://www.indmoney.com/calculators/rd-calculator \"RD Calculator\")\n* [Post Office FD Calculator](https://www.indmoney.com/calculators/post-office-fd-calculator \"Post Office FD Calculator\")\n* [Post Office RD Calculator](https://www.indmoney.com/calculators/post-office-rd-calculator \"Post Office RD Calculator\")\n* [Post Office MIS Calculator](https://www.indmoney.com/calculators/post-office-monthly-income-scheme-calculator \"Post Office MIS Calculator\")\n\nPPF & Govt Schemes\n\n* [NPS Calculator](https://www.indmoney.com/calculators/nps-calculator \"NPS Calculator\")\n* [PPF Calculator](https://www.indmoney.com/calculators/ppf-calculator \"PPF Calculator\")\n* [Post Office PPF Calculator](https://www.indmoney.com/calculators/post-office-ppf-calculator \"Post Office PPF Calculator\")\n* [NSC Calculator](https://www.indmoney.com/calculators/nsc-calculator \"NSC Calc"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0044",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "alculator \"Post Office PPF Calculator\")\n* [NSC Calculator](https://www.indmoney.com/calculators/nsc-calculator \"NSC Calculator\")\n* [SSY Calculator](https://www.indmoney.com/calculators/ssy-calculator \"SSY Calculator\")\n* [APY Calculator](https://www.indmoney.com/calculators/apy-calculator \"APY Calculator\")\n* [Retirement Calculator](https://www.indmoney.com/calculators/retirement-calculator \"Retirement Calculator\")\n* [Gratuity Calculator](https://www.indmoney.com/calculators/gratuity-calculator \"Gratuity Calculator\")\n\nEMI & Loans\n\n* [EMI Calculator](https://www.indmoney.com/calculators/emi-calculator \"EMI Calculator\")\n* [Home Loan EMI Calculator](https://www.indmoney.com/calculators/home-loan-emi-calculator \"Home Loan EMI Calculator\")\n* [Personal Loan EMI Calculator](https://www.indmoney.com/calculators/personal-loan-emi-calculator \"Personal Loan EMI Calculator\")\n* [Car Loan EMI Calculator"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0045",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "s://www.indmoney.com/calculators/personal-loan-emi-calculator \"Personal Loan EMI Calculator\")\n* [Car Loan EMI Calculator](https://www.indmoney.com/calculators/car-loan-emi-calculator \"Car Loan EMI Calculator\")\n* [Bike Loan EMI Calculator](https://www.indmoney.com/calculators/bike-loan-emi-calculator \"Bike Loan EMI Calculator\")\n* [Education Loan EMI Calculator](https://www.indmoney.com/calculators/education-loan-emi-calculator \"Education Loan EMI Calculator\")\n* [Credit Card EMI Calculator](https://www.indmoney.com/calculators/credit-card-emi-calculator \"Credit Card EMI Calculator\")\n\nTax & Salary\n\n* [Income Tax Calculator](https://www.indmoney.com/calculators/income-tax-calculator \"Income Tax Calculator\")\n* [Salary Calculator](https://www.indmoney.com/calculators/salary-calculator \"Salary Calculator\")\n* [GST Calculator](https://www.indmoney.com/calculators/gst-calculator \"GST Calculator\")"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0046",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "alculator \"Salary Calculator\")\n* [GST Calculator](https://www.indmoney.com/calculators/gst-calculator \"GST Calculator\")\n* [Inflation Calculator](https://www.indmoney.com/calculators/inflation-calculator \"Inflation Calculator\")\n* [Term Insurance Calculator](https://www.indmoney.com/calculators/term-insurance-calculator \"Term Insurance Calculator\")\n\nInterest Calculators\n\n* [Compound Interest Calculator](https://www.indmoney.com/calculators/compound-interest-calculator \"Compound Interest Calculator\")\n* [Simple Interest Calculator](https://www.indmoney.com/calculators/simple-interest-calculator \"Simple Interest Calculator\")\n* [Interest Rate Calculator](https://www.indmoney.com/calculators/interest-rate-calculator \"Interest Rate Calculator\")\n* [Discount Calculator](https://www.indmoney.com/calculators/discount-calculator \"Discount Calculator\")\n\nMajor Indices\n\n* [Nifty 50](https://www.indmoney"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0047",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ww.indmoney.com/calculators/discount-calculator \"Discount Calculator\")\n\nMajor Indices\n\n* [Nifty 50](https://www.indmoney.com/indices/nifty-50 \"Nifty 50\")\n* [Sensex](https://www.indmoney.com/indices/sensex \"Sensex\")\n* [Bank Nifty](https://www.indmoney.com/indices/bank-nifty \"Bank Nifty\")\n* [Nifty Next 50](https://www.indmoney.com/indices/nifty-next-50 \"Nifty Next 50\")\n* [Nifty Financial Services](https://www.indmoney.com/indices/nifty-financial \"Nifty Financial Services\")\n* [Nifty Midcap 100](https://www.indmoney.com/indices/nifty-midcap-100 \"Nifty Midcap 100\")\n* [Nifty Smallcap 250](https://www.indmoney.com/indices/nifty-smallcap-250 \"Nifty Smallcap 250\")\n* [Bankex](https://www.indmoney.com/indices/bankex \"Bankex\")\n* [Gift Nifty](https://www.indmoney.com/indices/global-indices/gift-nifty \"Gift Nifty\")\n\nNSE Indices\n\n* [Nifty 100](https://www.indmoney.com/indices/nifty-100 \"Nifty 100\")\n* ["
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0048",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "indices/gift-nifty \"Gift Nifty\")\n\nNSE Indices\n\n* [Nifty 100](https://www.indmoney.com/indices/nifty-100 \"Nifty 100\")\n* [Nifty 200](https://www.indmoney.com/indices/nifty-200 \"Nifty 200\")\n* [Nifty 500](https://www.indmoney.com/indices/nifty-500 \"Nifty 500\")\n* [Nifty LargeMidcap 250](https://www.indmoney.com/indices/nifty-largemidcap-250 \"Nifty LargeMidcap 250\")\n* [Nifty MidSmallcap 400](https://www.indmoney.com/indices/nifty-midsmallcap-400 \"Nifty MidSmallcap 400\")\n* [Nifty Midcap 50](https://www.indmoney.com/indices/nifty-midcap-50 \"Nifty Midcap 50\")\n* [Nifty Midcap 150](https://www.indmoney.com/indices/nifty-midcap-150 \"Nifty Midcap 150\")\n* [Nifty Smallcap 50](https://www.indmoney.com/indices/nifty-smallcap-50 \"Nifty Smallcap 50\")\n* [Nifty Smallcap 100](https://www.indmoney.com/indices/nifty-small-100 \"Nifty Smallcap 100\")\n* [Nifty Private Bank](https://www.indmoney.com/indices/nifty-pr"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0049",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "money.com/indices/nifty-small-100 \"Nifty Smallcap 100\")\n* [Nifty Private Bank](https://www.indmoney.com/indices/nifty-private-bank \"Nifty Private Bank\")\n* [Nifty PSU Bank](https://www.indmoney.com/indices/nifty-psu-bank \"Nifty PSU Bank\")\n\nNSE Sectoral\n\n* [Nifty IT](https://www.indmoney.com/indices/nifty-it \"Nifty IT\")\n* [Nifty Pharma](https://www.indmoney.com/indices/nifty-pharma \"Nifty Pharma\")\n* [Nifty Auto](https://www.indmoney.com/indices/nifty-auto \"Nifty Auto\")\n* [Nifty Metal](https://www.indmoney.com/indices/nifty-metal \"Nifty Metal\")\n* [Nifty Energy](https://www.indmoney.com/indices/nifty-energy \"Nifty Energy\")\n* [Nifty FMCG](https://www.indmoney.com/indices/nifty-fmcg \"Nifty FMCG\")\n* [Nifty Healthcare](https://www.indmoney.com/indices/nifty-healthcare \"Nifty Healthcare\")\n* [Nifty Realty](https://www.indmoney.com/indices/nifty-realty \"Nifty Realty\")\n* [Nifty Media](https://www.in"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0050",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "althcare\")\n* [Nifty Realty](https://www.indmoney.com/indices/nifty-realty \"Nifty Realty\")\n* [Nifty Media](https://www.indmoney.com/indices/nifty-media \"Nifty Media\")\n* [Nifty Infrastructure](https://www.indmoney.com/indices/nifty-infra \"Nifty Infrastructure\")\n* [Nifty Consumer Durables](https://www.indmoney.com/indices/nifty-consumer-durables \"Nifty Consumer Durables\")\n* [Nifty Commodities](https://www.indmoney.com/indices/nifty-commodities \"Nifty Commodities\")\n* [Nifty India Consumption](https://www.indmoney.com/indices/nifty-india-consumption \"Nifty India Consumption\")\n\nBSE Indices\n\n* [BSE 500](https://www.indmoney.com/indices/bse-500 \"BSE 500\")\n* [BSE 200](https://www.indmoney.com/indices/bse-200 \"BSE 200\")\n* [BSE 100](https://www.indmoney.com/indices/bse-100 \"BSE 100\")\n* [BSE Mid Cap](https://www.indmoney.com/indices/bse-mid-cap \"BSE Mid Cap\")\n* [BSE Small Cap](https://www.indmoney.c"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0051",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "0\")\n* [BSE Mid Cap](https://www.indmoney.com/indices/bse-mid-cap \"BSE Mid Cap\")\n* [BSE Small Cap](https://www.indmoney.com/indices/bse-small-cap \"BSE Small Cap\")\n* [S&P BSE LargeCap](https://www.indmoney.com/indices/sandp-bse-largecap \"S&P BSE LargeCap\")\n* [S&P BSE Sensex 50](https://www.indmoney.com/indices/sandp-bse-sensex-50 \"S&P BSE Sensex 50\")\n\nBSE Sectoral\n\n* [BSE Auto](https://www.indmoney.com/indices/bse-auto \"BSE Auto\")\n* [BSE IT Sector](https://www.indmoney.com/indices/bse-it-sector \"BSE IT Sector\")\n* [BSE Healthcare](https://www.indmoney.com/indices/bse-healthcare \"BSE Healthcare\")\n* [BSE Tech](https://www.indmoney.com/indices/bse-tech \"BSE Tech\")\n* [BSE FMCG Sector](https://www.indmoney.com/indices/bse-fmcg-sector \"BSE FMCG Sector\")\n* [S&P BSE Power](https://www.indmoney.com/indices/sandp-bse-power \"S&P BSE Power\")\n* [S&P BSE Capital Goods](https://www.indmoney.com/indices/sa"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0052",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "/www.indmoney.com/indices/sandp-bse-power \"S&P BSE Power\")\n* [S&P BSE Capital Goods](https://www.indmoney.com/indices/sandp-bse-capital-goods \"S&P BSE Capital Goods\")\n* [S&P BSE Oil and Gas](https://www.indmoney.com/indices/sandp-bse-oil-and-gas \"S&P BSE Oil and Gas\")\n* [S&P BSE Metal](https://www.indmoney.com/indices/sandp-bse-metal \"S&P BSE Metal\")\n* [S&P BSE Energy](https://www.indmoney.com/indices/sandp-bse-energy \"S&P BSE Energy\")\n* [S&P BSE Realty](https://www.indmoney.com/indices/sandp-bse-realty \"S&P BSE Realty\")\n* [S&P BSE PSU](https://www.indmoney.com/indices/sandp-bse-psu \"S&P BSE PSU\")\n* [S&P BSE Financial Services](https://www.indmoney.com/indices/sandp-bse-fin-ser \"S&P BSE Financial Services\")\n\nGlobal Indices\n\n* [Dow Jones Industrial Average](https://www.indmoney.com/indices/global-indices/dow-jones-industrial-average \"Dow Jones Industrial Average\")\n* [Nasdaq Composite](htt"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0053",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ndmoney.com/indices/global-indices/dow-jones-industrial-average \"Dow Jones Industrial Average\")\n* [Nasdaq Composite](https://www.indmoney.com/indices/global-indices/nasdaq-composite-index \"Nasdaq Composite\")\n* [S&P 500](https://www.indmoney.com/indices/global-indices/s-p-500 \"S&P 500\")\n* [Nasdaq 100](https://www.indmoney.com/indices/global-indices/nasdaq-100 \"Nasdaq 100\")\n* [Russell 2000](https://www.indmoney.com/indices/global-indices/russell-2000-index \"Russell 2000\")\n* [Russell 1000](https://www.indmoney.com/indices/global-indices/russell-1000-index \"Russell 1000\")\n* [S&P 100](https://www.indmoney.com/indices/global-indices/s-p-100 \"S&P 100\")\n* [All Global Indices](https://www.indmoney.com/indices/global-indices \"All Global Indices\")\n\nINDstocks Private Limited(formerly INDmoney Private Limited) - SEBI registered stock broker & depository participant. Member of NSE, BSE & MCX.\n\nSEBI St"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0054",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": "ly INDmoney Private Limited) - SEBI registered stock broker & depository participant. Member of NSE, BSE & MCX.\n\nSEBI Stock Broker INZ000305337\n\nNSE 90267 · M70042\n\nBSE 6779\n\nMCX 57600\n\nDepository Participant IN-DP-690-2022\n\nCDSL DP ID 12095500\n\nImportant Links: [SEBI](https://www.sebi.gov.in/)[NSE](https://www.nseindia.com/)[BSE](https://www.bseindia.com/)[MCX](https://www.mcxindia.com/)\n\n* * *\n\nAbout INDmoney\n\n![Image 27: SHAMKRIS](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=150/https://indcdn.indmoney.com/cdn/images/fe/iso-cert-new.png)\nWe hold ISO Information Security Management System ISO/IEC 27001:2022 certification.\n\n[![Image 28: PCI DSS Certified](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=150/https://indcdn.indmoney.com/cdn/images/fe/pci-dss-webseal.png)](https://seal.panaceainfosec.com/index.php?certid=CERT559BB0B082)\nINDmo"
+    },
+    {
+      "chunk_id": "scheme_02_chunk_0055",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+      "text": ".indmoney.com/cdn/images/fe/pci-dss-webseal.png)](https://seal.panaceainfosec.com/index.php?certid=CERT559BB0B082)\nINDmoney Tech Private Limited (Formerly known as Finzoom Investment Advisors Private Limited). holds PCIDSS certification"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0000",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "Title: HDFC Flexi Cap Fund - Check latest NAV, Returns and AUM\n\nURL Source: https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184\n\nMarkdown Content:\n# HDFC Flexi Cap Fund - Check latest NAV, Returns and AUM\n\n[![Image 8: INDmoney Logo](https://indcdn.indmoney.com/cdn/images/fe/ind-money-logo.svg)](https://www.indmoney.com/)\nINDmoney\n\n[US Stocks](https://www.indmoney.com/us-stocks \"US Stocks\")[Indian Stocks](https://www.indmoney.com/stocks \"Indian Stocks\")[ETFs](https://www.indmoney.com/stocks/etf \"ETFs\")[Mutual Funds](https://www.indmoney.com/mutual-funds \"Mutual Funds\")[IPO](https://www.indmoney.com/ipo \"IPO\")\n\n* * *\n\n[Features](https://www.indmoney.com/features \"Features\")[Pricing](https://www.indmoney.com/pricing \"Pricing\")\n\nLogin\n\n![Image 9: Download Indmoney App QR Code](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=72/https"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0001",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "[Image 9: Download Indmoney App QR Code](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=72/https://indcdn.indmoney.com/cdn/qr_icon_blue.png)\n\nLogin Open Demat Account\n\n* Fund Price\n\n* Performance\n\n* Peer Comparison\n\n* Calculator\n\n* Asset Allocation\n\n* Sector Allocation\n\n* Holdings\n\n* Overview\n\n* About\n\n* Compare Funds\n\n* FAQs\n\n1. [Home](https://www.indmoney.com/ \"Home\")>\n2. [Mutual funds](https://www.indmoney.com/mutual-funds \"Mutual funds\")>\n3. [HDFC Flexi Cap Fund](https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184 \"HDFC Flexi Cap Fund\")\n\n![Image 10: HDFC Flexi Cap Fund](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=63/https://indcdn.indmoney.com/public/images/amc_hdfc.png)\n\n# HDFC Flexi Cap Fund\n\n[Equity](https://www.indmoney.com/mutual-funds/equity-funds \"Equity\")|[HDFC Mutual Fund](https://www.ind"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0002",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "Flexi Cap Fund\n\n[Equity](https://www.indmoney.com/mutual-funds/equity-funds \"Equity\")|[HDFC Mutual Fund](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund \"HDFC Mutual Fund\")|[Flexi Cap](https://www.indmoney.com/mutual-funds/equity/flexi-cap \"Flexi Cap\")\n\nGet the latest NAV of HDFC Flexi Cap Fund. View historical returns compared to its benchmark and category average. Know which stocks and sectors the fund is investing in. Get an estimate of returns from the SIP and lump sum returns calculator. View detailed holding analysis and peer comparison. Get INDmoney ranking of the fund.\n\n₹2148.89\n\n▼-1%1D\n\nNAV as on 24 Apr 2026\n\n16.04%/per year\n\nSince Inception\n\nInvest Now\n\nAbsolute Gain%\n▲▼\n\n1M\n\n3M\n\n6M\n\n1Y\n\n3Y\n\n5Y\n\nMAX\n\n442941 people have invested ₹ 221.1Cr in HDFC Flexi Cap Fund in the last three months\n\n## HDFC Flexi Cap Fund Performance vs. Nifty 500\n\nFund returns vs Benchmark return"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0003",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "xi Cap Fund in the last three months\n\n## HDFC Flexi Cap Fund Performance vs. Nifty 500\n\nFund returns vs Benchmark returns vs Category Average returns as on (24-Apr-26)\n\nThe fund has consistently outperformed the benchmark (Nifty 500) over the last 1Y, 3Y, 5Y time periods.\n\n| Period | 1M | 3M | 6M | 1Y | 3Y | 5Y |\n| --- | --- | --- | --- | --- | --- | --- |\n| This Fund | 4.93% | -3.06% | -5.06% | 2.54% | 20.52% | 21.03% |\n| Nifty 500 | 7.13% | -0.6% | -4.71% | 1.76% | 14.77% | 13.27% |\n| Flexi Cap Avg | 6.92% | 0.16% | -4.94% | 2.36% | 16.02% | 14.29% |\n| Best in Flexi Cap | 16.34% | 12.46% | 3.47% | 13.15% | 24.83% | 21.28% |\n| Worst in Flexi Cap | 5.18% | -2.82% | -10.66% | -5.61% | 4.16% | 7.94% |\n| Category Rank | 1/22 | 1/22 | 1/22 | 1/21 | 4/18 | -- |\n\n## HDFC Flexi Cap Fund Ranking and Peer Comparison\n\nRanked based on performance, risk management and cost efficiency\n\n1\n\n/23\n\n83% Pe"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0004",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "i Cap Fund Ranking and Peer Comparison\n\nRanked based on performance, risk management and cost efficiency\n\n1\n\n/23\n\n83% Performance\n\n61% Risk Management\n\n77% Cost\n\nRanked 1 out of 23 mutual funds in the flexi cap category as per INDmoney.\n\n| Fund Name | INDmoney Rank | AUM (in Crs.) | Expense Ratio | 1Y Returns | 3Y Returns | 3Y Alpha | 3Y Beta | 3Y Sharpe | 3Y Sortino | 3Y Info Ratio |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| [HDFC Flexi Cap Fund](https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184 \"HDFC Flexi Cap Fund\") | 1/23 | 91,335Cr | 0.68% | 2.54% | 20.52% | 5.27 | 0.84 | 0.89 | 1.32 | 1.27 |\n| [Parag Parikh Flexi Cap Fund](https://www.indmoney.com/mutual-funds/parag-parikh-flexi-cap-direct-growth-3229 \"Parag Parikh Flexi Cap Fund\") | 2/23 | 1,28,966Cr | 0.62% | 3.07% | 18.12% | 5.77 | 0.61 | 1.05 | 1.70 | 0.61 |\n| ["
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0005",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "229 \"Parag Parikh Flexi Cap Fund\") | 2/23 | 1,28,966Cr | 0.62% | 3.07% | 18.12% | 5.77 | 0.61 | 1.05 | 1.70 | 0.61 |\n| [Mirae Asset Flexi Cap Fund](https://www.indmoney.com/mutual-funds/mirae-asset-flexi-cap-fund-direct-growth-1043208 \"Mirae Asset Flexi Cap Fund\") | 3/23 | 3,448Cr | 0.51% | 7.32% | 17.17% | 1.62 | 0.94 | 0.60 | 0.85 | 0.61 |\n| [Edelweiss Flexi Cap Fund](https://www.indmoney.com/mutual-funds/edelweiss-flexi-cap-fund-direct-growth-3174 \"Edelweiss Flexi Cap Fund\") | 4/23 | 2,957Cr | 0.46% | 5.65% | 19.82% | 3.20 | 1.00 | 0.69 | 1.01 | 1.20 |\n\nSee all\n\n![Image 11: Positive: Lower volatility within category](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\nGenerated Consistent Returns\n\n![Image 12: Positive: Lower volatility within category](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,for"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0006",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "eturns\n\n![Image 12: Positive: Lower volatility within category](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\nConsistently beats benchmark\n\n![Image 13: Positive: Lower volatility within category](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/Mutual-Funds-Like.png)\n\nLower volatility within category\n\n![Image 14: Negative: No bad points found for this fund.](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=30/https://indcdn.indmoney.com/cdn/mutual-funds-dislike.png)\n\nNo bad points found for this fund.\n\n## HDFC Flexi Cap Fund Returns Calculator\n\nCalculate SIP and lumpsum returns based on historical performance\n\n₹1L\n\n₹10L\n\n \n\n* 1-time \n* SIP \n\nTotal Investment\n\n₹ 1.0 L\n\nProfit\n\n₹ 2.5K\n\n* * *\n\nTotal Corpus\n\n₹ 1.0 L\n\nAbsolute Retur"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0007",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "₹1L\n\n₹10L\n\n \n\n* 1-time \n* SIP \n\nTotal Investment\n\n₹ 1.0 L\n\nProfit\n\n₹ 2.5K\n\n* * *\n\nTotal Corpus\n\n₹ 1.0 L\n\nAbsolute Return\n\n▲\n\n▼\n\n2.5%\n\n* * *\n\n1M\n\n3M\n\n6M\n\n1Y\n\n3Y\n\n5Y\n\n## HDFC Flexi Cap Fund Asset Allocation\n\nSee fund asset allocation details as on (13-Apr-26)\n\nFund Distribution\n\nas on (13-Apr-26)\n\nEquity 95.5%\n\nDebt & Cash 4.5%\n\nLarge cap\n\n77.7%\n\n* * *\n\nMid cap\n\n8.4%\n\n* * *\n\nSmall cap\n\n6.9%\n\n* * *\n\n### Asset Allocation Changes\n\nAll changes are between Apr'26 and Jan'26\n\n![Image 15: InterGlobe Aviation Ltd's allocation increased from 1.87% to 2.16%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nCash allocation has gone up from 6.8% to 6.8%\n\n## HDFC Flexi Cap Fund Sector Allocation\n\nSee fund sector allocation details as on (13-Apr-26)\n\nSector Allocation\n\nEquity 95.5%\n\nDebt & Cash 4.5%\n\nFi"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0008",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "Allocation\n\nSee fund sector allocation details as on (13-Apr-26)\n\nSector Allocation\n\nEquity 95.5%\n\nDebt & Cash 4.5%\n\nFinancial Services\n\n43%\n\nConsumer Cyclical\n\n19%\n\nHealth\n\n9.6%\n\nBasic Materials\n\n6.6%\n\nIndustrial\n\n5.7%\n\nTech\n\n5.5%\n\nReal Estate\n\n3.1%\n\nCommunication\n\n2.9%\n\nUtilities\n\n2.5%\n\nEnergy\n\n1.4%\n\nConsumer Defensive\n\n0.7%\n\n### Sector Changes\n\nAll changes are between Apr'26 and Jan'26\n\nTop 3 Sectors in March were Financial Services, Consumer Cyclical & Health\n\nMar'26\n\nFinancial Services\n\n42%\n\nConsumer Cyclical\n\n17%\n\nHealth\n\n9%\n\nFeb'26\n\nFinancial Services\n\n42%\n\nConsumer Cyclical\n\n17%\n\nHealth\n\n9%\n\n## HDFC Flexi Cap Fund Holdings Details\n\nas on (31-Mar-26)\n\nEquity\n\nDebt & Cash\n\n| Holdings | Weight% | | 1M Change |\n| --- | --- | --- | --- |\n| [ICICI Bank Ltd](https://www.indmoney.com/stocks/icici-bank-ltd-share-price \"ICICI Bank Ltd\") | 8.82% | | 4.4% |\n| [HDFC Bank Ltd](https://www.ind"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0009",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "ww.indmoney.com/stocks/icici-bank-ltd-share-price \"ICICI Bank Ltd\") | 8.82% | | 4.4% |\n| [HDFC Bank Ltd](https://www.indmoney.com/stocks/hdfc-bank-ltd-share-price \"HDFC Bank Ltd\") | 7.04% | | 7.2% |\n| [Axis Bank Ltd](https://www.indmoney.com/stocks/axis-bank-ltd-share-price \"Axis Bank Ltd\") | 6.87% | | 0% |\n| [State Bank of India](https://www.indmoney.com/stocks/state-bank-of-india-share-price \"State Bank of India\") | 4.75% | | 0.7% |\n| [SBI Life Insurance Co Ltd](https://www.indmoney.com/stocks/sbi-life-insurance-company-ltd-share-price \"SBI Life Insurance Co Ltd\") | 3.89% | | 0% |\n\nSee all\n\n### Portfolio Changes\n\nAll changes are between Jan'26 and Mar'26\n\nTop Stocks bought last month\n\n![Image 16: InterGlobe Aviation Ltd's allocation increased from 1.87% to 2.16%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0010",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "s://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nMax Healthcare Institute Ltd Ordinary Shares's allocation increased from 0.59% to 1.42%\n\n![Image 17: InterGlobe Aviation Ltd's allocation increased from 1.87% to 2.16%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nEternal Ltd's allocation increased from 1.49% to 2.09%\n\n![Image 18: InterGlobe Aviation Ltd's allocation increased from 1.87% to 2.16%](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/asset_allocation_image_up.png)\n\nInterGlobe Aviation Ltd's allocation increased from 1.87% to 2.16%\n\nTop Stocks sold last month\n\n![Image 19: State Bank of India's allocation decrease"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0011",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "ocation increased from 1.87% to 2.16%\n\nTop Stocks sold last month\n\n![Image 19: State Bank of India's allocation decreased from 5.26 % to 4.75 % ](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nHDFC Bank Ltd's allocation decreased from 7.25 % to 7.04 % \n\n![Image 20: State Bank of India's allocation decreased from 5.26 % to 4.75 % ](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nAxis Bank Ltd's allocation decreased from 7.44 % to 6.87 % \n\n![Image 21: State Bank of India's allocation decreased from 5.26 % to 4.75 % ](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nState Bank of India's allocation decreased"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0012",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "idth=2010/https://indcdn.indmoney.com/public/images/allocation_down_img.png)\n\nState Bank of India's allocation decreased from 5.26 % to 4.75 % \n\n## HDFC Flexi Cap Fund Overview\n\nGet key fund statistics, minimum investment details, AUM, expense ratio, exit load, and tax treatment.\n\nExpense ratio 0.68%\nBenchmark Nifty 500 TR INR\nAUM₹91335 Cr\nInception Date 1 January, 2013\nMin Lumpsum/SIP₹100/₹100\nExit Load 1.0%\nLock In No Lock-in\nTurnOver 26.57%\nRisk![Image 22: Risk meter](https://indcdn.indmoney.com/public/images/risk-o-meter.svg)\n\n![Image 23: pointer](https://indcdn.indmoney.com/public/images/Group-96373.svg)\n\nVery High Risk\n\n## About HDFC Flexi Cap Fund\n\nHDFC Flexi Cap is a[flexi-cap mutual fund](https://www.indmoney.com/mutual-funds/equity/flexi-cap)launched on 1st January 1995. These funds follow a diversified equity investment strategy where they invest in companies across all market"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0013",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "nuary 1995. These funds follow a diversified equity investment strategy where they invest in companies across all market captialization and adjust allocations based on market conditions. The fund uses[Nifty 500](https://www.indmoney.com/indices/nifty-500)TRI as its benchmark. Nifty 500 represents the broader market and helps the fund compare its returns with those of other companies\n\n[HDFC Mutual Fund](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund)follows a**bottom-up approach**, which involves paying attention to individual businesses instead of macroeconomic factors. They also pay close attention to**Quantitative**(Growth, Cash Flows, Risks) and**Qualitative**(Management, Track Record, Insights) aspects of the companies.\n\nStaying true to the nature of the fund, they diversify across market caps and asset classes. Diversification is achieved through a balanced mix of asset"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0014",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "fund, they diversify across market caps and asset classes. Diversification is achieved through a balanced mix of asset types, loan sizes, contract volumes, and geographies, while risk in less diversified pools is mitigated using credit enhancements. HDFC Flexi Cap maintains a strong focus on industries like Financials, Automobiles, Healthcare, Technology, etc.\n\nKnow more about HDFC Flexi Cap Fund\n\n### Fund Manager\n\n#### Dhruv Muchhal\n\nFund Manager of HDFC Flexi Cap Fund, since 22 June 2023\n\n#### Amit Ganatra\n\nFund Manager of HDFC Flexi Cap Fund, since 1 February 2026\n\n[Learn more about HDFC Mutual Fund](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund \"Learn more about HDFC Mutual Fund\")\n\n### AUM Change\n\nAll changes are between Jan'26 and Mar'26\n\n| Parameters | Mar'26 | Feb'26 | Jan'26 |\n| --- | --- | --- | --- |\n| AUM | ₹ 1L Cr | ₹ 1L Cr | ₹ 97.5K Cr |\n\n* AUM of the fund stan"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0015",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "| Mar'26 | Feb'26 | Jan'26 |\n| --- | --- | --- | --- |\n| AUM | ₹ 1L Cr | ₹ 1L Cr | ₹ 97.5K Cr |\n\n* AUM of the fund stands at 1L Cr as of Mar'26\n* AUM has remained same between Mar'26 and Feb'26\n\n## Compare HDFC Flexi Cap Fund\n\nHDFC Flexi Cap Fund\n\nVS\n\nParag Parikh Flexi Cap Fund\n\n## Frequently Asked Questions for HDFC Flexi Cap Fund\n\n### How do I invest in HDFC Flexi Cap Fund?\n\nINDmoney makes it simple to invest in the HDFC Flexi Cap Fund. To do so, follow the steps below:\n\n* Download the INDmoney app.\n* Search for ‘HDFC Flexi Cap Fund’.\n* Select whether you want to invest in SIP or lump sum.\n* Enter the amount you wish to invest.\n* Set up payments via bank mandate or UPI.\n\n### What is the current NAV of HDFC Flexi Cap Fund?\n\nThe NAV of the fund today is ₹2148.89. NAV or Net Asset Value is the per unit price of a mutual fund. For example, if the NAV of a fund is ₹10, it means you can ge"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0016",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "or Net Asset Value is the per unit price of a mutual fund. For example, if the NAV of a fund is ₹10, it means you can get 1000 units of that mutual fund at ₹10,000.\n\n### What is the return on the fund?\n\nHDFC Flexi Cap Fund fund has generated a return of 2.54% in 1 year, 20.52% in 3 years, 21.03% in 5 years.\n\n### Who is the fund manager of HDFC Flexi Cap Fund?\n\nThe fund managers are Dhruv Muchhal, Amit Ganatra.\n\n### What is the exit load of the fund?\n\nThe exit load is 1% if redeemed in 0-1 Years. Exit load is a fee levied for ‘exiting’ the fund earlier than a stipulated period, usually 1 year.\n\n### What is the expense ratio of the fund?\n\nThe expense ratio is 0.68%. The Expense Ratio is a fee charged for managing the fund. This includes commissions, administrative costs etc.\n\n### What is the AUM of the fund?\n\nThe AUM of the fund is ₹91335 Cr. AUM stands for Assets Under Management. It refe"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0017",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "tc.\n\n### What is the AUM of the fund?\n\nThe AUM of the fund is ₹91335 Cr. AUM stands for Assets Under Management. It refers to the total assets managed by the fund.\n\n### What are the top holdings of HDFC Flexi Cap Fund?\n\nThe top 3 holdings of the fund are ICICI Bank Ltd(8.82%), HDFC Bank Ltd(7.04%), Axis Bank Ltd(6.87%)\n\nInvest Now\n\nMutual Fund execution provided by\n\n* ![Image 24: BSE Star MF Logo](https://indcdn.indmoney.com/cdn-cgi/image/quality=100,format=auto,metadata=copyright,width=50/https://www.indmoney.com/stencil/images?url=/images/grievance-policy/bse.jpeg&w=640&q=75)\n\nINDstocks Private Limited (Formerly known as INDmoney Private Limited) is a SEBI registered Stock Broker and mutual funds distributor. SEBI Registration No. INZ000305337, Trading and Clearing Member of NSE (90267, M70042), BSE (6779), MCX (57600) and BSE Star MF (6779), AMFI Registration No: ARN-254564.\n\nDisclaim"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0018",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "mber of NSE (90267, M70042), BSE (6779), MCX (57600) and BSE Star MF (6779), AMFI Registration No: ARN-254564.\n\nDisclaimer: Mutual Fund investments are subject to market risks, read all scheme related documents carefully. Past performance is not indicative of future returns. Registration granted by SEBI, membership of BASL and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.\n\n![Image 25: INDmoney Super Money App Logo](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=240/https://indcdn.indmoney.com/public/images/fe/IND_logo_white_tm.png)\n\nINDmoney Tech Pvt. Ltd.\n\n616, 6th Floor Suncity Success Tower, \n\nSector 65, Gurugram, Haryana, India - 122005\n\n[](https://www.facebook.com/indmoney \"INDmoney Facebook\")[](https://in.linkedin.com/company/indmoney \"INDmoney LinkedIn\")[](https://x.com/INDmoney"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0019",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "m/indmoney \"INDmoney Facebook\")[](https://in.linkedin.com/company/indmoney \"INDmoney LinkedIn\")[](https://x.com/INDmoneyApp/ \"INDmoney X\")[](https://www.youtube.com/channel/UCm7xZ9sbqhuARuDDcckh8Jg \"INDmoney YouTube\")[](https://www.instagram.com/indmoneyapp/ \"INDmoney Instagram\")[](https://www.reddit.com/r/INDmoneyApp/ \"INDmoney Reddit\")[](https://www.quora.com/profile/INDmoney-3/ \"INDmoney Quora\")\n\nAll Rights Reserved | © Copyright 2026\n\nPRODUCTS\n\n* [US Stocks](https://www.indmoney.com/us-stocks \"US Stocks\")\n* [Indian Stocks](https://www.indmoney.com/stocks \"Indian Stocks\")\n* [Mutual Funds](https://www.indmoney.com/mutual-funds \"Mutual Funds\")\n* [Futures & Options](https://www.indmoney.com/futures-and-options \"Futures & Options\")\n* [IPO](https://www.indmoney.com/ipo \"IPO\")\n* [ETFs](https://www.indmoney.com/stocks/etf \"ETFs\")\n\nCOMPANY\n\n* [About Us](https://www.indmoney.com/about \"About U"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0020",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "PO\")\n* [ETFs](https://www.indmoney.com/stocks/etf \"ETFs\")\n\nCOMPANY\n\n* [About Us](https://www.indmoney.com/about \"About Us\")\n* [Blog](https://www.indmoney.com/blog \"Blog\")\n* [Customer Service](https://www.indmoney.com/customer-service \"Customer Service\")\n* [Fraud Awareness](https://www.indmoney.com/page/fraud-awareness \"Fraud Awareness\")\n* [Sitemap](https://www.indmoney.com/sitemap \"Sitemap\")\n\nLEGAL & REGULATORY\n\n* [Privacy Policy](https://www.indmoney.com/privacy-policy \"Privacy Policy\")\n* [Terms & Conditions](https://www.indmoney.com/terms-of-services \"Terms & Conditions\")\n* [Legal & Regulatory](https://www.indmoney.com/page/policy-center \"Legal & Regulatory\")\n* [Grievance Redressal Policy](https://www.indmoney.com/grievance-redressal-policy \"Grievance Redressal Policy\")\n\n* * *\n\nIndian Share Market US Stocks Mutual Funds Calculators Indices\n\nPopular Stocks\n\n* [Tata Motors](https://www.i"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0021",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "\")\n\n* * *\n\nIndian Share Market US Stocks Mutual Funds Calculators Indices\n\nPopular Stocks\n\n* [Tata Motors](https://www.indmoney.com/stocks/tata-motors-ltd-share-price \"Tata Motors\")\n* [Reliance Industries](https://www.indmoney.com/stocks/reliance-industries-ltd-share-price \"Reliance Industries\")\n* [HDFC Bank](https://www.indmoney.com/stocks/hdfc-bank-ltd-share-price \"HDFC Bank\")\n* [SBI](https://www.indmoney.com/stocks/state-bank-of-india-share-price \"SBI\")\n* [TCS](https://www.indmoney.com/stocks/tata-consultancy-services-ltd-share-price \"TCS\")\n* [ICICI Bank](https://www.indmoney.com/stocks/icici-bank-ltd-share-price \"ICICI Bank\")\n* [Infosys](https://www.indmoney.com/stocks/infosys-ltd-share-price \"Infosys\")\n* [Bajaj Finance](https://www.indmoney.com/stocks/bajaj-finance-ltd-share-price \"Bajaj Finance\")\n* [Adani Power](https://www.indmoney.com/stocks/adani-power-ltd-share-price \"Adani Pow"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0022",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "-ltd-share-price \"Bajaj Finance\")\n* [Adani Power](https://www.indmoney.com/stocks/adani-power-ltd-share-price \"Adani Power\")\n* [IRCTC](https://www.indmoney.com/stocks/indian-railway-catering-and-tourism-corporation-ltd-share-price \"IRCTC\")\n* [ITC](https://www.indmoney.com/stocks/itc-ltd-share-price \"ITC\")\n* [LIC](https://www.indmoney.com/stocks/life-insurance-corporation-of-india-share-price \"LIC\")\n* [Wipro](https://www.indmoney.com/stocks/wipro-ltd-share-price \"Wipro\")\n* [Coal India](https://www.indmoney.com/stocks/coal-india-ltd-share-price \"Coal India\")\n* [Asian Paints](https://www.indmoney.com/stocks/asian-paints-ltd-share-price \"Asian Paints\")\n\nSectors\n\n* [Banking](https://www.indmoney.com/stocks/sectors/banking \"Banking\")\n* [IT](https://www.indmoney.com/stocks/sectors/it \"IT\")\n* [Pharma](https://www.indmoney.com/stocks/sectors/pharma \"Pharma\")\n* [Auto](https://www.indmoney.com/stoc"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0023",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "tors/it \"IT\")\n* [Pharma](https://www.indmoney.com/stocks/sectors/pharma \"Pharma\")\n* [Auto](https://www.indmoney.com/stocks/sectors/auto \"Auto\")\n* [FMCG](https://www.indmoney.com/stocks/sectors/fmcg \"FMCG\")\n* [Defence](https://www.indmoney.com/stocks/sectors/defence \"Defence\")\n* [Power](https://www.indmoney.com/stocks/sectors/power \"Power\")\n* [Infrastructure](https://www.indmoney.com/stocks/sectors/infrastructure \"Infrastructure\")\n* [Real Estate](https://www.indmoney.com/stocks/sectors/real-estate \"Real Estate\")\n* [PSU](https://www.indmoney.com/stocks/sectors/psu \"PSU\")\n* [Railway](https://www.indmoney.com/stocks/sectors/railway \"Railway\")\n* [Capital Goods](https://www.indmoney.com/stocks/sectors/capital-goods \"Capital Goods\")\n* [Finance](https://www.indmoney.com/stocks/sectors/finance \"Finance\")\n* [Oil & Gas](https://www.indmoney.com/stocks/sectors/oil-gas \"Oil & Gas\")\n* [Healthcare](htt"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0024",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "sectors/finance \"Finance\")\n* [Oil & Gas](https://www.indmoney.com/stocks/sectors/oil-gas \"Oil & Gas\")\n* [Healthcare](https://www.indmoney.com/stocks/sectors/healthcare \"Healthcare\")\n\nThemes\n\n* [AI Stocks](https://www.indmoney.com/stocks/themes/ai \"AI Stocks\")\n* [EV Stocks](https://www.indmoney.com/stocks/themes/ev \"EV Stocks\")\n* [Green Energy](https://www.indmoney.com/stocks/themes/green-energy \"Green Energy\")\n* [Semiconductor](https://www.indmoney.com/stocks/themes/semiconductor \"Semiconductor\")\n* [Solar](https://www.indmoney.com/stocks/themes/solar \"Solar\")\n* [Drone](https://www.indmoney.com/stocks/themes/drone \"Drone\")\n* [Green Hydrogen](https://www.indmoney.com/stocks/themes/green-hydrogen \"Green Hydrogen\")\n* [Cybersecurity](https://www.indmoney.com/stocks/themes/cybersecurity \"Cybersecurity\")\n\nGroups\n\n* [Tata Group](https://www.indmoney.com/stocks/groups/tata-group \"Tata Group\")\n* ["
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0025",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "bersecurity \"Cybersecurity\")\n\nGroups\n\n* [Tata Group](https://www.indmoney.com/stocks/groups/tata-group \"Tata Group\")\n* [Adani Group](https://www.indmoney.com/stocks/groups/adani-group \"Adani Group\")\n* [Reliance Group](https://www.indmoney.com/stocks/groups/mukesh-ambani-group \"Reliance Group\")\n* [Bajaj Group](https://www.indmoney.com/stocks/groups/bajaj-group \"Bajaj Group\")\n* [Birla Group](https://www.indmoney.com/stocks/groups/birla-group \"Birla Group\")\n* [HDFC Group](https://www.indmoney.com/stocks/groups/hdfc-group \"HDFC Group\")\n* [Mahindra Group](https://www.indmoney.com/stocks/groups/mahindra-group \"Mahindra Group\")\n* [L&T Group](https://www.indmoney.com/stocks/groups/lt-group \"L&T Group\")\n* [Godrej Group](https://www.indmoney.com/stocks/groups/godrej-group \"Godrej Group\")\n* [ICICI Group](https://www.indmoney.com/stocks/groups/icici-group \"ICICI Group\")\n* [Jindal Group](https://www."
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0026",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "Group\")\n* [ICICI Group](https://www.indmoney.com/stocks/groups/icici-group \"ICICI Group\")\n* [Jindal Group](https://www.indmoney.com/stocks/groups/jindal-group \"Jindal Group\")\n* [Murugappa Group](https://www.indmoney.com/stocks/groups/murugappa-group \"Murugappa Group\")\n\nScreens\n\n* [Large Cap Stocks](https://www.indmoney.com/stocks/screens/large-cap \"Large Cap Stocks\")\n* [Mid Cap Stocks](https://www.indmoney.com/stocks/screens/mid-cap \"Mid Cap Stocks\")\n* [Small Cap Stocks](https://www.indmoney.com/stocks/screens/small-cap \"Small Cap Stocks\")\n* [Penny Stocks](https://www.indmoney.com/stocks/screens/penny-stocks \"Penny Stocks\")\n* [Dividend Stocks](https://www.indmoney.com/stocks/screens/dividend-stocks \"Dividend Stocks\")\n* [High Return Stocks](https://www.indmoney.com/stocks/screens/high-return-stocks \"High Return Stocks\")\n* [Multibagger Stocks](https://www.indmoney.com/stocks/screens/multi"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0027",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "ks/screens/high-return-stocks \"High Return Stocks\")\n* [Multibagger Stocks](https://www.indmoney.com/stocks/screens/multibagger-stocks \"Multibagger Stocks\")\n* [View all Screens](https://www.indmoney.com/stocks/screens \"View all Screens\")\n* [Stock Screener](https://www.indmoney.com/stocks/screener \"Stock Screener\")\n\nShare Market Today\n\n* [Share Market Today](https://www.indmoney.com/share-market-today \"Share Market Today\")\n* [Top Gainers](https://www.indmoney.com/share-market-today/top-gainers \"Top Gainers\")\n* [Top Losers](https://www.indmoney.com/share-market-today/top-losers \"Top Losers\")\n* [Most Active](https://www.indmoney.com/share-market-today/most-active \"Most Active\")\n* [52-Week High](https://www.indmoney.com/share-market-today/52-week-high \"52-Week High\")\n* [52-Week Low](https://www.indmoney.com/share-market-today/52-week-low \"52-Week Low\")\n* [Upper Circuit](https://www.indmoney.c"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0028",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "eek Low](https://www.indmoney.com/share-market-today/52-week-low \"52-Week Low\")\n* [Upper Circuit](https://www.indmoney.com/share-market-today/upper-circuit \"Upper Circuit\")\n* [Lower Circuit](https://www.indmoney.com/share-market-today/lower-circuit \"Lower Circuit\")\n* [Trending Stocks](https://www.indmoney.com/share-market-today/trending-stocks \"Trending Stocks\")\n* [Stocks to Buy](https://www.indmoney.com/share-market-today/stocks-to-buy \"Stocks to Buy\")\n* [Intraday Stocks](https://www.indmoney.com/share-market-today/intraday-stocks \"Intraday Stocks\")\n\nPopular Stocks\n\n* [NVIDIA](https://www.indmoney.com/us-stocks/nvidia-corporation-share-price-nvda \"NVIDIA\")\n* [Tesla](https://www.indmoney.com/us-stocks/tesla-inc-share-price-tsla \"Tesla\")\n* [Apple](https://www.indmoney.com/us-stocks/apple-inc-share-price-aapl \"Apple\")\n* [Microsoft](https://www.indmoney.com/us-stocks/microsoft-corporation-s"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0029",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "m/us-stocks/apple-inc-share-price-aapl \"Apple\")\n* [Microsoft](https://www.indmoney.com/us-stocks/microsoft-corporation-share-price-msft \"Microsoft\")\n* [Amazon](https://www.indmoney.com/us-stocks/amazon-com-inc-share-price-amzn \"Amazon\")\n* [Google](https://www.indmoney.com/us-stocks/alphabet-inc-class-a-shares-share-price-googl \"Google\")\n* [Meta](https://www.indmoney.com/us-stocks/meta-platforms-inc-share-price-meta \"Meta\")\n* [Broadcom](https://www.indmoney.com/us-stocks/broadcom-inc-share-price-avgo \"Broadcom\")\n* [AMD](https://www.indmoney.com/us-stocks/advanced-micro-devices-inc-share-price-amd \"AMD\")\n* [Netflix](https://www.indmoney.com/us-stocks/netflix-inc-share-price-nflx \"Netflix\")\n* [ServiceNow](https://www.indmoney.com/us-stocks/servicenow-inc-share-price-now \"ServiceNow\")\n* [Walmart](https://www.indmoney.com/us-stocks/walmart-inc-share-price-wmt \"Walmart\")\n* [Uber](https://www.i"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0030",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "erviceNow\")\n* [Walmart](https://www.indmoney.com/us-stocks/walmart-inc-share-price-wmt \"Walmart\")\n* [Uber](https://www.indmoney.com/us-stocks/uber-technologies-inc-share-price-uber \"Uber\")\n* [Salesforce](https://www.indmoney.com/us-stocks/salesforce-inc-share-price-crm \"Salesforce\")\n* [Adobe](https://www.indmoney.com/us-stocks/adobe-systems-inc-share-price-adbe \"Adobe\")\n\nSectors\n\n* [Tech Stocks](https://www.indmoney.com/us-stocks/tech-stocks \"Tech Stocks\")\n* [Semiconductor Stocks](https://www.indmoney.com/us-stocks/semiconductor-stocks \"Semiconductor Stocks\")\n* [AI Stocks](https://www.indmoney.com/us-stocks/ai-stocks \"AI Stocks\")\n* [Healthcare Stocks](https://www.indmoney.com/us-stocks/healthcare-stocks \"Healthcare Stocks\")\n* [Pharma Stocks](https://www.indmoney.com/us-stocks/pharma-stocks \"Pharma Stocks\")\n* [Finance Stocks](https://www.indmoney.com/us-stocks/finance-stocks \"Finance Stoc"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0031",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "stocks/pharma-stocks \"Pharma Stocks\")\n* [Finance Stocks](https://www.indmoney.com/us-stocks/finance-stocks \"Finance Stocks\")\n* [Energy Stocks](https://www.indmoney.com/us-stocks/energy-stocks \"Energy Stocks\")\n* [Defence Stocks](https://www.indmoney.com/us-stocks/defence-stocks \"Defence Stocks\")\n\nThemes\n\n* [EV Stocks](https://www.indmoney.com/us-stocks/ev-stocks \"EV Stocks\")\n* [E-commerce Stocks](https://www.indmoney.com/us-stocks/e-commerce-stocks \"E-commerce Stocks\")\n* [Travel Stocks](https://www.indmoney.com/us-stocks/travel-stocks \"Travel Stocks\")\n* [Dividend Stocks](https://www.indmoney.com/us-stocks/dividend-stocks \"Dividend Stocks\")\n* [FAANG Stocks](https://www.indmoney.com/us-stocks/faang \"FAANG Stocks\")\n* [Brands](https://www.indmoney.com/us-stocks/brands \"Brands\")\n\nScreens\n\n* [Mega Cap Stocks](https://www.indmoney.com/us-stocks/mega-cap-stocks \"Mega Cap Stocks\")\n* [Large Cap Sto"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0032",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "s\")\n\nScreens\n\n* [Mega Cap Stocks](https://www.indmoney.com/us-stocks/mega-cap-stocks \"Mega Cap Stocks\")\n* [Large Cap Stocks](https://www.indmoney.com/us-stocks/large-cap-stocks \"Large Cap Stocks\")\n* [Mid Cap Stocks](https://www.indmoney.com/us-stocks/mid-cap-stocks \"Mid Cap Stocks\")\n* [Small Cap Stocks](https://www.indmoney.com/us-stocks/small-cap-stocks \"Small Cap Stocks\")\n* [Highest Returns](https://www.indmoney.com/us-stocks/highest-returns \"Highest Returns\")\n* [US Stock Screener](https://www.indmoney.com/us-stocks/screener \"US Stock Screener\")\n\nPortfolio\n\n* [Warren Buffett](https://www.indmoney.com/us-stocks/warren-buffet \"Warren Buffett\")\n* [Cathie Wood](https://www.indmoney.com/us-stocks/cathie-wood \"Cathie Wood\")\n* [Ray Dalio](https://www.indmoney.com/us-stocks/ray-dalio \"Ray Dalio\")\n* [George Soros](https://www.indmoney.com/us-stocks/george-soros \"George Soros\")\n* [Jim Simons](ht"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0033",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "ay-dalio \"Ray Dalio\")\n* [George Soros](https://www.indmoney.com/us-stocks/george-soros \"George Soros\")\n* [Jim Simons](https://www.indmoney.com/us-stocks/jim-simons \"Jim Simons\")\n* [Bill Ackman](https://www.indmoney.com/us-stocks/bill-ackman \"Bill Ackman\")\n* [Tiger Global](https://www.indmoney.com/us-stocks/tiger-global \"Tiger Global\")\n* [Steven Cohen](https://www.indmoney.com/us-stocks/steven-cohen \"Steven Cohen\")\n\nUS Market Today\n\n* [Top Gainers](https://www.indmoney.com/us-stocks/top-gainers \"Top Gainers\")\n* [Top Losers](https://www.indmoney.com/us-stocks/top-losers \"Top Losers\")\n* [US Stock Market Timings](https://www.indmoney.com/us-stocks/us-stock-market-timings \"US Stock Market Timings\")\n* [US Market Holidays](https://www.indmoney.com/us-stocks/us-market-holidays \"US Market Holidays\")\n\nEquity Funds\n\n* [Large Cap Funds](https://www.indmoney.com/mutual-funds/equity/large-cap-funds \"L"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0034",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "\"US Market Holidays\")\n\nEquity Funds\n\n* [Large Cap Funds](https://www.indmoney.com/mutual-funds/equity/large-cap-funds \"Large Cap Funds\")\n* [Mid Cap Funds](https://www.indmoney.com/mutual-funds/equity/mid-cap-funds \"Mid Cap Funds\")\n* [Small Cap Funds](https://www.indmoney.com/mutual-funds/equity/small-cap-funds \"Small Cap Funds\")\n* [Flexi Cap Funds](https://www.indmoney.com/mutual-funds/equity/flexi-cap \"Flexi Cap Funds\")\n* [Multi Cap Funds](https://www.indmoney.com/mutual-funds/equity/multi-cap-funds \"Multi Cap Funds\")\n* [Large & Mid Cap Funds](https://www.indmoney.com/mutual-funds/equity/large-mid-cap \"Large & Mid Cap Funds\")\n* [ELSS Tax Saver Funds](https://www.indmoney.com/mutual-funds/collection/elss-funds \"ELSS Tax Saver Funds\")\n* [Index Funds](https://www.indmoney.com/mutual-funds/equity/index-funds \"Index Funds\")\n* [Nifty 50 Index Funds](https://www.indmoney.com/mutual-funds/equit"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0035",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": ".com/mutual-funds/equity/index-funds \"Index Funds\")\n* [Nifty 50 Index Funds](https://www.indmoney.com/mutual-funds/equity/nifty-50-index-funds \"Nifty 50 Index Funds\")\n* [Value Funds](https://www.indmoney.com/mutual-funds/equity/value \"Value Funds\")\n* [Contra Funds](https://www.indmoney.com/mutual-funds/equity/contra \"Contra Funds\")\n* [Sector Technology](https://www.indmoney.com/mutual-funds/equity/sector-technology \"Sector Technology\")\n* [Sector Financial Services](https://www.indmoney.com/mutual-funds/equity/sector-financial-services \"Sector Financial Services\")\n* [Equity Infrastructure](https://www.indmoney.com/mutual-funds/equity/equity-infrastructure \"Equity Infrastructure\")\n\nDebt Funds\n\n* [Liquid Funds](https://www.indmoney.com/mutual-funds/debt/liquid-funds \"Liquid Funds\")\n* [Overnight Fund](https://www.indmoney.com/mutual-funds/debt/overnight \"Overnight Fund\")\n* [Ultra Short Funds"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0036",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "d Funds\")\n* [Overnight Fund](https://www.indmoney.com/mutual-funds/debt/overnight \"Overnight Fund\")\n* [Ultra Short Funds](https://www.indmoney.com/mutual-funds/debt/ultra-short-funds \"Ultra Short Funds\")\n* [Short Term Funds](https://www.indmoney.com/mutual-funds/debt/short-term-funds \"Short Term Funds\")\n* [Low Duration Funds](https://www.indmoney.com/mutual-funds/debt/low-duration-funds \"Low Duration Funds\")\n* [Medium Duration Fund](https://www.indmoney.com/mutual-funds/debt/medium-duration \"Medium Duration Fund\")\n* [Long Duration](https://www.indmoney.com/mutual-funds/debt/long-duration \"Long Duration\")\n* [Dynamic Bond Fund](https://www.indmoney.com/mutual-funds/debt/dynamic-bond \"Dynamic Bond Fund\")\n* [Corporate Bond Funds](https://www.indmoney.com/mutual-funds/debt/corporate-bond-funds \"Corporate Bond Funds\")\n* [GILT Funds](https://www.indmoney.com/mutual-funds/debt/gilt-funds \"GILT F"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0037",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "orporate-bond-funds \"Corporate Bond Funds\")\n* [GILT Funds](https://www.indmoney.com/mutual-funds/debt/gilt-funds \"GILT Funds\")\n* [Banking PSU](https://www.indmoney.com/mutual-funds/debt/banking-psu \"Banking PSU\")\n* [Money Market Funds](https://www.indmoney.com/mutual-funds/debt/money-market-funds \"Money Market Funds\")\n\nHybrid Funds\n\n* [Aggressive Funds](https://www.indmoney.com/mutual-funds/hybrid/aggressive-funds \"Aggressive Funds\")\n* [Balanced Advantage Fund](https://www.indmoney.com/mutual-funds/hybrid/balanced-funds \"Balanced Advantage Fund\")\n* [Multi Asset Funds](https://www.indmoney.com/mutual-funds/hybrid/multi-asset-funds \"Multi Asset Funds\")\n* [Arbitrage Funds](https://www.indmoney.com/mutual-funds/hybrid/arbitrage-funds \"Arbitrage Funds\")\n* [Conservative Allocation](https://www.indmoney.com/mutual-funds/hybrid/conservative-allocation \"Conservative Allocation\")\n* [Equity Savings"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0038",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "ation](https://www.indmoney.com/mutual-funds/hybrid/conservative-allocation \"Conservative Allocation\")\n* [Equity Savings Funds](https://www.indmoney.com/mutual-funds/hybrid/equity-savings \"Equity Savings Funds\")\n* [Fund of Funds](https://www.indmoney.com/mutual-funds/hybrid/fund-of-funds \"Fund of Funds\")\n* [Retirement Fund](https://www.indmoney.com/mutual-funds/hybrid/retirement \"Retirement Fund\")\n\nCollections\n\n* [Best SIP Funds](https://www.indmoney.com/mutual-funds/collection/best-sip-funds \"Best SIP Funds\")\n* [High Return Funds](https://www.indmoney.com/mutual-funds/collection/high-return-mutual-funds \"High Return Funds\")\n* [ELSS Funds](https://www.indmoney.com/mutual-funds/collection/elss-funds \"ELSS Funds\")\n* [Low Risk Funds](https://www.indmoney.com/mutual-funds/collection/best-low-risk-mutual-funds \"Low Risk Funds\")\n* [Gold Mutual Funds](https://www.indmoney.com/mutual-funds/colle"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0039",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "ollection/best-low-risk-mutual-funds \"Low Risk Funds\")\n* [Gold Mutual Funds](https://www.indmoney.com/mutual-funds/collection/precious-metals-funds \"Gold Mutual Funds\")\n* [Trending Funds](https://www.indmoney.com/mutual-funds/collection/investors-choice \"Trending Funds\")\n* [Short Term Funds](https://www.indmoney.com/mutual-funds/collection/short-term-mutual-funds \"Short Term Funds\")\n* [Super Saver Funds](https://www.indmoney.com/mutual-funds/collection/super-saver \"Super Saver Funds\")\n\nTop AMCs\n\n* [HDFC Mutual Funds](https://www.indmoney.com/mutual-funds/amc/hdfc-mutual-fund \"HDFC Mutual Funds\")\n* [ICICI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/icici-prudential-mutual-fund \"ICICI Mutual Funds\")\n* [SBI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/sbi-mutual-fund \"SBI Mutual Funds\")\n* [Nippon Mutual Funds](https://www.indmoney.com/mutual-funds/amc/nippon-india-mut"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0040",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "c/sbi-mutual-fund \"SBI Mutual Funds\")\n* [Nippon Mutual Funds](https://www.indmoney.com/mutual-funds/amc/nippon-india-mutual-fund \"Nippon Mutual Funds\")\n* [Kotak Mutual Funds](https://www.indmoney.com/mutual-funds/amc/kotak-mutual-fund \"Kotak Mutual Funds\")\n* [Axis Mutual Funds](https://www.indmoney.com/mutual-funds/amc/axis-mutual-fund \"Axis Mutual Funds\")\n* [Mirae Mutual Funds](https://www.indmoney.com/mutual-funds/amc/mirae-asset-mutual-fund \"Mirae Mutual Funds\")\n* [PPFAS Mutual Funds](https://www.indmoney.com/mutual-funds/amc/parag-parikh-mutual-fund \"PPFAS Mutual Funds\")\n* [Aditya Birla Sun Life Mutual Funds](https://www.indmoney.com/mutual-funds/amc/aditya-birla-mutual-fund \"Aditya Birla Sun Life Mutual Funds\")\n* [UTI Mutual Funds](https://www.indmoney.com/mutual-funds/amc/uti-mutual-fund \"UTI Mutual Funds\")\n* [Motilal Oswal Mutual Funds](https://www.indmoney.com/mutual-funds/amc/mo"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0041",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "unds/amc/uti-mutual-fund \"UTI Mutual Funds\")\n* [Motilal Oswal Mutual Funds](https://www.indmoney.com/mutual-funds/amc/motilal-oswal-mutual-fund \"Motilal Oswal Mutual Funds\")\n* [Tata Mutual Funds](https://www.indmoney.com/mutual-funds/amc/tata-mutual-fund \"Tata Mutual Funds\")\n* [Jio BlackRock Mutual Funds](https://www.indmoney.com/mutual-funds/amc/jio-blackrock-mutual-fund \"Jio BlackRock Mutual Funds\")\n* [Quant Mutual Funds](https://www.indmoney.com/mutual-funds/amc/quant-mutual-fund \"Quant Mutual Funds\")\n\nOthers\n\n* [NFO](https://www.indmoney.com/mutual-funds/nfo \"NFO\")\n* [Compare Mutual Funds](https://www.indmoney.com/mutual-funds/compare \"Compare Mutual Funds\")\n* [Mutual Funds Screener](https://www.indmoney.com/mutual-funds/all \"Mutual Funds Screener\")\n\nSIP & Investment\n\n* [SIP Calculator](https://www.indmoney.com/calculators/sip-calculator \"SIP Calculator\")\n* [Lumpsum Calculator](https"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0042",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "t\n\n* [SIP Calculator](https://www.indmoney.com/calculators/sip-calculator \"SIP Calculator\")\n* [Lumpsum Calculator](https://www.indmoney.com/calculators/lumpsum-calculator \"Lumpsum Calculator\")\n* [SWP Calculator](https://www.indmoney.com/calculators/swp-calculator \"SWP Calculator\")\n* [STP Calculator](https://www.indmoney.com/calculators/stp-calculator \"STP Calculator\")\n* [Direct vs Regular Funds Calculator](https://www.indmoney.com/calculators/direct-regular-mutual-funds \"Direct vs Regular Funds Calculator\")\n* [CAGR Calculator](https://www.indmoney.com/calculators/cagr-calculator \"CAGR Calculator\")\n* [Brokerage Calculator](https://www.indmoney.com/calculators/brokerage-calculator \"Brokerage Calculator\")\n* [Stock Average Calculator](https://www.indmoney.com/calculators/stock-average-calculator \"Stock Average Calculator\")\n* [MTF Calculator](https://www.indmoney.com/calculators/mtf-calculato"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0043",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "ock-average-calculator \"Stock Average Calculator\")\n* [MTF Calculator](https://www.indmoney.com/calculators/mtf-calculator \"MTF Calculator\")\n\nFD & Savings\n\n* [Fixed Deposit Calculator](https://www.indmoney.com/calculators/fixed-deposit-calculator \"Fixed Deposit Calculator\")\n* [RD Calculator](https://www.indmoney.com/calculators/rd-calculator \"RD Calculator\")\n* [Post Office FD Calculator](https://www.indmoney.com/calculators/post-office-fd-calculator \"Post Office FD Calculator\")\n* [Post Office RD Calculator](https://www.indmoney.com/calculators/post-office-rd-calculator \"Post Office RD Calculator\")\n* [Post Office MIS Calculator](https://www.indmoney.com/calculators/post-office-monthly-income-scheme-calculator \"Post Office MIS Calculator\")\n\nPPF & Govt Schemes\n\n* [NPS Calculator](https://www.indmoney.com/calculators/nps-calculator \"NPS Calculator\")\n* [PPF Calculator](https://www.indmoney.com"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0044",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "lator](https://www.indmoney.com/calculators/nps-calculator \"NPS Calculator\")\n* [PPF Calculator](https://www.indmoney.com/calculators/ppf-calculator \"PPF Calculator\")\n* [Post Office PPF Calculator](https://www.indmoney.com/calculators/post-office-ppf-calculator \"Post Office PPF Calculator\")\n* [NSC Calculator](https://www.indmoney.com/calculators/nsc-calculator \"NSC Calculator\")\n* [SSY Calculator](https://www.indmoney.com/calculators/ssy-calculator \"SSY Calculator\")\n* [APY Calculator](https://www.indmoney.com/calculators/apy-calculator \"APY Calculator\")\n* [Retirement Calculator](https://www.indmoney.com/calculators/retirement-calculator \"Retirement Calculator\")\n* [Gratuity Calculator](https://www.indmoney.com/calculators/gratuity-calculator \"Gratuity Calculator\")\n\nEMI & Loans\n\n* [EMI Calculator](https://www.indmoney.com/calculators/emi-calculator \"EMI Calculator\")\n* [Home Loan EMI Calculat"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0045",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "oans\n\n* [EMI Calculator](https://www.indmoney.com/calculators/emi-calculator \"EMI Calculator\")\n* [Home Loan EMI Calculator](https://www.indmoney.com/calculators/home-loan-emi-calculator \"Home Loan EMI Calculator\")\n* [Personal Loan EMI Calculator](https://www.indmoney.com/calculators/personal-loan-emi-calculator \"Personal Loan EMI Calculator\")\n* [Car Loan EMI Calculator](https://www.indmoney.com/calculators/car-loan-emi-calculator \"Car Loan EMI Calculator\")\n* [Bike Loan EMI Calculator](https://www.indmoney.com/calculators/bike-loan-emi-calculator \"Bike Loan EMI Calculator\")\n* [Education Loan EMI Calculator](https://www.indmoney.com/calculators/education-loan-emi-calculator \"Education Loan EMI Calculator\")\n* [Credit Card EMI Calculator](https://www.indmoney.com/calculators/credit-card-emi-calculator \"Credit Card EMI Calculator\")\n\nTax & Salary\n\n* [Income Tax Calculator](https://www.indmoney"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0046",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "s/credit-card-emi-calculator \"Credit Card EMI Calculator\")\n\nTax & Salary\n\n* [Income Tax Calculator](https://www.indmoney.com/calculators/income-tax-calculator \"Income Tax Calculator\")\n* [Salary Calculator](https://www.indmoney.com/calculators/salary-calculator \"Salary Calculator\")\n* [GST Calculator](https://www.indmoney.com/calculators/gst-calculator \"GST Calculator\")\n* [Inflation Calculator](https://www.indmoney.com/calculators/inflation-calculator \"Inflation Calculator\")\n* [Term Insurance Calculator](https://www.indmoney.com/calculators/term-insurance-calculator \"Term Insurance Calculator\")\n\nInterest Calculators\n\n* [Compound Interest Calculator](https://www.indmoney.com/calculators/compound-interest-calculator \"Compound Interest Calculator\")\n* [Simple Interest Calculator](https://www.indmoney.com/calculators/simple-interest-calculator \"Simple Interest Calculator\")\n* [Interest Rate Calc"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0047",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "tor](https://www.indmoney.com/calculators/simple-interest-calculator \"Simple Interest Calculator\")\n* [Interest Rate Calculator](https://www.indmoney.com/calculators/interest-rate-calculator \"Interest Rate Calculator\")\n* [Discount Calculator](https://www.indmoney.com/calculators/discount-calculator \"Discount Calculator\")\n\nMajor Indices\n\n* [Nifty 50](https://www.indmoney.com/indices/nifty-50 \"Nifty 50\")\n* [Sensex](https://www.indmoney.com/indices/sensex \"Sensex\")\n* [Bank Nifty](https://www.indmoney.com/indices/bank-nifty \"Bank Nifty\")\n* [Nifty Next 50](https://www.indmoney.com/indices/nifty-next-50 \"Nifty Next 50\")\n* [Nifty Financial Services](https://www.indmoney.com/indices/nifty-financial \"Nifty Financial Services\")\n* [Nifty Midcap 100](https://www.indmoney.com/indices/nifty-midcap-100 \"Nifty Midcap 100\")\n* [Nifty Smallcap 250](https://www.indmoney.com/indices/nifty-smallcap-250 \"Nifty"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0048",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "/nifty-midcap-100 \"Nifty Midcap 100\")\n* [Nifty Smallcap 250](https://www.indmoney.com/indices/nifty-smallcap-250 \"Nifty Smallcap 250\")\n* [Bankex](https://www.indmoney.com/indices/bankex \"Bankex\")\n* [Gift Nifty](https://www.indmoney.com/indices/global-indices/gift-nifty \"Gift Nifty\")\n\nNSE Indices\n\n* [Nifty 100](https://www.indmoney.com/indices/nifty-100 \"Nifty 100\")\n* [Nifty 200](https://www.indmoney.com/indices/nifty-200 \"Nifty 200\")\n* [Nifty 500](https://www.indmoney.com/indices/nifty-500 \"Nifty 500\")\n* [Nifty LargeMidcap 250](https://www.indmoney.com/indices/nifty-largemidcap-250 \"Nifty LargeMidcap 250\")\n* [Nifty MidSmallcap 400](https://www.indmoney.com/indices/nifty-midsmallcap-400 \"Nifty MidSmallcap 400\")\n* [Nifty Midcap 50](https://www.indmoney.com/indices/nifty-midcap-50 \"Nifty Midcap 50\")\n* [Nifty Midcap 150](https://www.indmoney.com/indices/nifty-midcap-150 \"Nifty Midcap 150\")\n*"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0049",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "idcap-50 \"Nifty Midcap 50\")\n* [Nifty Midcap 150](https://www.indmoney.com/indices/nifty-midcap-150 \"Nifty Midcap 150\")\n* [Nifty Smallcap 50](https://www.indmoney.com/indices/nifty-smallcap-50 \"Nifty Smallcap 50\")\n* [Nifty Smallcap 100](https://www.indmoney.com/indices/nifty-small-100 \"Nifty Smallcap 100\")\n* [Nifty Private Bank](https://www.indmoney.com/indices/nifty-private-bank \"Nifty Private Bank\")\n* [Nifty PSU Bank](https://www.indmoney.com/indices/nifty-psu-bank \"Nifty PSU Bank\")\n\nNSE Sectoral\n\n* [Nifty IT](https://www.indmoney.com/indices/nifty-it \"Nifty IT\")\n* [Nifty Pharma](https://www.indmoney.com/indices/nifty-pharma \"Nifty Pharma\")\n* [Nifty Auto](https://www.indmoney.com/indices/nifty-auto \"Nifty Auto\")\n* [Nifty Metal](https://www.indmoney.com/indices/nifty-metal \"Nifty Metal\")\n* [Nifty Energy](https://www.indmoney.com/indices/nifty-energy \"Nifty Energy\")\n* [Nifty FMCG](https:/"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0050",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "tal \"Nifty Metal\")\n* [Nifty Energy](https://www.indmoney.com/indices/nifty-energy \"Nifty Energy\")\n* [Nifty FMCG](https://www.indmoney.com/indices/nifty-fmcg \"Nifty FMCG\")\n* [Nifty Healthcare](https://www.indmoney.com/indices/nifty-healthcare \"Nifty Healthcare\")\n* [Nifty Realty](https://www.indmoney.com/indices/nifty-realty \"Nifty Realty\")\n* [Nifty Media](https://www.indmoney.com/indices/nifty-media \"Nifty Media\")\n* [Nifty Infrastructure](https://www.indmoney.com/indices/nifty-infra \"Nifty Infrastructure\")\n* [Nifty Consumer Durables](https://www.indmoney.com/indices/nifty-consumer-durables \"Nifty Consumer Durables\")\n* [Nifty Commodities](https://www.indmoney.com/indices/nifty-commodities \"Nifty Commodities\")\n* [Nifty India Consumption](https://www.indmoney.com/indices/nifty-india-consumption \"Nifty India Consumption\")\n\nBSE Indices\n\n* [BSE 500](https://www.indmoney.com/indices/bse-500 \"BSE"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0051",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "fty-india-consumption \"Nifty India Consumption\")\n\nBSE Indices\n\n* [BSE 500](https://www.indmoney.com/indices/bse-500 \"BSE 500\")\n* [BSE 200](https://www.indmoney.com/indices/bse-200 \"BSE 200\")\n* [BSE 100](https://www.indmoney.com/indices/bse-100 \"BSE 100\")\n* [BSE Mid Cap](https://www.indmoney.com/indices/bse-mid-cap \"BSE Mid Cap\")\n* [BSE Small Cap](https://www.indmoney.com/indices/bse-small-cap \"BSE Small Cap\")\n* [S&P BSE LargeCap](https://www.indmoney.com/indices/sandp-bse-largecap \"S&P BSE LargeCap\")\n* [S&P BSE Sensex 50](https://www.indmoney.com/indices/sandp-bse-sensex-50 \"S&P BSE Sensex 50\")\n\nBSE Sectoral\n\n* [BSE Auto](https://www.indmoney.com/indices/bse-auto \"BSE Auto\")\n* [BSE IT Sector](https://www.indmoney.com/indices/bse-it-sector \"BSE IT Sector\")\n* [BSE Healthcare](https://www.indmoney.com/indices/bse-healthcare \"BSE Healthcare\")\n* [BSE Tech](https://www.indmoney.com/indices/bse"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0052",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "are](https://www.indmoney.com/indices/bse-healthcare \"BSE Healthcare\")\n* [BSE Tech](https://www.indmoney.com/indices/bse-tech \"BSE Tech\")\n* [BSE FMCG Sector](https://www.indmoney.com/indices/bse-fmcg-sector \"BSE FMCG Sector\")\n* [S&P BSE Power](https://www.indmoney.com/indices/sandp-bse-power \"S&P BSE Power\")\n* [S&P BSE Capital Goods](https://www.indmoney.com/indices/sandp-bse-capital-goods \"S&P BSE Capital Goods\")\n* [S&P BSE Oil and Gas](https://www.indmoney.com/indices/sandp-bse-oil-and-gas \"S&P BSE Oil and Gas\")\n* [S&P BSE Metal](https://www.indmoney.com/indices/sandp-bse-metal \"S&P BSE Metal\")\n* [S&P BSE Energy](https://www.indmoney.com/indices/sandp-bse-energy \"S&P BSE Energy\")\n* [S&P BSE Realty](https://www.indmoney.com/indices/sandp-bse-realty \"S&P BSE Realty\")\n* [S&P BSE PSU](https://www.indmoney.com/indices/sandp-bse-psu \"S&P BSE PSU\")\n* [S&P BSE Financial Services](https://www.i"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0053",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "[S&P BSE PSU](https://www.indmoney.com/indices/sandp-bse-psu \"S&P BSE PSU\")\n* [S&P BSE Financial Services](https://www.indmoney.com/indices/sandp-bse-fin-ser \"S&P BSE Financial Services\")\n\nGlobal Indices\n\n* [Dow Jones Industrial Average](https://www.indmoney.com/indices/global-indices/dow-jones-industrial-average \"Dow Jones Industrial Average\")\n* [Nasdaq Composite](https://www.indmoney.com/indices/global-indices/nasdaq-composite-index \"Nasdaq Composite\")\n* [S&P 500](https://www.indmoney.com/indices/global-indices/s-p-500 \"S&P 500\")\n* [Nasdaq 100](https://www.indmoney.com/indices/global-indices/nasdaq-100 \"Nasdaq 100\")\n* [Russell 2000](https://www.indmoney.com/indices/global-indices/russell-2000-index \"Russell 2000\")\n* [Russell 1000](https://www.indmoney.com/indices/global-indices/russell-1000-index \"Russell 1000\")\n* [S&P 100](https://www.indmoney.com/indices/global-indices/s-p-100 \"S&P 1"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0054",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "al-indices/russell-1000-index \"Russell 1000\")\n* [S&P 100](https://www.indmoney.com/indices/global-indices/s-p-100 \"S&P 100\")\n* [All Global Indices](https://www.indmoney.com/indices/global-indices \"All Global Indices\")\n\nINDstocks Private Limited(formerly INDmoney Private Limited) - SEBI registered stock broker & depository participant. Member of NSE, BSE & MCX.\n\nSEBI Stock Broker INZ000305337\n\nNSE 90267 · M70042\n\nBSE 6779\n\nMCX 57600\n\nDepository Participant IN-DP-690-2022\n\nCDSL DP ID 12095500\n\nImportant Links: [SEBI](https://www.sebi.gov.in/)[NSE](https://www.nseindia.com/)[BSE](https://www.bseindia.com/)[MCX](https://www.mcxindia.com/)\n\n* * *\n\nAbout INDmoney\n\n![Image 26: SHAMKRIS](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=150/https://indcdn.indmoney.com/cdn/images/fe/iso-cert-new.png)\nWe hold ISO Information Security Management System ISO/IEC 27001:2022 certif"
+    },
+    {
+      "chunk_id": "scheme_03_chunk_0055",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184",
+      "text": "ndmoney.com/cdn/images/fe/iso-cert-new.png)\nWe hold ISO Information Security Management System ISO/IEC 27001:2022 certification.\n\n[![Image 27: PCI DSS Certified](https://indcdn.indmoney.com/cdn-cgi/image/quality=90,format=auto,width=150/https://indcdn.indmoney.com/cdn/images/fe/pci-dss-webseal.png)](https://seal.panaceainfosec.com/index.php?certid=CERT559BB0B082)\nINDmoney Tech Private Limited (Formerly known as Finzoom Investment Advisors Private Limited). holds PCIDSS certification"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "product": "INDMoney",
+  "amc": "HDFC",
+  "approved_scheme_urls": [
+    "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+    "https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580",
+    "https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184"
+  ],
+  "notes": "Currently configured with 3 URLs so Phase 1 can run. Add the remaining 2 approved URLs later to reach the full 5-URL requirement."
+}
+

@@ -1,0 +1,12 @@
+rating,title,text,date
+1,Login broken,App keeps logging me out and OTP never arrives. Can't login since last update.,2026-03-11
+2,Slow and crashy,Portfolio page takes forever to load and sometimes crashes.,2026-03-14
+1,Nominee update issue,Trying to update nominee but it fails every time. Please fix nominee update flow.,2026-03-16
+3,Okay but confusing,The UI is confusing for statements and tax docs download.,2026-03-20
+2,SIP mandate problems,My SIP mandate setup failed twice. Need clearer steps for mandate.,2026-03-21
+1,Withdrawal delayed,Redemption shows pending for too long. Withdrawal timeline is unclear.,2026-03-23
+4,Good support,Support helped me understand statement download. Still app feels slow.,2026-03-25
+1,Login OTP issue,OTP not coming and I'm stuck at login screen.,2026-03-28
+2,Nominee update bug,Nominee update keeps erroring out. Can't save changes.,2026-04-02
+3,Needs improvements,App is fine but performance is laggy and navigation could be better.,2026-04-04
+

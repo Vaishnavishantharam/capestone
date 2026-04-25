@@ -1,0 +1,21 @@
+{
+  "product": "INDMoney",
+  "amc": "HDFC",
+  "ingested_at": "2026-04-25T00:00:00+00:00",
+  "schemes": [
+    {
+      "scheme_id": "scheme_01",
+      "scheme_name": "HDFC Large Cap Fund",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "evidence_chunk_ids": ["scheme_01_chunk_0000"]
+    }
+  ],
+  "evidence_chunks": [
+    {
+      "chunk_id": "scheme_01_chunk_0000",
+      "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
+      "text": "What is the exit load of the fund? The exit load is 1% if redeemed in 0-1 Years."
+    }
+  ]
+}
+
