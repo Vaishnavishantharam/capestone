@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from core.rag.retrieve import load_schemes_json, retrieve_top_k
+from core.llm.gemini import generate_text
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -143,4 +144,50 @@ def answer_question(question: str) -> SmartSyncAnswer:
     # Fact-only response (exit load).
     text = f"{scheme_fact_line}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
     return SmartSyncAnswer(text=text, scheme_citation=scheme_url, fee_citation=None)
+
+
+def answer_question_gemini(question: str) -> SmartSyncAnswer:
+    """
+    Gemini rewrite mode:
+    - First compute the deterministic, grounded answer (with citations).
+    - Then ask Gemini to rewrite ONLY the explanation content (no new facts),
+      while we keep citations and timestamp from the deterministic output.
+    """
+    base = answer_question(question)
+    # If refusal or missing citations, just return base.
+    if "Scheme source:" not in base.text and "Source:" not in base.text:
+        return base
+
+    # Separate body from citation/timestamp footer.
+    lines = base.text.splitlines()
+    footer_idx = None
+    for i, ln in enumerate(lines):
+        if ln.startswith("Scheme source:") or ln.startswith("Source:"):
+            footer_idx = i
+            break
+    if footer_idx is None:
+        return base
+
+    body = "\n".join(lines[:footer_idx]).strip()
+    footer = "\n".join(lines[footer_idx:]).strip()
+
+    prompt = f"""
+You are rewriting a compliance-sensitive fintech support answer.
+
+Rules:
+- Do NOT add any new facts or numbers.
+- Do NOT remove any of the existing bullet points; keep exactly the same count.
+- Keep it facts-only, neutral tone.
+- Return ONLY the rewritten body text (no citations, no timestamps).
+
+Original body:
+{body}
+""".strip()
+
+    rewritten = generate_text(prompt)
+    if not rewritten:
+        return base
+
+    merged = f"{rewritten.strip()}\n\n{footer}"
+    return SmartSyncAnswer(text=merged, scheme_citation=base.scheme_citation, fee_citation=base.fee_citation)
 

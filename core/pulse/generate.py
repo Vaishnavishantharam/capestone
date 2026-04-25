@@ -2,12 +2,14 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
+from core.llm.gemini import generate_text
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -118,6 +120,19 @@ def build_weekly_pulse(
     if not reviews:
         raise ValueError("No reviews found in CSV.")
 
+    # Optional Gemini path: set USE_GEMINI_PULSE=1 to enable.
+    if str(os.environ.get("USE_GEMINI_PULSE", "")).strip() == "1":
+        try:
+            return build_weekly_pulse_gemini(
+                product=product,
+                reviews=reviews,
+                weeks_back=weeks_back,
+                max_themes=max_themes,
+            )
+        except Exception:
+            # Fall back to deterministic logic if Gemini fails.
+            pass
+
     themed: dict[str, list[ReviewRow]] = defaultdict(list)
     for r in reviews:
         themed[assign_theme(r)].append(r)
@@ -208,6 +223,64 @@ def build_weekly_pulse(
         "quotes": quotes[:3],
         "weekly_note": weekly_note,
         "action_ideas": action_ideas,
+        "word_count": len(weekly_note.split()),
+    }
+
+
+def build_weekly_pulse_gemini(
+    *,
+    product: str,
+    reviews: list[ReviewRow],
+    weeks_back: int,
+    max_themes: int,
+) -> dict:
+    """
+    Gemini-based pulse generation. Still enforces rubric checks after generation.
+    """
+    # Prepare a compact review sample to stay within token limits.
+    sample = []
+    for r in reviews[:200]:
+        sample.append({"rating": r.rating, "text": redact_pii(r.text)[:400], "date": r.date_display or r.date})
+
+    prompt = f"""
+You are a fintech product analyst. Generate a Weekly Product Pulse for {product} from app reviews.
+
+Hard rules:
+- Group into at most {max_themes} themes
+- Pick top 3 themes
+- Include exactly 3 real user quotes (verbatim from the provided texts; already redacted)
+- Weekly note must be <= 250 words
+- Include exactly 3 action ideas
+- Output MUST be valid JSON with keys: themes, top_themes, quotes, weekly_note, action_ideas
+
+Reviews (JSON list):
+{json.dumps(sample, ensure_ascii=False)}
+""".strip()
+
+    raw = generate_text(prompt)
+    data = json.loads(raw)
+
+    # Build the artifact; validate constraints.
+    themes = data.get("themes", [])
+    top_themes = data.get("top_themes", [])
+    quotes = data.get("quotes", [])
+    weekly_note = str(data.get("weekly_note", "")).strip()
+    action_ideas = data.get("action_ideas", [])
+
+    # enforce
+    weekly_note_words = weekly_note.split()
+    if len(weekly_note_words) > 250:
+        weekly_note = " ".join(weekly_note_words[:250])
+
+    return {
+        "pulse_id": f"pulse_{datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S')}",
+        "product": product,
+        "generated_at": iso_now(),
+        "themes": themes[:max_themes],
+        "top_themes": list(top_themes)[:3],
+        "quotes": list(quotes)[:3],
+        "weekly_note": weekly_note,
+        "action_ideas": list(action_ideas)[:3],
         "word_count": len(weekly_note.split()),
     }
 

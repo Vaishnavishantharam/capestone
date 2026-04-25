@@ -7,7 +7,8 @@ import streamlit as st
 
 from core.mcp.hitl import enqueue_actions, generate_actions_from_booking, list_queue, load_latest_booking, set_status
 from core.pulse.load import load_latest_pulse
-from core.rag.smartsync import answer_question
+from core.rag.smartsync import answer_question, answer_question_gemini
+from core.tts.elevenlabs import tts_mp3_bytes
 from core.voice.booking import run_text_booking_session, theme_aware_greeting
 
 
@@ -25,17 +26,27 @@ tabs = st.tabs(["Smart‑Sync Q&A", "Weekly Pulse", "Booking (chat)", "Approval 
 
 with tabs[0]:
     st.subheader("Smart‑Sync Unified Search (Exit Load)")
+    use_llm = st.checkbox("Use Gemini to rewrite answer (grounded)", value=False)
+    speak = st.checkbox("Speak answer with ElevenLabs", value=False)
     q = st.text_input(
         "Ask a question (try: “What is the exit load for HDFC Flexi Cap and why was I charged it?”)",
         value="",
     )
     if st.button("Answer", type="primary", disabled=not q.strip()):
-        ans = answer_question(q.strip())
+        ans = answer_question_gemini(q.strip()) if use_llm else answer_question(q.strip())
         st.text_area("Answer", ans.text, height=260)
+        if speak:
+            try:
+                audio = tts_mp3_bytes(ans.text)
+            except Exception as e:
+                st.error(f"TTS failed: {e}")
+            else:
+                st.audio(audio, format="audio/mp3")
 
 
 with tabs[1]:
     st.subheader("Weekly Pulse")
+    st.caption("To enable Gemini pulse generation set `USE_GEMINI_PULSE=1` in Railway variables.")
     pulse = load_latest_pulse()
     if pulse:
         st.success(f"Loaded latest pulse: {pulse.get('pulse_id')}")
@@ -49,6 +60,11 @@ with tabs[2]:
     st.subheader("Booking agent (chat fallback)")
     greeting, pulse_id, top_theme = theme_aware_greeting()
     st.write(greeting)
+    if st.checkbox("Speak agent greeting with ElevenLabs", value=False):
+        try:
+            st.audio(tts_mp3_bytes(greeting), format="audio/mp3")
+        except Exception as e:
+            st.error(f"TTS failed: {e}")
     if pulse_id:
         st.caption(f"Using pulse_id={pulse_id}, top_theme={top_theme}")
 
