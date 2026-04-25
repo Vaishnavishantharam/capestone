@@ -7,15 +7,14 @@
   },
   "schemes": [
     {
-      "scheme_name": "HDFC Large Cap Fund - Direct Plan - Growth Option",
+      "scheme_name": "hdfc-large-cap-fund-direct-plan-growth-option-2989",
       "amc_name": "HDFC",
       "category": "Large Cap",
       "plan_type": "Direct",
       "option_type": "Growth",
-      "expense_ratio": "0.98%",
-      "exit_load": "1.0%",
       "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
-      "scraped_at": "2026-04-25T00:00:00+00:00"
+      "scraped_at": "2026-04-25T00:00:00+00:00",
+      "exit_load": "1.0%"
     }
   ],
   "evidence": [
@@ -24,7 +23,7 @@
       "field_value": "1.0%",
       "evidence_text": "Exit Load | 1.0%",
       "source_url": "https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989",
-      "scheme_name": "HDFC Large Cap Fund - Direct Plan - Growth Option"
+      "scheme_name": "hdfc-large-cap-fund-direct-plan-growth-option-2989"
     }
   ]
 }

@@ -11,7 +11,7 @@ This document specifies how the unified system answers **combined** questions us
 
 - **User question** (text) from the dashboard.
 - **Knowledge base**:
-  - `data/knowledge/` (curated official URLs + extracted evidence chunks)
+  - `data/schemes.json` (Bot‑Mutualfund schema: `meta`, `schemes`, `evidence`)
   - `data/state/fee_explainers.json` (approved explainer scenarios + official links)
 
 ---
@@ -43,7 +43,7 @@ Classify the user question into one of:
 
 ### Step 2 — Retrieve M1 evidence (scheme facts)
 
-- Retrieve top‑k chunks from the scheme corpus relevant to the asked attribute(s):
+- Retrieve top‑k **evidence rows** from `data/schemes.json` relevant to the asked attribute(s):
   - exit load, expense ratio, min SIP, lock-in (ELSS), riskometer, benchmark, etc.
 - Choose the **best single source URL** when possible (per milestone constraints) OR apply the combined-citation rule defined in `docs/rules.md`.
 
@@ -62,6 +62,7 @@ When `combined_fact_plus_fee`:
 
 1. Extract the scheme fact(s) (exact numeric values / conditions) from M1 evidence.
 2. Fill the fee explainer bullets with the relevant context.
+   - **Phase 3 implementation note**: we use a deterministic 6‑bullet template (no LLM) and inject the retrieved exit‑load rule (e.g. `1.0%`) into `{exit_load_rule}`.
 3. Enforce:
    - bullet count ≤ 6
    - no advice language (“should”, “best”, “invest”)

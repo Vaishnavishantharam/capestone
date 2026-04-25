@@ -60,11 +60,26 @@ def _tf_idf_dot(q: list[str], d: list[str], idf: dict[str, float]) -> float:
 
 def retrieve_top_k(question: str, *, k: int = 4, schemes_path: Path = SCHEMES_PATH) -> list[RetrievedEvidence]:
     db = load_schemes_json(schemes_path)
-    chunks = db.get("evidence_chunks", [])
-    if not chunks:
-        return []
+    # Prefer Bot-Mutualfund schema: top-level "evidence".
+    evidence = db.get("evidence", [])
+    if not evidence:
+        # Back-compat with our earlier prototype.
+        evidence = db.get("evidence_chunks", [])
+        if not evidence:
+            return []
 
-    tokenized_docs = [_tokenize(c["text"]) for c in chunks]
+    def doc_text(e: dict) -> str:
+        # Evidence schema: field_name, field_value, evidence_text, scheme_name, source_url
+        parts = [
+            str(e.get("field_name", "")),
+            str(e.get("field_value", "")),
+            str(e.get("evidence_text", "")),
+            str(e.get("scheme_name", "")),
+        ]
+        return " ".join([p for p in parts if p])
+
+    docs = [doc_text(e) for e in evidence]
+    tokenized_docs = [_tokenize(t) for t in docs]
     idf = _build_idf(tokenized_docs)
     q_toks = _tokenize(question)
 
@@ -74,12 +89,12 @@ def retrieve_top_k(question: str, *, k: int = 4, schemes_path: Path = SCHEMES_PA
 
     out: list[RetrievedEvidence] = []
     for idx, score in top:
-        c = chunks[int(idx)]
+        c = evidence[int(idx)]
         out.append(
             RetrievedEvidence(
-                chunk_id=c["chunk_id"],
+                chunk_id=str(c.get("chunk_id") or f"evidence_{idx:04d}"),
                 source_url=c["source_url"],
-                text=c["text"],
+                text=str(c.get("evidence_text") or c.get("text") or ""),
                 score=float(score),
             )
         )

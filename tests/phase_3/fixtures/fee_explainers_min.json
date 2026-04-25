@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "last_checked": "2026-04-25T00:00:00Z"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "exit_load_charged",
+      "bullets": [
+        "What it is: Exit load rule is {exit_load_rule}.",
+        "Why you may see it: charged when redeemed early.",
+        "Common triggers: early redemption.",
+        "What to verify: dates.",
+        "What this assistant can’t confirm: account details.",
+        "Next step: contact support."
+      ],
+      "source_links": [
+        "https://example.com/fee-policy"
+      ]
+    }
+  ]
+}
+

@@ -68,11 +68,101 @@ def chunk_text(text: str, *, max_chars: int = 900, overlap: int = 120) -> list[s
     return chunks
 
 
-@dataclass(frozen=True)
-class EvidenceChunk:
-    chunk_id: str
-    source_url: str
-    text: str
+FIELD_ALIASES: dict[str, str] = {
+    "Expense ratio": "expense_ratio",
+    "Exit Load": "exit_load",
+    "Min Lumpsum/SIP": "min_lumpsum_sip",
+    "Lock In": "lock_in",
+    "Risk": "risk_level",
+    "Benchmark": "benchmark",
+    "AUM": "aum",
+    "Inception Date": "inception_date",
+}
+
+
+def _first_match(pattern: str, text: str) -> str | None:
+    m = re.search(pattern, text, flags=re.IGNORECASE)
+    if not m:
+        return None
+    return re.sub(r"\s+", " ", m.group(1)).strip()
+
+
+def _parse_money_int(raw: str) -> int | None:
+    raw = raw.replace(",", "")
+    m = re.search(r"(\d+)", raw)
+    if not m:
+        return None
+    try:
+        return int(m.group(1))
+    except ValueError:
+        return None
+
+
+def extract_structured_fields(page_text: str) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """
+    Extract scheme fields and evidence objects in the same spirit as Bot-Mutualfund's schema.
+
+    We primarily parse lines like:
+      "Exit Load | 1.0%"
+      "Min Lumpsum/SIP | ₹100/₹100"
+    """
+    scheme_fields: dict[str, Any] = {}
+    evidence: list[dict[str, Any]] = []
+
+    # Normalize and scan line-by-line for:
+    # - "Label | value"
+    # - "Label value" (including cases like "AUM₹35458 Cr")
+    lines = [re.sub(r"\s+", " ", ln).strip() for ln in page_text.splitlines()]
+    for ln in lines:
+        # Case A: "Label | value"
+        if "|" in ln:
+            left, right = [p.strip() for p in ln.split("|", 1)]
+            if left and right and left in FIELD_ALIASES:
+                field_key = FIELD_ALIASES[left]
+                scheme_fields[field_key] = right
+                evidence.append(
+                    {
+                        "field_name": field_key,
+                        "field_value": right,
+                        "evidence_text": f"{left} | {right}",
+                    }
+                )
+            continue
+
+        # Case B: "Label value"
+        for label, field_key in FIELD_ALIASES.items():
+            if not ln.lower().startswith(label.lower()):
+                continue
+            value = ln[len(label) :].strip()
+            if not value:
+                continue
+            scheme_fields[field_key] = value
+            evidence.append(
+                {
+                    "field_name": field_key,
+                    "field_value": value,
+                    "evidence_text": f"{label} | {value}",
+                }
+            )
+            break
+
+    # Special: split Min Lumpsum/SIP into both values.
+    if "min_lumpsum_sip" in scheme_fields:
+        raw = str(scheme_fields.pop("min_lumpsum_sip"))
+        # common format: "₹100/₹100" or "₹100 / ₹100"
+        parts = [p.strip() for p in re.split(r"/", raw)]
+        if len(parts) >= 2:
+            lumpsum_raw, sip_raw = parts[0], parts[1]
+            scheme_fields["min_lumpsum_raw"] = lumpsum_raw
+            scheme_fields["min_sip_raw"] = sip_raw
+            scheme_fields["min_lumpsum"] = _parse_money_int(lumpsum_raw)
+            scheme_fields["min_sip"] = _parse_money_int(sip_raw)
+
+    # Fallbacks from free text (best-effort).
+    scheme_fields.setdefault("expense_ratio", scheme_fields.get("expense_ratio"))
+    scheme_fields.setdefault("exit_load", scheme_fields.get("exit_load"))
+
+    return scheme_fields, evidence
 
 
 def fetch_url(url: str, *, timeout_s: int = 30) -> str:
@@ -102,7 +192,13 @@ def fetch_url(url: str, *, timeout_s: int = 30) -> str:
 
 
 def infer_scheme_name(source_url: str, page_text: str) -> str:
-    # Best-effort: use <title> if present, otherwise fallback to URL path.
+    # Best-effort:
+    # - r.jina.ai pages include a "Title: ..." header line.
+    # - otherwise use <title> if present, otherwise fallback to URL path.
+    jina_title = _first_match(r"^\s*Title:\s*(.+)$", page_text)
+    if jina_title:
+        return jina_title[:120]
+
     m = re.search(r"<title[^>]*>(.*?)</title>", page_text, flags=re.IGNORECASE | re.DOTALL)
     if m:
         title = re.sub(r"\s+", " ", m.group(1)).strip()
@@ -115,9 +211,9 @@ def main() -> None:
     urls = sources.get("approved_scheme_urls", [])
     validate_urls(urls)
 
-    ingested_at = iso_now()
-    all_chunks: list[dict[str, Any]] = []
+    scraped_at = iso_now()
     schemes: list[dict[str, Any]] = []
+    evidence: list[dict[str, Any]] = []
 
     for i, url in enumerate(urls, start=1):
         print(f"[{i}/{len(urls)}] Fetching {url}")
@@ -125,21 +221,44 @@ def main() -> None:
         text = html_to_text(html)
         scheme_name = infer_scheme_name(url, html)
 
-        chunks = chunk_text(text)
-        scheme_chunks: list[EvidenceChunk] = []
-        for j, c in enumerate(chunks):
-            chunk_id = f"scheme_{i:02d}_chunk_{j:04d}"
-            scheme_chunks.append(EvidenceChunk(chunk_id=chunk_id, source_url=url, text=c))
+        # Extract structured scheme fields and evidence lines.
+        extracted_fields, extracted_evidence = extract_structured_fields(text)
 
-        schemes.append(
-            {
-                "scheme_id": f"scheme_{i:02d}",
-                "scheme_name": scheme_name,
-                "source_url": url,
-                "evidence_chunk_ids": [c.chunk_id for c in scheme_chunks],
-            }
-        )
-        all_chunks.extend([c.__dict__ for c in scheme_chunks])
+        # Parse basic plan/option/category from the scheme name if possible.
+        plan_type = "Direct" if "direct" in scheme_name.lower() else "Unknown"
+        option_type = "Growth" if "growth" in scheme_name.lower() else "Unknown"
+        category = _first_match(r"\b(large cap|flexi cap|mid cap|small cap|index)\b", scheme_name)
+        if category:
+            category = category.title()
+
+        scheme_obj: dict[str, Any] = {
+            "scheme_name": scheme_name,
+            "amc_name": sources.get("amc") or "HDFC",
+            "category": category,
+            "plan_type": plan_type,
+            "option_type": option_type,
+            "source_url": url,
+            "scraped_at": scraped_at,
+            # Filled below from extracted fields (may be null).
+            "expense_ratio": extracted_fields.get("expense_ratio"),
+            "exit_load": extracted_fields.get("exit_load"),
+            "min_sip": extracted_fields.get("min_sip"),
+            "min_sip_raw": extracted_fields.get("min_sip_raw"),
+            "min_lumpsum": extracted_fields.get("min_lumpsum"),
+            "min_lumpsum_raw": extracted_fields.get("min_lumpsum_raw"),
+            "lock_in": extracted_fields.get("lock_in"),
+            "risk_level": extracted_fields.get("risk_level"),
+            "benchmark": extracted_fields.get("benchmark"),
+            "aum": extracted_fields.get("aum"),
+            "inception_date": extracted_fields.get("inception_date"),
+            "fund_manager": extracted_fields.get("fund_manager"),
+        }
+        schemes.append(scheme_obj)
+
+        for ev in extracted_evidence:
+            ev["source_url"] = url
+            ev["scheme_name"] = scheme_name
+            evidence.append(ev)
 
         # polite delay
         time.sleep(0.5)
@@ -148,11 +267,12 @@ def main() -> None:
     OUT_PATH.write_text(
         json.dumps(
             {
-                "product": sources.get("product"),
-                "amc": sources.get("amc"),
-                "ingested_at": ingested_at,
+                "meta": {
+                    "last_scraped": scraped_at,
+                    "source_urls": urls,
+                },
                 "schemes": schemes,
-                "evidence_chunks": all_chunks,
+                "evidence": evidence,
             },
             ensure_ascii=False,
             indent=2,
@@ -161,7 +281,7 @@ def main() -> None:
         encoding="utf-8",
     )
 
-    print(f"Wrote {OUT_PATH} with {len(schemes)} schemes and {len(all_chunks)} evidence chunks.")
+    print(f"Wrote {OUT_PATH} with {len(schemes)} schemes and {len(evidence)} evidence rows.")
 
 
 if __name__ == "__main__":

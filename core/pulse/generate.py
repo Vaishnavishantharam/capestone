@@ -44,10 +44,13 @@ THEME_KEYWORDS: dict[str, list[str]] = {
 
 @dataclass(frozen=True)
 class ReviewRow:
+    index: int
     rating: int
     title: str
     text: str
     date: str
+    date_display: str
+    helpful_count: int
 
 
 def load_reviews_csv(path: Path) -> list[ReviewRow]:
@@ -57,17 +60,38 @@ def load_reviews_csv(path: Path) -> list[ReviewRow]:
         for r in reader:
             if not r:
                 continue
+            index_raw = (r.get("index") or "").strip()
             title = (r.get("title") or "").strip()
             text = (r.get("text") or "").strip()
             date = (r.get("date") or "").strip()
+            date_display = (r.get("dateDisplay") or r.get("date_display") or "").strip()
+            helpful_raw = (r.get("helpfulCount") or r.get("helpful_count") or "").strip()
             rating_raw = (r.get("rating") or "").strip()
             try:
                 rating = int(float(rating_raw)) if rating_raw else 0
             except ValueError:
                 rating = 0
+            try:
+                index = int(float(index_raw)) if index_raw else len(rows)
+            except ValueError:
+                index = len(rows)
+            try:
+                helpful_count = int(float(helpful_raw)) if helpful_raw else 0
+            except ValueError:
+                helpful_count = 0
             if not (title or text):
                 continue
-            rows.append(ReviewRow(rating=rating, title=title, text=text, date=date))
+            rows.append(
+                ReviewRow(
+                    index=index,
+                    rating=rating,
+                    title=title,
+                    text=text,
+                    date=date,
+                    date_display=date_display,
+                    helpful_count=helpful_count,
+                )
+            )
     return rows
 
 
@@ -135,15 +159,30 @@ def build_weekly_pulse(
         action_pool.append("Clarify redemption timelines in-product and surface real-time status for pending withdrawals.")
     if "Statements / tax docs" in top_themes:
         action_pool.append("Improve statement/tax-doc download discoverability and add a short guided path.")
+    if "Support" in top_themes:
+        action_pool.append("Triage top support complaints and publish a short status + resolution playbook for agents.")
+    if "UX / usability" in top_themes:
+        action_pool.append("Run a quick UX audit on the top friction paths and simplify navigation labels and flows.")
 
     # Ensure exactly 3 action ideas.
+    fallbacks = [
+        "Review recent negative reviews and tag them into clear themes for weekly tracking.",
+        "Add a lightweight in-app feedback prompt on key friction screens.",
+        "Improve help-center links for the most common issues this week.",
+    ]
     if not action_pool:
-        action_pool = [
-            "Review recent negative reviews and tag them into clear themes for weekly tracking.",
-            "Add a lightweight in-app feedback prompt on key friction screens.",
-            "Improve help-center links for the most common issues this week.",
-        ]
-    action_ideas = (action_pool + action_pool)[:3]
+        action_pool = fallbacks[:]
+
+    action_ideas: list[str] = []
+    i = 0
+    while len(action_ideas) < 3:
+        if i < len(action_pool):
+            candidate = action_pool[i]
+        else:
+            candidate = fallbacks[(i - len(action_pool)) % len(fallbacks)]
+        if candidate not in action_ideas:
+            action_ideas.append(candidate)
+        i += 1
 
     theme_defs = {t: f"Reviews primarily about {t.lower()}." for t in themes}
 

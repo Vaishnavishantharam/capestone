@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "last_checked": "2026-04-25T00:00:00Z",
+    "notes": "Prototype placeholder fee URLs. Replace with official INDMoney/AMC fee/exit-load pages when available."
+  },
+  "scenarios": [
+    {
+      "scenario_id": "exit_load_charged",
+      "title": "Exit load charged on redemption",
+      "applies_to": "Mutual fund redemptions where an exit load is applicable per scheme rules.",
+      "bullets": [
+        "What it is: Exit load is a fee charged by the scheme if units are redeemed within the specified exit-load period. (Scheme rule: {exit_load_rule})",
+        "Why you may see it: If your redemption happened within that period (based on purchase date vs redemption date), the exit load can be deducted from the redemption proceeds.",
+        "Common triggers: Early redemption, partial redemptions of recent units (FIFO rules may apply), or switching between schemes within the exit-load window (depending on scheme terms).",
+        "What to verify (no PII): Check the transaction date(s) and redemption date; confirm which units were redeemed and whether they fall inside the exit-load period.",
+        "What this assistant can’t confirm: I can’t access your account/folio or transaction history. Please don’t share personal details here.",
+        "Next step: If you think it was applied incorrectly, compare your transaction dates against the scheme’s exit-load clause and contact support with your booking code (shared securely outside this chat)."
+      ],
+      "source_links": [
+        "REPLACE_WITH_OFFICIAL_FEE_OR_EXIT_LOAD_POLICY_URL"
+      ]
+    }
+  ]
+}
+
