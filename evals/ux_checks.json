@@ -1,0 +1,13 @@
+{
+  "weekly_pulse_checks": {
+    "max_word_count": 250,
+    "required_action_ideas": 3,
+    "required_quotes": 3,
+    "required_top_themes": 3,
+    "max_themes": 5
+  },
+  "voice_agent_check": {
+    "must_mention_top_theme_if_pulse_exists": true
+  }
+}
+
