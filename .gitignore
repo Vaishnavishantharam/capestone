@@ -3,7 +3,14 @@ __pycache__/
 *.pyc
 .DS_Store
 .pytest_cache/
+.env
+**/.env
 
-# Optional: local outputs (keep if you want them versioned)
-data/state/pulses/*.json
+# Local runtime artifacts (keep out of git)
+data/reviews/reviews_*.csv
+data/reviews/reviews_*.json
+data/state/pulses/pulse_*.json
+data/state/bookings/booking_*.json
+data/state/approvals/approval_*.json
+data/state/outbox/*.json
 

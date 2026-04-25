@@ -5,3 +5,6 @@ pydantic>=2.7.0
 pytest>=7.0.0
 google-play-scraper>=1.2.7
 langdetect>=1.0.9
+streamlit>=1.33.0
+# streamlit requires packaging<25; pin for compatibility across environments.
+packaging<25
