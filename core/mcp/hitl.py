@@ -41,6 +41,16 @@ def _market_context_snippet(pulse: dict[str, Any] | None) -> str:
         return "Market/Customer sentiment context: (no weekly pulse available yet)."
     top = pulse.get("top_themes") or []
     themes = ", ".join([str(t) for t in top[:3]]) if top else "(no themes)"
+    note = str(pulse.get("weekly_note") or "").strip()
+    if note:
+        return "\n".join(
+            [
+                "Market Context (from Weekly Pulse):",
+                note,
+                "",
+                f"Customer Sentiment this week: {themes}",
+            ]
+        )
     return f"Market/Customer sentiment context (from Weekly Pulse): top themes this week are {themes}."
 
 
@@ -62,9 +72,14 @@ def generate_actions_from_booking(
     slot_ist = booking["slot_ist"]
     pulse_id = booking.get("pulse_id")
     top_theme = booking.get("top_theme")
+    # Voice-tab booking schema can include these:
+    pulse_theme = booking.get("pulse_theme") or top_theme
+    market_context = booking.get("market_context")
+
+    is_voice_style = str(booking_code).startswith("BOOK-2024-")
 
     calendar_payload = {
-        "title": f"Advisor Q&A — {topic} — {booking_code}",
+        "title": (f"Advisor Call - {topic}" if is_voice_style else f"Advisor Q&A — {topic} — {booking_code}"),
         "slot_ist": slot_ist,
         "timezone": "IST",
         "booking_code": booking_code,
@@ -72,14 +87,35 @@ def generate_actions_from_booking(
 
     notes_payload = {
         "doc_name": "Advisor Pre-Bookings (mock)",
-        "line": f"{slot_ist} | {topic} | {booking_code} | pulse_id={pulse_id} | top_theme={top_theme}",
+        "line": (
+            f"Booking {booking_code} | Topic: {topic} | Pulse Theme: {pulse_theme} | Slot: {slot_ist}"
+            if is_voice_style
+            else f"{slot_ist} | {topic} | {booking_code} | pulse_id={pulse_id} | top_theme={top_theme}"
+        ),
         "booking_code": booking_code,
     }
 
     email_payload = {
         "to": "advisor@company.test",
-        "subject": f"Advisor Pre-Booking — {topic} — {booking_code}",
+        "subject": (f"Upcoming call - {topic}" if is_voice_style else f"Advisor Pre-Booking — {topic} — {booking_code}"),
         "body": "\n".join(
+            [
+                "Dear Advisor,",
+                "You have a call booked.",
+                f"Topic: {topic}",
+                f"Slot: {slot_ist}",
+                f"Booking Code: {booking_code}",
+                "",
+                "Market Context (from Weekly Pulse):",
+                (market_context.strip() if isinstance(market_context, str) and market_context.strip() else _market_context_snippet(pulse)),
+                "",
+                f"Customer Sentiment this week: {pulse_theme}",
+                "",
+                "Note: This is a draft only (HITL approval required).",
+            ]
+        )
+        if is_voice_style
+        else "\n".join(
             [
                 f"Booking code: {booking_code}",
                 f"Topic: {topic}",

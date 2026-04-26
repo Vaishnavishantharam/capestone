@@ -26,6 +26,14 @@ def generate_booking_code(prefix: str = "IN") -> str:
     return f"{prefix}-{suffix}"
 
 
+def generate_booking_code_book() -> str:
+    """
+    Voice tab booking code format required by capstone demo script.
+    Example: BOOK-2024-XXXX
+    """
+    suffix = "".join(random.choice(string.ascii_uppercase + string.digits) for _ in range(4))
+    return f"BOOK-2024-{suffix}"
+
 PII_RE = re.compile(r"\b(pan|aadhaar|otp|folio|account number|phone|email)\b", re.IGNORECASE)
 ADVICE_RE = re.compile(r"\b(best|returns?|20%|guarantee|should i|invest|buy|sell|predict)\b", re.IGNORECASE)
 
@@ -88,6 +96,40 @@ def persist_booking(bundle: dict[str, Any], bookings_dir: Path = BOOKINGS_DIR) -
     out = bookings_dir / f"booking_{bundle['booking_code']}.json"
     out.write_text(json.dumps(bundle, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return out
+
+
+def create_voice_booking_artifact(
+    *,
+    topic: str,
+    slot_label: str,
+    pulse_theme: str | None,
+    pulse_id: str | None,
+    market_context: str | None,
+) -> tuple[dict[str, Any], Path]:
+    """
+    Create the booking JSON artifact required by the Voice & Book tab.
+    This does not execute any actions; it only persists state for HITL.
+    """
+    if PII_RE.search(topic) or PII_RE.search(slot_label):
+        raise ValueError("PII detected in input. Do not collect/store personal information.")
+    if ADVICE_RE.search(topic):
+        raise ValueError("Investment advice is out of scope for booking.")
+
+    booking_code = generate_booking_code_book()
+    bundle = {
+        "booking_code": booking_code,
+        "topic": topic,
+        "slot_ist": slot_label,
+        "pulse_theme": pulse_theme,
+        "pulse_id": pulse_id,
+        "market_context": market_context,
+        "status": "pending_approval",
+        "timezone": "IST",
+        "input_mode": "voice_or_buttons",
+        "created_at": iso_now(),
+    }
+    path = persist_booking(bundle)
+    return bundle, path
 
 
 def run_text_booking_session(

@@ -19,6 +19,38 @@
       "source_links": [
         "https://investor.sebi.gov.in/exit_load.html"
       ]
+    },
+    {
+      "scenario_id": "expense_ratio_applied",
+      "title": "Expense ratio shown / applied in NAV (TER)",
+      "applies_to": "Questions about why an expense ratio is shown, or why it affects returns (it is accounted for in NAV).",
+      "bullets": [
+        "What it is: The expense ratio (TER) is the scheme’s allowed operating expenses expressed as a % of daily net assets. (Shown TER: {expense_ratio})",
+        "Why you may feel 'charged': TER is typically adjusted in the scheme’s NAV on an ongoing basis; you usually don’t pay it as a separate bill.",
+        "What it covers (high level): Costs like investment management, administration, registrar/custody, and permitted marketing/distribution expenses (within regulations).",
+        "What to verify (facts-only): Check the scheme’s TER/expense ratio disclosure on official pages; TER can change over time as disclosed.",
+        "What this assistant can’t confirm: I can’t see your exact NAV history or account statements here. Please don’t share personal details.",
+        "Next step: If you want a human explanation of how TER impacts NAV for your holding period, book an advisor call (no PII in chat)."
+      ],
+      "source_links": [
+        "https://www.amfiindia.com/investor-corner/knowledge-center/Expense-Ratio.html"
+      ]
+    },
+    {
+      "scenario_id": "min_sip_constraint",
+      "title": "Minimum SIP shown (not a separate fee)",
+      "applies_to": "Questions about why a minimum SIP amount is shown or why a SIP setup may be blocked below that amount.",
+      "bullets": [
+        "What it is: Minimum SIP is the lowest allowed installment amount for starting a SIP in this scheme. (Minimum SIP shown: {min_sip})",
+        "Why you may think you were 'charged': Minimum SIP is not a fee; it’s a scheme constraint. It matters when you try to start/modify a SIP.",
+        "When it shows up: During SIP setup, when editing an existing SIP amount, or when validating an order before placement.",
+        "What to verify (facts-only): Confirm the scheme name and the SIP amount you entered; if it’s below the minimum, the app will prompt this value.",
+        "What this assistant can’t confirm: I can’t see your bank mandate, payments, or order history here. Please don’t share personal details.",
+        "Next step: If you believe money was deducted as a charge, check the transaction description in your statement and book an advisor call for support triage."
+      ],
+      "source_links": [
+        "https://www.amfiindia.com/investor-corner/systematic-investment-plan"
+      ]
     }
   ]
 }

@@ -34,6 +34,7 @@ _WHY_SEE_RE = re.compile(
     r")\b",
     re.IGNORECASE,
 )
+_WHY_GENERIC_RE = re.compile(r"^\s*why\s+am\s+i\s+see(?:ing|ng)\s+(it|this)\s*\??\s*$", re.IGNORECASE)
 
 # Education / definitions: keep a single approved official link for concepts.
 _AMFI_SIP_URL = "https://www.amfiindia.com/investor-corner/systematic-investment-plan"
@@ -114,6 +115,16 @@ def _format_fee_bullets(template_bullets: list[str], *, exit_load_rule: str) -> 
     return "\n".join([f"- {b}" for b in filled])
 
 
+def _format_generic_bullets(template_bullets: list[str], replacements: dict[str, str]) -> str:
+    filled: list[str] = []
+    for b in template_bullets[:6]:
+        out = b
+        for k, v in replacements.items():
+            out = out.replace("{" + k + "}", v)
+        filled.append(out)
+    return "\n".join([f"- {b}" for b in filled])
+
+
 def answer_question(question: str) -> SmartSyncAnswer:
     """
     Phase 3 Smart‑Sync (exit load only):
@@ -151,6 +162,32 @@ def answer_question(question: str) -> SmartSyncAnswer:
     schemes_db = load_schemes_json()
     schemes = schemes_db.get("schemes", []) or []
 
+    def _pulse_context_snippet() -> str:
+        pulse = load_latest_pulse()
+        if not pulse:
+            return "Weekly Pulse context: (not available yet — run Phase 2 to generate a pulse artifact.)"
+        top = pulse.get("top_themes") or pulse.get("topThemes") or []
+        top_theme = top[0] if isinstance(top, list) and top else None
+        pulse_id = pulse.get("pulse_id") or pulse.get("pulseId") or "latest"
+        if top_theme:
+            return f"Weekly Pulse context (internal): pulse_id={pulse_id}; top_theme={top_theme}"
+        return f"Weekly Pulse context (internal): pulse_id={pulse_id}"
+
+    # If the user asks a generic "why am I seeing it/this?" without a scheme fact,
+    # give a safe clarification and keep scope tight (HDFC scheme facts only).
+    if _WHY_GENERIC_RE.search(question):
+        known = ", ".join([str(s.get("scheme_name")) for s in schemes[:6]]) if schemes else "HDFC schemes"
+        msg = (
+            "I can explain why you’re seeing a *specific* scheme detail (like exit load, minimum SIP, expense ratio, lock-in, benchmark, AUM, inception date, risk) — "
+            "but I need the scheme + which detail you’re looking at.\n\n"
+            "Try: “exit load for HDFC Small Cap — why am I seeing this?”\n"
+            "Or: “minimum SIP for HDFC Large Cap — why am I seeing this?”\n\n"
+            f"{_pulse_context_snippet()}\n\n"
+            f"Available HDFC schemes in my current sources: {known}\n\n"
+            f"Last updated from sources: {iso_now()}"
+        )
+        return SmartSyncAnswer(text=msg, scheme_citation=None, fee_citation=None)
+
     wants_why = bool(re.search(r"\b(why|charged|charge|deducted)\b", question, re.IGNORECASE))
     wants_exit_load = "exit load" in question.lower() or "exitload" in question.lower()
     wants_min_sip = bool(re.search(r"\b(min(imum)?\s+)?sip\b", question, re.IGNORECASE))
@@ -160,7 +197,9 @@ def answer_question(question: str) -> SmartSyncAnswer:
     wants_aum = bool(re.search(r"\baum\b", question, re.IGNORECASE))
     wants_inception = bool(re.search(r"\binception\b|launch date|start date", question, re.IGNORECASE))
     wants_risk = bool(re.search(r"\brisk\b|riskometer|risk level", question, re.IGNORECASE))
-    wants_why_seeing = bool(_WHY_SEE_RE.search(question))
+    # "why am I seeing this?" or "why was I charged" should trigger the explanatory add-on
+    # for scheme attributes (except exit load, which uses the dedicated 6-bullet scenario).
+    wants_why_seeing = bool(_WHY_SEE_RE.search(question)) or (wants_why and not wants_exit_load)
 
     is_scheme_specific = (
         wants_exit_load
@@ -187,19 +226,19 @@ def answer_question(question: str) -> SmartSyncAnswer:
         msg = f"I couldn’t find scheme data in the current sources.\n\nLast updated from sources: {iso_now()}"
         return SmartSyncAnswer(text=msg, scheme_citation=None, fee_citation=None)
 
+    # If it's not a supported scheme fact question, keep scope tight and offer booking.
+    if scheme is None:
+        msg = (
+            "I’m limited to facts-only questions about the configured HDFC mutual fund schemes "
+            "(exit load, minimum SIP, expense ratio, lock-in, benchmark, AUM, inception date, risk) with source links.\n\n"
+            f"{_pulse_context_snippet()}\n\n"
+            "If you want help beyond facts, you can say: “book an advisor call”.\n\n"
+            f"Last updated from sources: {iso_now()}"
+        )
+        return SmartSyncAnswer(text=msg, scheme_citation=None, fee_citation=None)
+
     scheme_name = str(scheme.get("scheme_name"))
     scheme_url = str(scheme.get("source_url"))
-
-    def _pulse_context_snippet() -> str:
-        pulse = load_latest_pulse()
-        if not pulse:
-            return "Weekly Pulse context: (not available yet — run Phase 2 to generate a pulse artifact.)"
-        top = pulse.get("top_themes") or pulse.get("topThemes") or []
-        top_theme = top[0] if isinstance(top, list) and top else None
-        pulse_id = pulse.get("pulse_id") or pulse.get("pulseId") or "latest"
-        if top_theme:
-            return f"Weekly Pulse context (internal): pulse_id={pulse_id}; top_theme={top_theme}"
-        return f"Weekly Pulse context (internal): pulse_id={pulse_id}"
 
     # Evidence-backed scheme fact snippet for exit load.
     exit_load_value = str(scheme.get("exit_load") or "not found in sources")
@@ -237,6 +276,28 @@ def answer_question(question: str) -> SmartSyncAnswer:
         if not min_sip_raw:
             msg = f"I couldn’t find the minimum SIP for {scheme_name} in the current sources.\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
             return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+        fact_line = f"Minimum SIP | {min_sip_raw}"
+
+        # If user asks "why charged" about min SIP, answer with the required 6-bullet structure
+        # (this is a constraint explainer, not a fee).
+        if wants_why:
+            fee_db = _load_fee_explainers()
+            scenario = _get_scenario(fee_db, "min_sip_constraint")
+            fee_url = str((scenario.get("source_links") or [None])[0])
+            bullets = _format_generic_bullets(
+                scenario.get("bullets", []),
+                replacements={"min_sip": str(min_sip_raw)},
+            )
+            text = (
+                f"{fact_line}\n\n"
+                f"{bullets}\n\n"
+                f"{_pulse_context_snippet()}\n\n"
+                f"Scheme source: {scheme_url}\n"
+                f"Fee/Explainer source: {fee_url}\n"
+                f"Last updated from sources: {iso_now()}"
+            )
+            return SmartSyncAnswer(text=text, scheme_citation=scheme_url, fee_citation=fee_url)
+
         extra = ""
         if wants_why_seeing:
             extra = (
@@ -245,7 +306,7 @@ def answer_question(question: str) -> SmartSyncAnswer:
                 "- If you tried to set up a SIP below this minimum, the app may show this value as a constraint.\n\n"
                 + _pulse_context_snippet()
             )
-        msg = f"Minimum SIP | {min_sip_raw}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        msg = f"{fact_line}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
         return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
 
     if wants_expense:
@@ -254,14 +315,35 @@ def answer_question(question: str) -> SmartSyncAnswer:
         if not (ev or v):
             msg = f"I couldn’t find the expense ratio for {scheme_name} in the current sources.\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
             return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
+        fact_line = ev or f"Expense ratio | {v}"
+
+        # If user asks "why charged" about expense ratio, use the 6-bullet explainer template.
+        if wants_why:
+            fee_db = _load_fee_explainers()
+            scenario = _get_scenario(fee_db, "expense_ratio_applied")
+            fee_url = str((scenario.get("source_links") or [None])[0])
+            bullets = _format_generic_bullets(
+                scenario.get("bullets", []),
+                replacements={"expense_ratio": str(v)},
+            )
+            text = (
+                f"{fact_line}\n\n"
+                f"{bullets}\n\n"
+                f"{_pulse_context_snippet()}\n\n"
+                f"Scheme source: {scheme_url}\n"
+                f"Fee source: {fee_url}\n"
+                f"Last updated from sources: {iso_now()}"
+            )
+            return SmartSyncAnswer(text=text, scheme_citation=scheme_url, fee_citation=fee_url)
+
         extra = ""
         if wants_why_seeing:
             extra = (
                 "\n\nWhy you might see this in-app (general):\n"
-                "- Expense ratio is a recurring scheme cost disclosed by the fund; apps show it as a factual scheme attribute.\n\n"
+                "- Expense ratio is a disclosed scheme attribute; it is typically reflected in NAV over time rather than charged as a separate bill.\n\n"
                 + _pulse_context_snippet()
             )
-        msg = f"{ev or f'Expense ratio | {v}'}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
+        msg = f"{fact_line}{extra}\n\nSource: {scheme_url}\nLast updated from sources: {iso_now()}"
         return SmartSyncAnswer(text=msg, scheme_citation=scheme_url, fee_citation=None)
 
     if wants_lockin:
