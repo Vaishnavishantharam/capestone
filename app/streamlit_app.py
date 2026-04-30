@@ -458,23 +458,6 @@ def _render_workspace_selector() -> None:
 st.set_page_config(page_title="Investor Ops & Intelligence Suite", layout="wide")
 _inject_ops_dashboard_theme()
 
-with st.sidebar:
-    st.subheader("Admin")
-    with st.expander("Runtime status", expanded=False):
-        env_text = ENV_PATH.read_text(encoding="utf-8") if ENV_PATH.exists() else ""
-        env_has_eleven_line = any(ln.strip().startswith("ELEVENLABS_API_KEY=") for ln in env_text.splitlines())
-        st.write(
-            {
-                "env_file_exists": ENV_PATH.exists(),
-                "env_file_has_ELEVENLABS_API_KEY_line": env_has_eleven_line,
-                "GEMINI_API_KEY": "set" if _has_env("GEMINI_API_KEY") else "missing",
-                "ELEVENLABS_API_KEY": "set" if _has_env("ELEVENLABS_API_KEY") else "missing",
-                "ELEVENLABS_API_KEY_len": len(_get_env("ELEVENLABS_API_KEY")),
-                "GEMINI_MODEL": _get_env("GEMINI_MODEL") or "gemini-1.5-flash",
-                "ELEVENLABS_VOICE_ID": _get_env("ELEVENLABS_VOICE_ID") or "21m00Tcm4TlvDq8ikWAM",
-            }
-        )
-
 st.markdown(
     """
     <div class="ops-hero-title">

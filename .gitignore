@@ -11,6 +11,7 @@ __pycache__/
 data/reviews/reviews_*.csv
 data/reviews/reviews_*.json
 data/state/pulses/pulse_*.json
+!data/state/pulses/pulse_00000000_000000_seed.json
 data/state/bookings/booking_*.json
 data/state/approvals/approval_*.json
 data/state/outbox/*.json
