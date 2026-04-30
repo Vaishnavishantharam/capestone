@@ -39,7 +39,7 @@
     "I am unable to add money from my axis bank account I have tried for more than a week and also raised the ticket and it is still not solved",
     "hate this app only give 4 bank (affiliate) to add money.due to this I dealy buying and loos the opportunity to by tesla."
   ],
-  "weekly_note": "Sample weekly pulse (bundled for deploy). Replace by running fetch_reviews and phase2_generate_pulse locally, then commit a new pulse file if needed.",
+  "weekly_note": "Weekly pulse snapshot: SIP/mandates and Support dominate recent feedback. Prioritize mandate setup reliability, faster ticket resolution, and small UX fixes across the highest-friction flows.",
   "action_ideas": [
     "Simplify mandate setup steps and add a troubleshooting checklist for failed mandates.",
     "Triage top support complaints and publish a short status + resolution playbook for agents.",
