@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import json
 import os
 import base64
@@ -11,7 +12,7 @@ import streamlit.components.v1 as components
 
 from core.mcp.hitl import enqueue_actions, generate_actions_from_booking, list_queue, load_latest_booking, set_status
 from core.pulse.load import load_latest_pulse
-from core.rag.smartsync import answer_question, answer_question_gemini
+from core.rag.smartsync import answer_question
 from core.stt.elevenlabs import transcribe_audio_bytes
 from core.tts.elevenlabs import tts_mp3_bytes
 from core.voice.booking import create_voice_booking_artifact, theme_aware_greeting
@@ -66,7 +67,378 @@ def _get_env(key: str) -> str:
 def _has_env(key: str) -> bool:
     return bool(_get_env(key))
 
+
+def _inject_ops_dashboard_theme() -> None:
+    """Dark navy + neon cyan glassmorphism (professional ops / AI-assistant style)."""
+    st.markdown(
+        """
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+          :root {
+            --ops-bg0: #0a0c12;
+            --ops-bg1: #0f1219;
+            --ops-panel: rgba(22, 27, 38, 0.72);
+            --ops-border: rgba(34, 211, 238, 0.18);
+            --ops-cyan: #22d3ee;
+            --ops-cyan-dim: rgba(34, 211, 238, 0.35);
+            --ops-text: #f1f5f9;
+            --ops-muted: #94a3b8;
+          }
+          html, body, .stApp {
+            font-family: 'Inter', system-ui, sans-serif !important;
+          }
+          .stApp {
+            background: linear-gradient(165deg, var(--ops-bg0) 0%, #12151f 42%, #0e1118 100%) !important;
+            color: var(--ops-text) !important;
+          }
+          [data-testid="stAppViewContainer"] > .main {
+            background: transparent !important;
+          }
+          section[data-testid="stSidebar"] {
+            background: linear-gradient(180deg, #0c0f16 0%, #151a24 100%) !important;
+            border-right: 1px solid var(--ops-border) !important;
+          }
+          section[data-testid="stSidebar"] .stMarkdown, section[data-testid="stSidebar"] p,
+          section[data-testid="stSidebar"] span, section[data-testid="stSidebar"] label {
+            color: #cbd5e1 !important;
+          }
+          header[data-testid="stHeader"] {
+            background: rgba(10, 12, 18, 0.92) !important;
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--ops-border) !important;
+          }
+          div[data-testid="stDecoration"] { display: none; }
+          #MainMenu { visibility: hidden; }
+          footer { visibility: hidden; }
+          .block-container {
+            padding-top: 1.25rem !important;
+            padding-bottom: 3rem !important;
+            max-width: 1280px !important;
+          }
+          .stTabs [data-baseweb="tab-list"] {
+            gap: 6px !important;
+            background: rgba(15, 18, 26, 0.85) !important;
+            border-radius: 14px !important;
+            padding: 6px !important;
+            border: 1px solid var(--ops-border) !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+          }
+          .stTabs [data-baseweb="tab"] {
+            border-radius: 10px !important;
+            color: var(--ops-muted) !important;
+            font-weight: 600 !important;
+            letter-spacing: 0.02em;
+          }
+          .stTabs [aria-selected="true"] {
+            background: linear-gradient(135deg, rgba(34, 211, 238, 0.18), rgba(34, 211, 238, 0.08)) !important;
+            color: var(--ops-cyan) !important;
+            box-shadow: 0 0 28px rgba(34, 211, 238, 0.12);
+          }
+          .stTabs [data-baseweb="tab-highlight"] {
+            background: transparent !important;
+          }
+          .main .stMarkdown p, .main .stMarkdown li,
+          .main .stCaption, .main label {
+            color: #cbd5e1 !important;
+          }
+          .main h1, .main h2, .main h3 {
+            color: var(--ops-cyan) !important;
+            font-weight: 700 !important;
+            letter-spacing: -0.02em;
+          }
+          .stButton > button {
+            border-radius: 12px !important;
+            font-weight: 600 !important;
+            border: 1px solid var(--ops-border) !important;
+            background: rgba(30, 41, 59, 0.5) !important;
+            color: var(--ops-text) !important;
+          }
+          .stButton > button:hover {
+            border-color: var(--ops-cyan) !important;
+            box-shadow: 0 0 20px rgba(34, 211, 238, 0.15);
+          }
+          .stButton > button[kind="primary"], div[data-testid="column"] button[kind="primary"] {
+            background: linear-gradient(135deg, #0891b2 0%, #22d3ee 100%) !important;
+            color: #0a0c12 !important;
+            border: none !important;
+            box-shadow: 0 4px 24px rgba(34, 211, 238, 0.28) !important;
+          }
+          [data-testid="stChatMessage"] {
+            background: var(--ops-panel) !important;
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--ops-border) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25) !important;
+          }
+          [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] p,
+          [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] li {
+            color: #e2e8f0 !important;
+          }
+          .stChatInput > div {
+            border-radius: 14px !important;
+            border: 1px solid var(--ops-border) !important;
+            background: rgba(15, 23, 42, 0.65) !important;
+          }
+          .stChatInput textarea {
+            color: var(--ops-text) !important;
+          }
+          [data-testid="stExpander"] {
+            background: rgba(17, 21, 31, 0.75) !important;
+            border: 1px solid var(--ops-border) !important;
+            border-radius: 12px !important;
+          }
+          div[data-testid="stAlert"] {
+            background: rgba(15, 23, 42, 0.85) !important;
+            border: 1px solid var(--ops-border) !important;
+            border-radius: 12px !important;
+            color: #e2e8f0 !important;
+          }
+          [data-testid="stSuccess"] {
+            background: rgba(16, 185, 129, 0.1) !important;
+            border: 1px solid rgba(16, 185, 129, 0.4) !important;
+            color: #a7f3d0 !important;
+          }
+          [data-testid="stInfo"] {
+            background: rgba(14, 165, 233, 0.1) !important;
+            border: 1px solid rgba(34, 211, 238, 0.35) !important;
+            color: #bae6fd !important;
+          }
+          [data-testid="stWarning"] {
+            background: rgba(245, 158, 11, 0.12) !important;
+            border: 1px solid rgba(245, 158, 11, 0.45) !important;
+            color: #fde68a !important;
+          }
+          .va-ind {
+            display: flex; justify-content: center; align-items: center; gap: 10px;
+            margin: 6px 0 14px 0; font-weight: 700; color: #e2e8f0; font-size: 0.95rem; letter-spacing: 0.02em;
+          }
+          .va-dot {
+            width: 10px; height: 10px; border-radius: 999px; background: #f43f5e;
+            box-shadow: 0 0 12px rgba(244, 63, 94, 0.55);
+            animation: va_pulse 1.2s infinite;
+          }
+          .va-dots span {
+            display: inline-block; width: 6px; height: 6px; margin: 0 2px;
+            background: #22d3ee; border-radius: 999px; animation: va_bounce 1.2s infinite; opacity: 0.65;
+          }
+          .va-dots span:nth-child(2) { animation-delay: 0.2s; }
+          .va-dots span:nth-child(3) { animation-delay: 0.4s; }
+          @keyframes va_pulse {
+            0% { transform: scale(0.9); opacity: 0.5; } 50% { transform: scale(1.1); opacity: 1; } 100% { transform: scale(0.9); opacity: 0.5; }
+          }
+          @keyframes va_bounce {
+            0%, 80%, 100% { transform: translateY(0); opacity: 0.4; } 40% { transform: translateY(-6px); opacity: 1; }
+          }
+          [data-testid="stMetricValue"], [data-testid="stMetricLabel"] {
+            color: #e2e8f0 !important;
+          }
+          iframe[title="st.dataframe"] {
+            border: 1px solid var(--ops-border) !important;
+            border-radius: 12px !important;
+          }
+          .ops-hero-title {
+            margin-bottom: 1.35rem;
+            padding: 1.1rem 1.35rem;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(34, 211, 238, 0.12) 0%, rgba(99, 102, 241, 0.06) 100%);
+            border: 1px solid var(--ops-border);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255,255,255,0.04);
+          }
+          .ops-hero-title h1 {
+            margin: 0.35rem 0 0.25rem 0;
+            font-size: 1.55rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            background: linear-gradient(90deg, #e0f2fe 0%, var(--ops-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+          [data-testid="stVerticalBlockBorderWrapper"] {
+            background: rgba(17, 21, 31, 0.45) !important;
+            border: 1px solid var(--ops-border) !important;
+            border-radius: 16px !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+          }
+          hr {
+            border: none !important;
+            border-top: 1px solid var(--ops-border) !important;
+            margin: 1.25rem 0 !important;
+          }
+          .ops-hero-title .ops-tagline {
+            margin: 0;
+            font-size: 0.88rem;
+            color: var(--ops-muted);
+            font-weight: 500;
+          }
+          .ops-product-chip {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--ops-cyan);
+            padding: 0.2rem 0.55rem;
+            border-radius: 6px;
+            border: 1px solid var(--ops-cyan-dim);
+            background: rgba(34, 211, 238, 0.08);
+          }
+          .ops-workspace-caption {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--ops-muted);
+            margin: 0 0 0.45rem 0;
+          }
+          div[data-testid="stRadio"] div[role="radiogroup"] {
+            display: flex !important;
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+            gap: 6px !important;
+            width: 100% !important;
+            padding: 5px !important;
+            margin: 0 0 1.35rem 0 !important;
+            background: rgba(12, 15, 22, 0.92) !important;
+            border: 1px solid var(--ops-border) !important;
+            border-radius: 14px !important;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+          }
+          div[data-testid="stRadio"] div[role="radiogroup"] label {
+            flex: 1 1 0 !important;
+            min-width: 0 !important;
+            margin: 0 !important;
+            padding: 0.65rem 0.45rem !important;
+            text-align: center !important;
+            border-radius: 10px !important;
+            font-weight: 700 !important;
+            font-size: 0.86rem !important;
+            color: #e0f2fe !important;
+            border: 1px solid rgba(34, 211, 238, 0.2) !important;
+            cursor: pointer !important;
+            transition: background 0.15s, color 0.15s, box-shadow 0.15s, border-color 0.15s;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+          }
+          div[data-testid="stRadio"] div[role="radiogroup"] label p,
+          div[data-testid="stRadio"] div[role="radiogroup"] label span,
+          div[data-testid="stRadio"] div[role="radiogroup"] label div,
+          div[data-testid="stRadio"] [data-testid="stMarkdownContainer"] p {
+            color: inherit !important;
+            margin: 0 !important;
+          }
+          div[data-testid="stRadio"] div[role="radiogroup"] label input {
+            accent-color: #22d3ee;
+          }
+          div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked),
+          div[data-testid="stRadio"] div[role="radiogroup"] label[aria-checked="true"] {
+            background: linear-gradient(135deg, rgba(34, 211, 238, 0.45), rgba(6, 182, 212, 0.25)) !important;
+            color: #ffffff !important;
+            border-color: rgba(103, 232, 249, 0.7) !important;
+            box-shadow: 0 0 32px rgba(34, 211, 238, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+            text-shadow: 0 0 18px rgba(34, 211, 238, 0.55);
+          }
+          div[data-testid="stRadio"] div[role="radiogroup"] label:hover {
+            color: #ffffff !important;
+            border-color: rgba(34, 211, 238, 0.4) !important;
+          }
+          .chat-intro-card {
+            margin: 0 0 1rem 0;
+            padding: 1rem 1.15rem 1.05rem;
+            border-radius: 14px;
+            border: 1px solid var(--ops-border);
+            background: rgba(17, 21, 31, 0.65);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+          }
+          .chat-intro-card .chat-intro-title {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #f1f5f9;
+            line-height: 1.45;
+          }
+          .chat-intro-card .chat-intro-body {
+            margin: 0;
+            font-size: 0.88rem;
+            color: #94a3b8;
+            line-height: 1.55;
+          }
+          .chat-intro-card .chat-intro-kicker {
+            margin: 0 0 0.35rem 0;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ops-cyan);
+          }
+          .chat-thread-label {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--ops-muted);
+          }
+          .voice-panel-head {
+            margin: 0 0 1.1rem 0;
+            padding: 1rem 1.15rem;
+            border-radius: 14px;
+            border: 1px solid var(--ops-border);
+            background: rgba(17, 21, 31, 0.55);
+            backdrop-filter: blur(10px);
+          }
+          .voice-panel-kicker {
+            display: block;
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--ops-cyan);
+            margin-bottom: 0.35rem;
+          }
+          .voice-panel-head h2.voice-panel-title {
+            margin: 0 0 0.35rem 0;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #f1f5f9 !important;
+            letter-spacing: -0.02em;
+            -webkit-text-fill-color: #f1f5f9;
+          }
+          .voice-panel-desc {
+            margin: 0;
+            font-size: 0.86rem;
+            color: #94a3b8;
+            line-height: 1.45;
+          }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def _render_workspace_selector() -> None:
+    """Three-way workspace switch (session state key: ops_workspace → chat | pulse | voice)."""
+    if "ops_workspace" not in st.session_state:
+        st.session_state.ops_workspace = "chat"
+    st.markdown('<p class="ops-workspace-caption">Choose workspace</p>', unsafe_allow_html=True)
+    st.radio(
+        "workspace_section",
+        options=["chat", "pulse", "voice"],
+        format_func=lambda k: {
+            "chat": "💬  Chat / FAQ",
+            "pulse": "📊  Weekly Pulse",
+            "voice": "📞  Voice & Book",
+        }[k],
+        horizontal=True,
+        key="ops_workspace",
+        label_visibility="collapsed",
+    )
+
+
 st.set_page_config(page_title="Investor Ops & Intelligence Suite", layout="wide")
+_inject_ops_dashboard_theme()
 
 with st.sidebar:
     st.subheader("Admin")
@@ -85,8 +457,19 @@ with st.sidebar:
             }
         )
 
-st.title("Investor Ops & Intelligence Suite (INDMoney)")
-st.caption("Facts-only mutual fund ops dashboard: Smart‑Sync Q&A, Weekly Pulse, Booking, HITL approvals, Evals.")
+st.markdown(
+    """
+    <div class="ops-hero-title">
+      <span class="ops-product-chip">INDMoney</span>
+      <h1>Investor Ops & Intelligence Suite</h1>
+      <p class="ops-tagline">Smart‑Sync Q&A · Weekly pulse · Voice booking · HITL approvals · Evals</p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+_render_workspace_selector()
+
 
 def _intent_is_booking(text: str) -> bool:
     t = (text or "").lower()
@@ -94,70 +477,243 @@ def _intent_is_booking(text: str) -> bool:
 
 
 def _render_chat_faq() -> None:
+    st.markdown(
+        """
+        <div class="chat-intro-card">
+          <div class="chat-intro-kicker">Smart-Sync support</div>
+          <p class="chat-intro-title">HDFC mutual fund facts on INDMoney</p>
+          <p class="chat-intro-body">
+            Ask about exit load, expense ratio, minimum SIP, lock-in, and more. Replies use your RAG sources and citations.
+          </p>
+          <p class="chat-intro-body" style="margin-top:0.65rem;">
+            <strong style="color:#e2e8f0;">Try:</strong>
+            <span style="color:#cbd5e1;"> “What is the minimum SIP for HDFC Small Cap?”</span>
+          </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
     if "messages" not in st.session_state:
-        st.session_state.messages = [
-            {
-                "role": "assistant",
-                "content": (
-                    "Hi — I’m your INDMoney Investor Ops assistant.\n\n"
-                    "You can ask factual HDFC scheme questions (exit load, expense ratio, minimum SIP, lock-in). "
-                    "Or say “book an advisor call” to schedule a tentative slot."
-                ),
-            }
-        ]
+        st.session_state.messages = []
 
-    for m in st.session_state.messages:
-        with st.chat_message(m["role"]):
-            st.markdown(m["content"])
+    st.markdown('<p class="chat-thread-label">Conversation</p>', unsafe_allow_html=True)
+    if not st.session_state.messages:
+        st.caption("No messages yet — type below to begin.")
 
-    user_text = st.chat_input("Ask a question about HDFC schemes (facts-only)")
-    if user_text is None:
-        user_text = ""
-    user_text = (user_text or "").strip()
+    with st.container(border=True):
+        for m in st.session_state.messages:
+            with st.chat_message(m["role"]):
+                st.markdown(m["content"])
+
+        user_text = st.chat_input("Message INDMoney support…")
 
     if user_text:
-        st.session_state.messages.append({"role": "user", "content": user_text})
-        with st.chat_message("user"):
-            st.markdown(user_text)
-
-        # Smart‑Sync Q&A only (booking happens in the Voice & Book tab).
-        use_llm = _has_env("GEMINI_API_KEY") and st.session_state.get("use_gemini", False)
-        ans = answer_question_gemini(user_text) if use_llm else answer_question(user_text)
-        st.session_state.messages.append({"role": "assistant", "content": ans.text})
-        with st.chat_message("assistant"):
-            st.markdown(ans.text)
-            if _has_env("ELEVENLABS_API_KEY") and st.session_state.get("use_tts", False):
-                try:
-                    st.audio(tts_mp3_bytes(ans.text), format="audio/mp3")
-                except Exception as e:
-                    st.error(f"TTS failed: {e}")
+        q = (user_text or "").strip()
+        if q:
+            st.session_state.messages.append({"role": "user", "content": q})
+            ans = answer_question(q)
+            st.session_state.messages.append({"role": "assistant", "content": ans.text})
+            st.rerun()
 
 
-left, right = st.tabs(["💬 Chat / FAQ", "📞 Voice & Book"])
-
-with left:
-    st.subheader("Smart‑Sync Unified Search (HDFC schemes)")
-    c = st.columns([1, 1, 2])
-    st.session_state.use_gemini = c[0].toggle(
-        "Gemini rewrite",
-        value=bool(st.session_state.get("use_gemini", False)),
-        disabled=not _has_env("GEMINI_API_KEY"),
+def _render_weekly_pulse_dashboard() -> None:
+    st.markdown(
+        """
+        <style>
+          .pulse-hero {
+            background: linear-gradient(135deg, rgba(8, 145, 178, 0.35) 0%, rgba(34, 211, 238, 0.12) 48%, rgba(99, 102, 241, 0.08) 100%);
+            color: #f1f5f9;
+            padding: 1.35rem 1.6rem 1.45rem;
+            border-radius: 16px;
+            margin-bottom: 1.25rem;
+            border: 1px solid rgba(34, 211, 238, 0.22);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+          }
+          .pulse-hero h1 {
+            margin: 0 0 0.35rem 0;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.25;
+            color: #e0f2fe;
+          }
+          .pulse-hero p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #94a3b8;
+          }
+          .pulse-h3 {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #22d3ee;
+            margin: 0 0 0.65rem 0;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid rgba(34, 211, 238, 0.45);
+            display: inline-block;
+          }
+          .pulse-note-body {
+            font-size: 1.02rem;
+            line-height: 1.65;
+            color: #e2e8f0;
+            margin: 0;
+          }
+          .pulse-quote-card {
+            background: rgba(22, 27, 38, 0.75);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(34, 211, 238, 0.15);
+            border-left: 4px solid #22d3ee;
+            padding: 0.85rem 1rem;
+            margin-bottom: 0.6rem;
+            border-radius: 12px;
+            font-size: 0.92rem;
+            line-height: 1.55;
+            color: #cbd5e1;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+          }
+          .pulse-q-ldquo, .pulse-q-rdquo {
+            color: #22d3ee;
+            font-weight: 700;
+            opacity: 0.9;
+          }
+          .pulse-action-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.65rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #e2e8f0;
+          }
+          .pulse-action-num {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 999px;
+            background: rgba(34, 211, 238, 0.18);
+            color: #22d3ee;
+            font-weight: 700;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(34, 211, 238, 0.35);
+          }
+          .pulse-meta {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-top: 0.35rem;
+          }
+          .pulse-theme-line {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.95rem;
+            color: #94a3b8;
+            line-height: 1.5;
+          }
+        </style>
+        """,
+        unsafe_allow_html=True,
     )
-    st.session_state.use_tts = c[1].toggle(
-        "Speak answer",
-        value=bool(st.session_state.get("use_tts", False)),
-        disabled=not _has_env("ELEVENLABS_API_KEY"),
+
+    st.markdown(
+        """
+        <div class="pulse-hero">
+          <h1>Weekly product pulse</h1>
+          <p>Executive snapshot from the latest saved pulse in your workspace.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
     )
-    if c[2].button("Reset chat"):
-        for k in ["messages"]:
-            if k in st.session_state:
-                del st.session_state[k]
-        st.rerun()
 
-    _render_chat_faq()
+    pulse = load_latest_pulse()
+    if not pulse:
+        st.info(
+            "No pulse JSON found yet. From the project root run "
+            "`python phase_2/fetch_reviews.py` then `python scripts/phase2_generate_pulse.py` "
+            "(or place a bundle under `data/state/pulses/`)."
+        )
+        return
 
-with right:
-    st.subheader("Voice assistant")
+    top = pulse.get("top_themes") or []
+    quotes = pulse.get("quotes") or []
+    ideas = pulse.get("action_ideas") or []
+    note = str(pulse.get("weekly_note") or "")
+
+    _ga = html.escape(str(pulse.get("generated_at", "—")))
+    st.markdown(
+        f'<p class="pulse-meta">Updated <code>{_ga}</code></p>',
+        unsafe_allow_html=True,
+    )
+
+    row_a, row_b = st.columns([1.15, 1], gap="large")
+    with row_a:
+        st.markdown('<h3 class="pulse-h3">Executive summary</h3>', unsafe_allow_html=True)
+        _note_html = html.escape(note) if note else "—"
+        st.markdown(f'<p class="pulse-note-body">{_note_html}</p>', unsafe_allow_html=True)
+
+    with row_b:
+        st.markdown('<h3 class="pulse-h3">Theme mix</h3>', unsafe_allow_html=True)
+        _top_line = " · ".join(html.escape(str(t)) for t in top) if top else "—"
+        st.markdown(
+            '<p class="pulse-theme-line">' + _top_line + "</p>",
+            unsafe_allow_html=True,
+        )
+        th = pulse.get("themes") or []
+        if th and isinstance(th, list) and isinstance(th[0] if th else None, dict):
+            st.dataframe(
+                [{"Theme": t.get("label", ""), "Count": t.get("count", ""), "Notes": t.get("definition", "")} for t in th],
+                use_container_width=True,
+                hide_index=True,
+                height=min(320, 52 + len(th) * 36),
+            )
+        elif th:
+            st.json(th)
+
+    st.markdown('<h3 class="pulse-h3">Voice of the customer</h3>', unsafe_allow_html=True)
+    if quotes:
+        for q in quotes[:3]:
+            q_esc = html.escape(str(q))
+            st.markdown(
+                f'<div class="pulse-quote-card"><span class="pulse-q-ldquo">&ldquo;</span>{q_esc}'
+                f'<span class="pulse-q-rdquo">&rdquo;</span></div>',
+                unsafe_allow_html=True,
+            )
+    else:
+        st.caption("No quotes in this bundle.")
+
+    st.markdown('<h3 class="pulse-h3">Recommended actions</h3>', unsafe_allow_html=True)
+    for i, a in enumerate(ideas[:3], 1):
+        a_esc = html.escape(str(a))
+        st.markdown(
+            f'<div class="pulse-action-row"><span class="pulse-action-num">{i}</span><span>{a_esc}</span></div>',
+            unsafe_allow_html=True,
+        )
+
+    st.download_button(
+        "Export JSON",
+        data=json.dumps(pulse, ensure_ascii=False, indent=2),
+        file_name=f"{pulse.get('pulse_id', 'pulse')}.json",
+        mime="application/json",
+        use_container_width=True,
+    )
+
+
+def _render_voice_book_tab() -> None:
+    st.markdown(
+        """
+        <div class="voice-panel-head">
+          <span class="voice-panel-kicker">Advisor booking</span>
+          <h2 class="voice-panel-title">Voice assistant</h2>
+          <p class="voice-panel-desc">Book a call by voice or on-screen buttons. Audio stays off until you start.</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
     # -----------------------------
     # Voice assistant (mic + buttons fallback)
@@ -199,7 +755,7 @@ with right:
 
     # Session state init
     if "voice_stage" not in st.session_state:
-        st.session_state["voice_stage"] = "greeting"
+        st.session_state["voice_stage"] = "idle"
     if "voice_transcript_log" not in st.session_state:
         st.session_state["voice_transcript_log"] = []
     if "voice_confirmed_done" not in st.session_state:
@@ -237,27 +793,19 @@ with right:
 
     top_theme_label = st.session_state.get("pulse_top_theme", "General Queries")
 
-    # UI: speaking/listening indicators
-    st.markdown(
-        """
-        <style>
-          .va-ind { display:flex; justify-content:center; align-items:center; gap:10px; margin: 6px 0 14px 0; font-weight: 700; }
-          .va-dot { width:10px; height:10px; border-radius:999px; background:#ff3b30; animation: va_pulse 1.2s infinite; }
-          .va-dots span{ display:inline-block; width:6px; height:6px; margin:0 2px; background:#333; border-radius:999px; animation: va_bounce 1.2s infinite; opacity:0.5;}
-          .va-dots span:nth-child(2){ animation-delay: 0.2s;}
-          .va-dots span:nth-child(3){ animation-delay: 0.4s;}
-          @keyframes va_pulse { 0%{ transform:scale(0.9); opacity:0.5;} 50%{ transform:scale(1.1); opacity:1;} 100%{ transform:scale(0.9); opacity:0.5;} }
-          @keyframes va_bounce { 0%,80%,100%{ transform:translateY(0); opacity:0.4;} 40%{ transform:translateY(-6px); opacity:1;} }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
+    # UI: speaking/listening indicators (.va-* styled in global theme)
     _stage_ind = st.session_state.get("voice_stage")
     _mic_stages_ind = ("await_yes_no", "await_topic", "await_slot")
     _mic_eligible = _has_env("ELEVENLABS_API_KEY") and _stage_ind in _mic_stages_ind
 
     indicator = st.empty()
-    if st.session_state.voice_processing:
+    if _stage_ind == "idle":
+        indicator.markdown(
+            '<div class="va-ind"><span class="va-dots"><span></span><span></span><span></span></span>'
+            "<span>Inactive — start when you’re ready</span></div>",
+            unsafe_allow_html=True,
+        )
+    elif st.session_state.voice_processing:
         indicator.markdown(
             '<div class="va-ind"><span class="va-dots"><span></span><span></span><span></span></span>'
             "<span>Transcribing your response…</span></div>",
@@ -279,6 +827,18 @@ with right:
             '<div class="va-ind"><span class="va-dots"><span></span><span></span><span></span></span><span>Ready</span></div>',
             unsafe_allow_html=True,
         )
+
+    # Not started: show tab but no audio / no flow until user opts in
+    if st.session_state.get("voice_stage") == "idle":
+        st.markdown(
+            "Book an advisor call using voice or the buttons below. "
+            "**No audio plays until you start.**"
+        )
+        if st.button("Start Voice Chat", type="primary", use_container_width=True, key="btn_start_voice_chat"):
+            st.session_state["voice_stage"] = "greeting"
+            st.rerun()
+        st.caption("Tip: starting the chat also helps your browser allow voice playback.")
+        st.stop()
 
     # Stage: greeting (run once)
     if st.session_state["voice_stage"] == "greeting":
@@ -399,7 +959,7 @@ with right:
                                 st.rerun()
                             elif any(w in low for w in ["no", "different", "other"]):
                                 st.session_state["voice_stage"] = "ended"
-                                bot_say("No problem! You can type your question in the Chat tab. Have a great day!")
+                                bot_say("No problem! You can type your question under Chat / FAQ. Have a great day!")
                                 st.rerun()
                             else:
                                 bot_say("Sorry, I didn't catch that. Please say Yes or No.")
@@ -461,7 +1021,7 @@ with right:
             if st.button("❌ No thanks", key="btn_no"):
                 st.session_state["voice_stage"] = "ended"
                 _append_once("user", "No")
-                bot_say("No problem! You can type your question in the Chat tab. Have a great day!")
+                bot_say("No problem! You can type your question under Chat / FAQ. Have a great day!")
                 st.rerun()
 
     # Stage: await_topic (buttons only)
@@ -548,17 +1108,57 @@ with right:
                 "booking_path",
                 "voice_confirmed_done",
                 "voice_last_tts",
+                "voice_tts_queue",
+                "voice_spoken_upto",
+                "voice_mic_locked",
+                "voice_mic_epoch",
+                "voice_stt_last_sig",
+                "voice_processing",
             ]:
                 st.session_state.pop(key, None)
+            st.session_state["voice_stage"] = "idle"
+            st.session_state["voice_transcript_log"] = []
+            st.session_state["voice_tts_queue"] = []
+            st.session_state["voice_spoken_upto"] = 0
+            st.session_state["voice_confirmed_done"] = False
             st.rerun()
 
     # Stage: ended
     elif stage == "ended":
-        st.info("No problem! You can type your question in the Chat tab.")
+        st.info("No problem! Switch to **Chat / FAQ** above and type your question there.")
         if st.button("🔄 Start over", key="restart_ended"):
-            for key in ["voice_stage", "voice_transcript_log", "selected_topic", "selected_slot", "booking_code", "booking_path", "voice_confirmed_done", "voice_last_tts"]:
+            for key in [
+                "voice_stage",
+                "voice_transcript_log",
+                "selected_topic",
+                "selected_slot",
+                "booking_code",
+                "booking_path",
+                "voice_confirmed_done",
+                "voice_last_tts",
+                "voice_tts_queue",
+                "voice_spoken_upto",
+                "voice_mic_locked",
+                "voice_mic_epoch",
+                "voice_stt_last_sig",
+                "voice_processing",
+            ]:
                 st.session_state.pop(key, None)
+            st.session_state["voice_stage"] = "idle"
+            st.session_state["voice_transcript_log"] = []
+            st.session_state["voice_tts_queue"] = []
+            st.session_state["voice_spoken_upto"] = 0
+            st.session_state["voice_confirmed_done"] = False
             st.rerun()
+
+
+_ws = st.session_state.get("ops_workspace", "chat")
+if _ws == "chat":
+    _render_chat_faq()
+elif _ws == "pulse":
+    _render_weekly_pulse_dashboard()
+else:
+    _render_voice_book_tab()
 
 with st.sidebar:
     st.divider()
@@ -569,14 +1169,13 @@ if show_admin:
     st.subheader("Admin section")
 
     with st.expander("Weekly Pulse", expanded=False):
-        st.caption("To enable Gemini pulse generation set `USE_GEMINI_PULSE=1` in Railway variables.")
+        st.caption("Pulse tab shows the latest saved bundle. CLI: `python phase_2/fetch_reviews.py` → `python scripts/phase2_generate_pulse.py`")
+        st.caption("Optional Gemini themes/note: set `USE_GEMINI_PULSE=1` when `GEMINI_API_KEY` is available.")
         pulse = load_latest_pulse()
         if pulse:
-            st.success(f"Loaded latest pulse: {pulse.get('pulse_id')}")
-            st.json(pulse)
+            st.success(f"Latest pulse: `{pulse.get('pulse_id')}` · top theme: **{(pulse.get('top_themes') or ['—'])[0]}**")
         else:
-            st.info("No pulse found yet. Run Phase 2 to fetch reviews and generate a pulse.")
-            st.code("python phase_2/fetch_reviews.py\npython phase_2/run_pulse.py")
+            st.info("No pulse saved yet — run `fetch_reviews` / `phase2_generate_pulse` from the repo root.")
 
     with st.expander("Approval Center (HITL)", expanded=False):
         st.caption("Creates pending actions from latest booking; approve/reject updates local queue.")
