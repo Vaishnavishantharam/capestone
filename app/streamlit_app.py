@@ -202,6 +202,19 @@ def _inject_ops_dashboard_theme() -> None:
           .stChatInput textarea {
             color: var(--ops-text) !important;
           }
+          /* Remove occasional inner white stripe from BaseWeb textarea wrapper */
+          .stChatInput [data-baseweb="textarea"],
+          .stChatInput [data-baseweb="textarea"] > div,
+          .stChatInput [data-baseweb="textarea"] > div > div {
+            background: transparent !important;
+            box-shadow: none !important;
+          }
+          .stChatInput textarea {
+            background: transparent !important;
+          }
+          .stChatInput textarea::placeholder {
+            color: rgba(148, 163, 184, 0.9) !important;
+          }
           [data-testid="stExpander"] {
             background: rgba(17, 21, 31, 0.75) !important;
             border: 1px solid var(--ops-border) !important;
@@ -1160,56 +1173,4 @@ elif _ws == "pulse":
     _render_weekly_pulse_dashboard()
 else:
     _render_voice_book_tab()
-
-with st.sidebar:
-    st.divider()
-    show_admin = st.toggle("Show admin section (pulse / approvals / evals)", value=False)
-
-if show_admin:
-    st.divider()
-    st.subheader("Admin section")
-
-    with st.expander("Weekly Pulse", expanded=False):
-        st.caption("Pulse tab shows the latest saved bundle. CLI: `python phase_2/fetch_reviews.py` → `python scripts/phase2_generate_pulse.py`")
-        st.caption("Optional Gemini themes/note: set `USE_GEMINI_PULSE=1` when `GEMINI_API_KEY` is available.")
-        pulse = load_latest_pulse()
-        if pulse:
-            st.success(f"Latest pulse: `{pulse.get('pulse_id')}` · top theme: **{(pulse.get('top_themes') or ['—'])[0]}**")
-        else:
-            st.info("No pulse saved yet — run `fetch_reviews` / `phase2_generate_pulse` from the repo root.")
-
-    with st.expander("Approval Center (HITL)", expanded=False):
-        st.caption("Creates pending actions from latest booking; approve/reject updates local queue.")
-        latest_booking = load_latest_booking()
-        if latest_booking:
-            st.write("Latest booking:")
-            st.json(latest_booking)
-            if st.button("Create pending actions from latest booking", key="enqueue_from_latest"):
-                actions = generate_actions_from_booking(latest_booking)
-                paths = enqueue_actions(actions)
-                st.success(f"Enqueued {len(paths)} actions.")
-        else:
-            st.info("No booking found yet. Create one in the Voice & Book tab first.")
-
-        pending = list_queue(status="pending")
-        st.write(f"Pending actions: {len(pending)}")
-        for item in pending:
-            with st.expander(f"{item['id']} — {item['action_type']} — booking={item['payload'].get('booking_code')}"):
-                st.json(item)
-                cols = st.columns(2)
-                if cols[0].button("Approve", key=f"approve_{item['id']}"):
-                    set_status(item["id"], "approved")
-                    st.rerun()
-                if cols[1].button("Reject", key=f"reject_{item['id']}"):
-                    set_status(item["id"], "rejected")
-                    st.rerun()
-
-    with st.expander("Evals", expanded=False):
-        report_path = ROOT / "docs" / "EVALS_REPORT.md"
-        if report_path.exists():
-            st.success("Found eval report.")
-            st.markdown(report_path.read_text(encoding="utf-8"))
-        else:
-            st.info("No eval report found yet. Run Phase 6.")
-            st.code("python phase_6/run_evals.py")
 
