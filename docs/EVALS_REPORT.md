@@ -23,7 +23,7 @@ Exit Load | 1.0%
 - Next step: If you think it was applied incorrectly, compare your transaction dates against the scheme’s exit-load clause and contact support with your booking code (shared securely outside this chat).
 
 Scheme source: https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989
-Fee source: REPLACE_WITH_OFFICIAL_FEE_OR_EXIT_LOAD_POLICY_URL
+Fee source: https://investor.sebi.gov.in/exit_load.html
 Last updated from sources: 2026-04-25T20:39:52+00:00
 ```
 
@@ -44,7 +44,7 @@ Exit Load | 1.0%
 - Next step: If you think it was applied incorrectly, compare your transaction dates against the scheme’s exit-load clause and contact support with your booking code (shared securely outside this chat).
 
 Scheme source: https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184
-Fee source: REPLACE_WITH_OFFICIAL_FEE_OR_EXIT_LOAD_POLICY_URL
+Fee source: https://investor.sebi.gov.in/exit_load.html
 Last updated from sources: 2026-04-25T20:39:52+00:00
 ```
 
@@ -65,7 +65,7 @@ Exit Load | 1.0%
 - Next step: If you think it was applied incorrectly, compare your transaction dates against the scheme’s exit-load clause and contact support with your booking code (shared securely outside this chat).
 
 Scheme source: https://www.indmoney.com/mutual-funds/hdfc-small-cap-fund-direct-growth-option-3580
-Fee source: REPLACE_WITH_OFFICIAL_FEE_OR_EXIT_LOAD_POLICY_URL
+Fee source: https://investor.sebi.gov.in/exit_load.html
 Last updated from sources: 2026-04-25T20:39:52+00:00
 ```
 
@@ -86,7 +86,7 @@ Exit Load | 1.0%
 - Next step: If you think it was applied incorrectly, compare your transaction dates against the scheme’s exit-load clause and contact support with your booking code (shared securely outside this chat).
 
 Scheme source: https://www.indmoney.com/mutual-funds/hdfc-large-cap-fund-direct-plan-growth-option-2989
-Fee source: REPLACE_WITH_OFFICIAL_FEE_OR_EXIT_LOAD_POLICY_URL
+Fee source: https://investor.sebi.gov.in/exit_load.html
 Last updated from sources: 2026-04-25T20:39:52+00:00
 ```
 
@@ -107,7 +107,7 @@ Exit Load | 1.0%
 - Next step: If you think it was applied incorrectly, compare your transaction dates against the scheme’s exit-load clause and contact support with your booking code (shared securely outside this chat).
 
 Scheme source: https://www.indmoney.com/mutual-funds/hdfc-flexi-cap-fund-direct-plan-growth-option-3184
-Fee source: REPLACE_WITH_OFFICIAL_FEE_OR_EXIT_LOAD_POLICY_URL
+Fee source: https://investor.sebi.gov.in/exit_load.html
 Last updated from sources: 2026-04-25T20:39:52+00:00
 ```
 
