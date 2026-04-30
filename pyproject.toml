@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capestone"
+version = "0.0.0"
+requires-python = ">=3.8"
+description = "Local install exposes the `core` package for Streamlit on Railway and other hosts."
+
+# Dependencies stay in requirements.txt for pip install -r requirements.txt
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*"]

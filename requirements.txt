@@ -8,3 +8,6 @@ langdetect>=1.0.9
 streamlit>=1.33.0
 # streamlit requires packaging<25; pin for compatibility across environments.
 packaging<25
+
+# Install repo-root package so `import core` works everywhere (Railway, Docker, etc.)
+-e .

@@ -1,11 +1,31 @@
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+
+def _find_repo_root() -> Path:
+    """Directory that contains the `core` package (works regardless of cwd / Railway root)."""
+    start = Path(__file__).resolve()
+    for d in [start.parent, *start.parents]:
+        if (d / "core" / "__init__.py").is_file():
+            return d
+    raise RuntimeError(
+        "Could not find the `core/` package. Deploy the full repository from its root "
+        "so `core/` is included (e.g. Railway: set Root Directory to `.` or leave blank, "
+        "not `app`)."
+    )
+
+
+# Must run before any `from core...` imports (Railway, Docker, etc.).
+ROOT = _find_repo_root().resolve()
+sys.path.insert(0, str(ROOT))
+
 import html
 import json
 import os
 import base64
 import tempfile
-from pathlib import Path
 
 import streamlit as st
 import streamlit.components.v1 as components
@@ -17,8 +37,6 @@ from core.stt.elevenlabs import transcribe_audio_bytes
 from core.tts.elevenlabs import tts_mp3_bytes
 from core.voice.booking import create_voice_booking_artifact, theme_aware_greeting
 
-
-ROOT = Path(__file__).resolve().parents[1]
 
 def _read_env_file(path: Path) -> dict[str, str]:
     if not path.exists():
